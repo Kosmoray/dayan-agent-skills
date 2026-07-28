@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kosmoray.github.io/dayan-agent-skills/sitemap.xml

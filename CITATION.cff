@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If Dayan Agent Skills helps your work, please cite the repository."
+title: "Dayan Agent Skills"
+type: software
+authors:
+  - name: "Dayan AI"
+repository-code: "https://github.com/Kosmoray/dayan-agent-skills"
+url: "https://kosmoray.github.io/dayan-agent-skills/"
+license: MIT
+version: "0.1.0-beta.1"
+date-released: "2026-07-29"

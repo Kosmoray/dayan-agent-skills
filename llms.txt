@@ -1,0 +1,34 @@
+# Dayan Agent Skills
+
+> Open skills, harnesses, hooks, and verifiers for making probabilistic AI work more repeatable, inspectable, and human-friendly.
+
+Canonical repository: https://github.com/Kosmoray/dayan-agent-skills
+Live Dayan Deck demo: https://kosmoray.github.io/dayan-agent-skills/
+License: MIT
+Release: 0.1.0-beta.1
+
+## Available Skill
+
+- Dayan Deck: turns structured content into a self-contained HTML presentation with one narrative job per slide, a coherent visual system, editable text, and a deterministic structural verifier.
+
+## Verified
+
+- catalog and plugin manifests parse;
+- fourteen-plus positive and negative tests pass;
+- isolated packaging into Codex and Claude Code Skill directories passes;
+- the example deck passes its structural verifier;
+- public redline scanning is part of CI.
+
+## Not claimed
+
+- universal behavioral compatibility across agent versions;
+- verified PPTX export;
+- visual quality from structural tests alone;
+- suitability for consequential decisions without human review.
+
+## Roadmap
+
+Create: Huashu Design, Dayan HTML, Diagram.
+Think: Wenzhen, Plan, Orient.
+Build: Agent Designer, Agent Factory, Hook Factory.
+Verify & Grow: Adversarial Reviewer, AI SEO.

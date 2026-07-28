@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-labelledby="title desc">
+  <title id="title">Dayan square array mark</title>
+  <desc id="desc">A seven by seven black square array with one red square above and to the right.</desc>
+  <defs><path id="row" d="M22.9 25.6h4.1v4.1h-4.1zm8.2 0h4.1v4.1h-4.1zm8.2 0h4.1v4.1h-4.1zm8.2 0h4.1v4.1h-4.1zm8.2 0h4.1v4.1h-4.1zm8.2 0h4.1v4.1h-4.1zm8.2 0h4.1v4.1h-4.1z"/></defs>
+  <g fill="#0B0B0C">
+    <use href="#row"/><use href="#row" y="8.2"/><use href="#row" y="16.4"/><use href="#row" y="24.6"/>
+    <use href="#row" y="32.8"/><use href="#row" y="41"/><use href="#row" y="49.2"/>
+  </g>
+  <path fill="#C81E1E" d="M81.2 16.8h4.7v4.7h-4.7z"/>
+</svg>

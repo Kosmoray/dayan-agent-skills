@@ -1,0 +1,42 @@
+{
+  "name": "dayan-agent-skills",
+  "version": "0.1.0-beta.1",
+  "description": "Open skills, harnesses, hooks, and verifiers for making AI agent work more repeatable and inspectable.",
+  "author": {
+    "name": "Dayan AI",
+    "url": "https://github.com/Kosmoray"
+  },
+  "homepage": "https://kosmoray.github.io/dayan-agent-skills/",
+  "repository": "https://github.com/Kosmoray/dayan-agent-skills",
+  "license": "MIT",
+  "keywords": [
+    "agents",
+    "skills",
+    "harness",
+    "hooks",
+    "verifiers",
+    "presentations"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Dayan Agent Skills",
+    "shortDescription": "Give probabilistic AI a control layer",
+    "longDescription": "Build more repeatable and inspectable agent workflows with open Skills, guardrails, examples, and deterministic verifiers.",
+    "developerName": "Dayan AI",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://kosmoray.github.io/dayan-agent-skills/",
+    "privacyPolicyURL": "https://github.com/Kosmoray/dayan-agent-skills/blob/main/SECURITY.md",
+    "termsOfServiceURL": "https://github.com/Kosmoray/dayan-agent-skills/blob/main/LICENSE",
+    "defaultPrompt": [
+      "Turn this outline into a focused, self-contained HTML presentation and verify its structure."
+    ],
+    "brandColor": "#E21B23",
+    "composerIcon": "./assets/dayan-mark.svg",
+    "logo": "./assets/dayan-mark.svg",
+    "screenshots": []
+  }
+}

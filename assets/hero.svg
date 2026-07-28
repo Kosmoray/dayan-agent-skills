@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Dayan Agent Skills</title>
+  <desc id="desc">A black and white control layer diagram with the Dayan square array and red human-decision point.</desc>
+  <rect width="1600" height="900" fill="#080808"/>
+  <g opacity=".16" stroke="#fff" stroke-width="1">
+    <path d="M0 120h1600M0 300h1600M0 480h1600M0 660h1600M0 840h1600"/>
+    <path d="M160 0v900M480 0v900M800 0v900M1120 0v900M1440 0v900"/>
+  </g>
+  <g transform="translate(124 105) scale(2.1)">
+    <defs><path id="hero-row" d="M0 0h12v12H0zm24 0h12v12H24zm24 0h12v12H48zm24 0h12v12H72zm24 0h12v12H96zm24 0h12v12h-12zm24 0h12v12h-12z"/></defs>
+    <g fill="#F4F2ED">
+      <use href="#hero-row"/><use href="#hero-row" y="24"/><use href="#hero-row" y="48"/><use href="#hero-row" y="72"/>
+      <use href="#hero-row" y="96"/><use href="#hero-row" y="120"/><use href="#hero-row" y="144"/>
+    </g>
+    <rect x="190" y="-34" width="16" height="16" fill="#E21B23"/>
+  </g>
+  <text x="124" y="560" fill="#E21B23" font-family="Arial, PingFang SC, sans-serif" font-size="28" font-weight="700" letter-spacing="7">DAYAN AGENT SKILLS · PUBLIC BETA 01</text>
+  <text x="124" y="660" fill="#F4F2ED" font-family="Arial, PingFang SC, sans-serif" font-size="86" font-weight="700" letter-spacing="-3">GIVE AI A CONTROL LAYER.</text>
+  <text x="124" y="735" fill="#A6A39D" font-family="Arial, PingFang SC, sans-serif" font-size="34">SKILLS · HARNESSES · HOOKS · VERIFIERS</text>
+  <g transform="translate(124 798)">
+    <rect width="350" height="3" fill="#E21B23"/>
+    <text y="44" fill="#F4F2ED" font-family="Arial, PingFang SC, sans-serif" font-size="25" font-weight="700">01  DAYAN DECK — AVAILABLE NOW</text>
+  </g>
+</svg>

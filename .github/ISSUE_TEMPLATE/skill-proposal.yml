@@ -1,0 +1,41 @@
+name: Skill proposal
+description: Propose a repeatable, verifiable agent workflow.
+title: "[Skill]: "
+labels:
+  - skill-proposal
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Repeated problem
+      description: Who hits this problem repeatedly, and what goes wrong today?
+    validations:
+      required: true
+  - type: textarea
+    id: artifact
+    attributes:
+      label: Expected artifact
+      description: What concrete file, result, or decision should the Skill create?
+    validations:
+      required: true
+  - type: textarea
+    id: trigger
+    attributes:
+      label: Trigger and non-trigger boundary
+      description: When should the Skill run, and when should it stay out?
+    validations:
+      required: true
+  - type: textarea
+    id: verification
+    attributes:
+      label: Verification
+      description: What passing and rejected fixtures would prove the boundary?
+    validations:
+      required: true
+  - type: textarea
+    id: human
+    attributes:
+      label: Human authority
+      description: Which consequential actions or judgments must remain human-controlled?
+    validations:
+      required: true

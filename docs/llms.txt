@@ -1,0 +1,6 @@
+# Dayan Agent Skills
+
+Canonical repository: https://github.com/Kosmoray/dayan-agent-skills
+Live demo: https://kosmoray.github.io/dayan-agent-skills/
+
+Dayan Deck is the first public beta: an HTML-first presentation Skill with a structural verifier and explicit human-review boundaries.

@@ -1,0 +1,23 @@
+name: verify
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Compile
+        run: python3 -m py_compile scripts/*.py installers/*.py skills/dayan-deck/scripts/*.py tests/*.py
+      - name: Validate release
+        run: python3 scripts/validate_release.py
+      - name: Test
+        run: python3 -m unittest discover -s tests -v
