@@ -5,12 +5,14 @@ The installer requires an explicit target home so smoke tests never write to the
 ```bash
 python3 installers/install.py dayan-deck --agent codex --home /path/to/test-home
 python3 installers/install.py dayan-deck --agent claude-code --home /path/to/test-home
+python3 installers/install.py dayan-adversarial-reviewer --agent codex --home /path/to/test-home
+python3 installers/install.py dayan-adversarial-reviewer --agent claude-code --home /path/to/test-home
 ```
 
 Supported installation targets in this candidate:
 
-- Codex-compatible Skill directory: `.codex/skills/dayan-deck`;
-- Claude Code-compatible Skill directory: `.claude/skills/dayan-deck`.
+- Codex-compatible Skill directory: `.codex/skills/<skill-name>`;
+- Claude Code-compatible Skill directory: `.claude/skills/<skill-name>`.
 
 These are verified packaging targets, not universal behavioral compatibility claims. A real agent trigger and output smoke test is still required before `compatible_agents` is populated.
 

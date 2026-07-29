@@ -45,6 +45,19 @@ Skill、harness、hook 和 verifier，就是 AI 的半自动模式：
 
 [阅读 Skill](skills/dayan-deck/SKILL.md) · [打开在线 Starter](https://kosmoray.github.io/dayan-agent-skills/) · [查看验证器](skills/dayan-deck/scripts/verify_deck.py)
 
+### `dayan-adversarial-reviewer` · Public Beta
+
+在合并或发布前，用三种明确区分的视角审查一项具体变更：
+
+- 失败模式：异常输入、重复执行、半完成、并发、中断与回滚；
+- 维护者视角：隐式约定、职责混杂和回归陷阱；
+- 信任边界：外部输入、权限、文件、环境变量、日志与凭证；
+- 输出有证据的 `BLOCK`、`CONCERNS` 或 `CLEAN` 裁决；
+- 同时交付人类可读 Markdown 与机器可验证 JSON；
+- 附带通过/阻断样例和确定性验证器。
+
+[阅读 Skill](skills/dayan-adversarial-reviewer/SKILL.md) · [查看审查量表](skills/dayan-adversarial-reviewer/references/rubric.md) · [查看验证器](skills/dayan-adversarial-reviewer/scripts/verify_review.py)
+
 ## 一分钟安装
 
 ```bash
@@ -55,6 +68,8 @@ python3 installers/install.py dayan-deck \
   --agent codex \
   --home "$HOME"
 ```
+
+把 `dayan-deck` 替换为 `dayan-adversarial-reviewer`，即可安装对抗审查 Skill。
 
 Claude Code：
 
@@ -68,7 +83,7 @@ Beta 安装器只负责全新安装，遇到已有目录会停止，不会覆盖
 
 ## 接下来公开什么
 
-首批 12 个候选分成四组：Create、Think、Build、Verify & Grow。目前只有 `dayan-deck` 已作为 beta 发布，其余名称是公开路线图，不代表已经达到生产可用状态。机器可读状态见 [`catalog.json`](catalog.json)。
+首批 12 个候选分成四组：Create、Think、Build、Verify & Grow。目前 `dayan-deck` 与 `dayan-adversarial-reviewer` 已作为 beta 发布，其余名称是公开路线图，不代表已经达到生产可用状态。机器可读状态见 [`catalog.json`](catalog.json)。
 
 ## 开源原则
 

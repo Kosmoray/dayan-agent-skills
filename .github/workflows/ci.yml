@@ -16,7 +16,7 @@ jobs:
         with:
           python-version: "3.11"
       - name: Compile
-        run: python3 -m py_compile scripts/*.py installers/*.py skills/dayan-deck/scripts/*.py tests/*.py
+        run: python3 -m py_compile scripts/*.py installers/*.py skills/*/scripts/*.py tests/*.py
       - name: Validate release
         run: python3 scripts/validate_release.py
       - name: Test

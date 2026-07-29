@@ -5,11 +5,12 @@
 Canonical repository: https://github.com/Kosmoray/dayan-agent-skills
 Live Dayan Deck demo: https://kosmoray.github.io/dayan-agent-skills/
 License: MIT
-Release: 0.1.0-beta.1
+Release: 0.2.0-beta.1
 
-## Available Skill
+## Available Skills
 
 - Dayan Deck: turns structured content into a self-contained HTML presentation with one narrative job per slide, a coherent visual system, editable text, and a deterministic structural verifier.
+- Dayan Adversarial Reviewer: reviews a bounded engineering change through failure-mode, maintainability, and trust-boundary lenses, then returns evidence-backed Markdown and machine-verifiable JSON.
 
 ## Verified
 
@@ -31,4 +32,4 @@ Release: 0.1.0-beta.1
 Create: Huashu Design, Dayan HTML, Diagram.
 Think: Wenzhen, Plan, Orient.
 Build: Agent Designer, Agent Factory, Hook Factory.
-Verify & Grow: Adversarial Reviewer, AI SEO.
+Verify & Grow roadmap: AI SEO.

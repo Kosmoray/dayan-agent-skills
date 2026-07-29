@@ -51,6 +51,19 @@ Turn a topic, outline, or source document into a self-contained HTML presentatio
 
 [Read the Skill](skills/dayan-deck/SKILL.md) · [Open the live starter](https://kosmoray.github.io/dayan-agent-skills/) · [Inspect the verifier](skills/dayan-deck/scripts/verify_deck.py)
 
+### `dayan-adversarial-reviewer` · public beta
+
+Review a concrete change before merge or release through three distinct lenses:
+
+- failure modes: malformed, repeated, partial, concurrent, interrupted, and rollback paths;
+- maintainability: hidden contracts, mixed responsibilities, and regression traps;
+- trust boundaries: untrusted input, authorization, files, environment, logs, and secrets;
+- evidence-backed `BLOCK`, `CONCERNS`, or `CLEAN` verdicts;
+- matching human-readable Markdown and machine-verifiable JSON;
+- accepted and blocking fixtures plus a deterministic verdict validator.
+
+[Read the Skill](skills/dayan-adversarial-reviewer/SKILL.md) · [Inspect the rubric](skills/dayan-adversarial-reviewer/references/rubric.md) · [Run the validator](skills/dayan-adversarial-reviewer/scripts/verify_review.py)
+
 ## Install in under a minute
 
 Clone the repository, then install into an explicit agent home:
@@ -63,6 +76,8 @@ python3 installers/install.py dayan-deck \
   --agent codex \
   --home "$HOME"
 ```
+
+Replace `dayan-deck` with `dayan-adversarial-reviewer` to install the review Skill.
 
 Claude Code packaging target:
 
@@ -79,6 +94,9 @@ The beta installer performs new installs only and refuses to overwrite an existi
 ```bash
 python3 skills/dayan-deck/scripts/verify_deck.py \
   skills/dayan-deck/examples/starter.html
+
+python3 skills/dayan-adversarial-reviewer/scripts/verify_review.py \
+  skills/dayan-adversarial-reviewer/examples/block-review.json
 ```
 
 Expected result:
@@ -100,7 +118,7 @@ The first 12 public candidates are organized as four product clusters:
 | Dayan HTML | Orient | Hook Factory |  |
 | Diagram |  |  |  |
 
-Only `dayan-deck` is available in this beta. The other names are a public roadmap, not a production-readiness claim. See [`catalog.json`](catalog.json).
+`dayan-deck` and `dayan-adversarial-reviewer` are available as public betas. The other names are a public roadmap, not a production-readiness claim. See [`catalog.json`](catalog.json).
 
 ## Design principles
 
@@ -131,7 +149,7 @@ Start with [`CONTRIBUTING.md`](CONTRIBUTING.md) or propose a Skill using the iss
 
 ## Security and provenance
 
-The public beta is a clean-room package. It excludes customer material, private templates, internal infrastructure, machine-specific paths, credentials, and third-party binary assets. Read [`SANITIZATION.md`](SANITIZATION.md), [`SECURITY.md`](SECURITY.md), and the [`dayan-deck` provenance record](skills/dayan-deck/PROVENANCE.md).
+The public beta is a clean-room package. It excludes customer material, private templates, internal infrastructure, machine-specific paths, credentials, and third-party binary assets. Read [`SANITIZATION.md`](SANITIZATION.md), [`SECURITY.md`](SECURITY.md), and the provenance records for [`dayan-deck`](skills/dayan-deck/PROVENANCE.md) and [`dayan-adversarial-reviewer`](skills/dayan-adversarial-reviewer/PROVENANCE.md).
 
 ## License
 

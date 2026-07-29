@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "scope": "src/session.py and tests/test_session.py",
+  "verdict": "BLOCK",
+  "summary": "The session lookup accepts a caller-controlled account identifier without an authorization check.",
+  "findings": [
+    {
+      "severity": "CRITICAL",
+      "title": "Session lookup crosses the account boundary",
+      "evidence": {
+        "path": "src/session.py",
+        "line": 64,
+        "trigger": "An authenticated caller supplies another account identifier to the lookup function."
+      },
+      "risk": "The caller can read a session that belongs to a different account.",
+      "fix": "Derive the account identifier from the authenticated principal and add a cross-account rejection test."
+    },
+    {
+      "severity": "WARNING",
+      "title": "The error path reports success after storage failure",
+      "evidence": {
+        "path": "src/session.py",
+        "line": 91,
+        "trigger": "The session store raises a write exception."
+      },
+      "risk": "Callers receive a success state even though the session was not persisted.",
+      "fix": "Propagate a typed failure and assert that no success response is returned."
+    }
+  ],
+  "residual_assumptions": {
+    "failure_mode": "The storage client documents which write errors are safe to retry.",
+    "maintainer": "The handler remains the single entry point for session creation.",
+    "trust_boundary": "No downstream service independently re-authorizes the requested account."
+  }
+}

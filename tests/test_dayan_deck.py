@@ -76,13 +76,14 @@ class DeckVerifierTests(unittest.TestCase):
 
 
 class InstallerTests(unittest.TestCase):
-    def test_installs_into_both_isolated_agent_homes(self):
+    def test_installs_beta_skills_into_both_isolated_agent_homes(self):
         with tempfile.TemporaryDirectory(prefix="openclaw-install-test-", dir="/tmp") as directory:
             home = Path(directory)
-            for agent in ("codex", "claude-code"):
-                destination = installer.install(home, agent, "dayan-deck")
-                self.assertTrue((destination / "SKILL.md").is_file())
-                self.assertTrue((destination / ".dayan-package.json").is_file())
+            for skill_name in ("dayan-deck", "dayan-adversarial-reviewer"):
+                for agent in ("codex", "claude-code"):
+                    destination = installer.install(home, agent, skill_name)
+                    self.assertTrue((destination / "SKILL.md").is_file())
+                    self.assertTrue((destination / ".dayan-package.json").is_file())
 
     def test_refuses_any_overwrite(self):
         with tempfile.TemporaryDirectory(prefix="openclaw-install-test-", dir="/tmp") as directory:

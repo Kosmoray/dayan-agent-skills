@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "scope": "src/cache.py and tests/test_cache.py",
+  "verdict": "CLEAN",
+  "summary": "No release-blocking defect was proven in the bounded cache-key change.",
+  "findings": [
+    {
+      "severity": "NOTE",
+      "title": "Add one Unicode regression fixture",
+      "evidence": {
+        "path": "tests/test_cache.py",
+        "line": 38,
+        "trigger": "A future cache-key change handles non-ASCII identifiers."
+      },
+      "risk": "A later normalization change could regress without a focused fixture.",
+      "fix": "Add one non-ASCII identifier case beside the existing key tests."
+    }
+  ],
+  "residual_assumptions": {
+    "failure_mode": "The cache backend preserves the documented atomic set operation.",
+    "maintainer": "The normalization contract remains owned by src/cache.py.",
+    "trust_boundary": "Callers continue to pass identifiers through the existing length limit."
+  }
+}

@@ -3,6 +3,7 @@
 ## Available
 
 - `dayan-deck` — public beta
+- `dayan-adversarial-reviewer` — public beta
 
 ## Create
 
@@ -24,7 +25,6 @@
 
 ## Verify & Grow
 
-- Adversarial Reviewer
 - AI SEO
 
 Names on this roadmap are release candidates, not production-readiness claims. Each Skill must earn a public source, accepted and rejected fixtures, a validator or human-review contract, and license provenance.

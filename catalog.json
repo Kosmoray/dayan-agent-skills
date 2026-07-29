@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "release": "0.1.0-beta.1",
+  "release": "0.2.0-beta.1",
   "status": "public-beta",
   "skills": [
     {
@@ -8,7 +8,10 @@
       "category": "create",
       "trigger": "Turn structured content into a polished, editable presentation with a coherent visual system.",
       "compatible_agents": [],
-      "required_tools": ["python3", "modern browser"],
+      "required_tools": [
+        "python3",
+        "modern browser"
+      ],
       "risk_level": "medium",
       "public_version": "0.1.0-beta.1",
       "quickstart": "docs/install.md",
@@ -18,7 +21,11 @@
       "maintenance_status": "beta",
       "star_potential": 96,
       "public_readiness": 82,
-      "blockers": ["real agent trigger smoke", "safe update and uninstall", "cross-environment visual evidence"]
+      "blockers": [
+        "real agent trigger smoke",
+        "safe update and uninstall",
+        "cross-environment visual evidence"
+      ]
     },
     {
       "name": "dayan-huashu-design",
@@ -35,7 +42,12 @@
       "maintenance_status": "candidate",
       "star_potential": 90,
       "public_readiness": 64,
-      "blockers": ["public source rewrite", "brand-neutral starter", "browser fixture", "license audit"]
+      "blockers": [
+        "public source rewrite",
+        "brand-neutral starter",
+        "browser fixture",
+        "license audit"
+      ]
     },
     {
       "name": "dayan-html",
@@ -52,7 +64,11 @@
       "maintenance_status": "candidate",
       "star_potential": 88,
       "public_readiness": 50,
-      "blockers": ["public source rewrite", "remove internal delivery policy", "example and visual regression check"]
+      "blockers": [
+        "public source rewrite",
+        "remove internal delivery policy",
+        "example and visual regression check"
+      ]
     },
     {
       "name": "dayan-diagram",
@@ -69,7 +85,12 @@
       "maintenance_status": "candidate",
       "star_potential": 82,
       "public_readiness": 54,
-      "blockers": ["public source rewrite", "SVG fixtures", "accessibility checks", "license audit"]
+      "blockers": [
+        "public source rewrite",
+        "SVG fixtures",
+        "accessibility checks",
+        "license audit"
+      ]
     },
     {
       "name": "dayan-wenzhen",
@@ -86,7 +107,11 @@
       "maintenance_status": "candidate",
       "star_potential": 85,
       "public_readiness": 48,
-      "blockers": ["brand-neutral rewrite", "passing and rejected fixtures", "output schema"]
+      "blockers": [
+        "brand-neutral rewrite",
+        "passing and rejected fixtures",
+        "output schema"
+      ]
     },
     {
       "name": "dayan-plan",
@@ -103,7 +128,11 @@
       "maintenance_status": "candidate",
       "star_potential": 77,
       "public_readiness": 42,
-      "blockers": ["public differentiation", "plan schema", "example and validator"]
+      "blockers": [
+        "public differentiation",
+        "plan schema",
+        "example and validator"
+      ]
     },
     {
       "name": "dayan-orient",
@@ -120,7 +149,11 @@
       "maintenance_status": "candidate",
       "star_potential": 80,
       "public_readiness": 55,
-      "blockers": ["clean-room repository fixture", "agent compatibility evidence", "validator"]
+      "blockers": [
+        "clean-room repository fixture",
+        "agent compatibility evidence",
+        "validator"
+      ]
     },
     {
       "name": "dayan-agent-designer",
@@ -137,7 +170,11 @@
       "maintenance_status": "candidate",
       "star_potential": 83,
       "public_readiness": 49,
-      "blockers": ["brand-neutral schema", "safe example", "evaluation fixture"]
+      "blockers": [
+        "brand-neutral schema",
+        "safe example",
+        "evaluation fixture"
+      ]
     },
     {
       "name": "dayan-agent-factory",
@@ -154,7 +191,12 @@
       "maintenance_status": "candidate",
       "star_potential": 78,
       "public_readiness": 47,
-      "blockers": ["remove internal orchestration", "safe output boundary", "factory fixture", "validator"]
+      "blockers": [
+        "remove internal orchestration",
+        "safe output boundary",
+        "factory fixture",
+        "validator"
+      ]
     },
     {
       "name": "dayan-hook-factory",
@@ -171,24 +213,33 @@
       "maintenance_status": "candidate",
       "star_potential": 76,
       "public_readiness": 48,
-      "blockers": ["sandboxed hook examples", "failure containment", "cross-platform fixture"]
+      "blockers": [
+        "sandboxed hook examples",
+        "failure containment",
+        "cross-platform fixture"
+      ]
     },
     {
       "name": "dayan-adversarial-reviewer",
       "category": "verify-grow",
-      "trigger": "Attack a proposed artifact from user, maintainer, and failure-mode perspectives before release.",
+      "trigger": "Review a concrete engineering change through failure-mode, maintainability, and trust-boundary lenses before release.",
       "compatible_agents": [],
-      "required_tools": [],
+      "required_tools": [
+        "python3"
+      ],
       "risk_level": "medium",
-      "public_version": "unreleased",
-      "quickstart": null,
-      "example": null,
-      "validator": null,
-      "source_license": "pending",
-      "maintenance_status": "candidate",
+      "public_version": "0.2.0-beta.1",
+      "quickstart": "docs/install.md",
+      "example": "skills/dayan-adversarial-reviewer/examples/clean-review.json",
+      "validator": "skills/dayan-adversarial-reviewer/scripts/verify_review.py",
+      "source_license": "MIT",
+      "maintenance_status": "beta",
       "star_potential": 84,
-      "public_readiness": 52,
-      "blockers": ["brand-neutral rubric", "independent fixture", "machine-readable verdict"]
+      "public_readiness": 82,
+      "blockers": [
+        "real agent trigger smoke",
+        "independent reviewer calibration across repositories"
+      ]
     },
     {
       "name": "dayan-ai-seo",
@@ -205,7 +256,11 @@
       "maintenance_status": "candidate",
       "star_potential": 79,
       "public_readiness": 53,
-      "blockers": ["remove proprietary strategy", "evidence fixture", "no-ranking-promise safety language"]
+      "blockers": [
+        "remove proprietary strategy",
+        "evidence fixture",
+        "no-ranking-promise safety language"
+      ]
     }
   ]
 }

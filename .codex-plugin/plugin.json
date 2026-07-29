@@ -1,6 +1,6 @@
 {
   "name": "dayan-agent-skills",
-  "version": "0.1.0-beta.1",
+  "version": "0.2.0-beta.1",
   "description": "Open skills, harnesses, hooks, and verifiers for making AI agent work more repeatable and inspectable.",
   "author": {
     "name": "Dayan AI",
@@ -32,7 +32,8 @@
     "privacyPolicyURL": "https://github.com/Kosmoray/dayan-agent-skills/blob/main/SECURITY.md",
     "termsOfServiceURL": "https://github.com/Kosmoray/dayan-agent-skills/blob/main/LICENSE",
     "defaultPrompt": [
-      "Turn this outline into a focused, self-contained HTML presentation and verify its structure."
+      "Turn this outline into a focused, self-contained HTML presentation and verify its structure.",
+      "Review this concrete change through failure-mode, maintainability, and trust-boundary lenses, then return an evidence-backed BLOCK, CONCERNS, or CLEAN verdict."
     ],
     "brandColor": "#E21B23",
     "composerIcon": "./assets/dayan-mark.svg",
