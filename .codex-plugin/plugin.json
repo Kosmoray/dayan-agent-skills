@@ -1,6 +1,6 @@
 {
   "name": "dayan-agent-skills",
-  "version": "0.3.0-beta.1",
+  "version": "0.4.0-beta.1",
   "description": "Open skills, harnesses, hooks, and verifiers for making AI agent work more repeatable and inspectable.",
   "author": {
     "name": "Dayan AI",
@@ -34,7 +34,8 @@
     "defaultPrompt": [
       "Turn this outline into a focused, self-contained HTML presentation and verify its structure.",
       "Review this concrete change through failure-mode, maintainability, and trust-boundary lenses, then return an evidence-backed BLOCK, CONCERNS, or CLEAN verdict.",
-      "Turn this vague or risky request into a falsifiable problem hypothesis and a minimal task contract before proposing a solution."
+      "Turn this vague or risky request into a falsifiable problem hypothesis and a minimal task contract before proposing a solution.",
+      "Map this unfamiliar repository, design the smallest viable agent workflow, or build a verified HTML, diagram, hook, or AI visibility audit."
     ],
     "brandColor": "#E21B23",
     "composerIcon": "./assets/dayan-mark.svg",

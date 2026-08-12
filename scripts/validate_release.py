@@ -47,6 +47,7 @@ REQUIRED_FILES = [
     "skills/dayan-wenzhen/scripts/verify_contract.py",
     "skills/dayan-wenzhen/PROVENANCE.md",
     "skills/dayan-wenzhen/SANITIZATION.md",
+    "scripts/validate_public_skill.py",
 ]
 PROHIBITED_PUBLIC_PATTERNS = {
     "private user path": re.compile(r"(?:/Users|/home)/[A-Za-z0-9._-]+/|/Desktop/"),
@@ -73,12 +74,13 @@ def main() -> int:
         catalog = {}
         plugin = {}
 
-    if catalog.get("release") != "0.3.0-beta.1":
-        errors.append("catalog release must be 0.3.0-beta.1")
+    if catalog.get("release") != "0.4.0-beta.1":
+        errors.append("catalog release must be 0.4.0-beta.1")
     skills = catalog.get("skills", [])
     beta = [item for item in skills if item.get("maintenance_status") == "beta"]
-    if [item.get("name") for item in beta] != ["dayan-deck", "dayan-wenzhen", "dayan-adversarial-reviewer"]:
-        errors.append("dayan-deck, dayan-wenzhen, and dayan-adversarial-reviewer must be the beta Skills")
+    beta_names = [item.get("name") for item in beta]
+    if len(beta_names) != 12:
+        errors.append("all 12 catalog Skills must be public beta in v0.4.0-beta.1")
     if plugin.get("version") != catalog.get("release"):
         errors.append("plugin and catalog versions must match")
     if plugin.get("license") != "MIT":
@@ -96,7 +98,7 @@ def main() -> int:
             if local_target and not (markdown_path.parent / local_target).exists():
                 errors.append(f"broken local link in {markdown_name}: {target}")
 
-    for skill_name in ("dayan-deck", "dayan-adversarial-reviewer", "dayan-wenzhen"):
+    for skill_name in beta_names:
         skill_text = (ROOT / "skills" / skill_name / "SKILL.md").read_text(encoding="utf-8")
         if not skill_text.startswith("---\n"):
             errors.append(f"{skill_name} SKILL.md is missing frontmatter")
@@ -111,6 +113,7 @@ def main() -> int:
         Path("skills/dayan-deck/scripts/verify_deck.py"),
         Path("skills/dayan-adversarial-reviewer/scripts/verify_review.py"),
         Path("skills/dayan-wenzhen/scripts/verify_contract.py"),
+        Path("scripts/validate_public_skill.py"),
     }
     for path in sorted(item for item in ROOT.rglob("*") if item.is_file() and ".git" not in item.parts):
         relative = path.relative_to(ROOT)
@@ -137,6 +140,11 @@ def main() -> int:
             ]
         )
     )
+
+    legacy = {"dayan-deck", "dayan-adversarial-reviewer", "dayan-wenzhen"}
+    for skill_name in beta_names:
+        if skill_name not in legacy:
+            errors.extend(run([sys.executable, "scripts/validate_public_skill.py", skill_name]))
     for fixture in ("clean-review.json", "block-review.json"):
         errors.extend(
             run(

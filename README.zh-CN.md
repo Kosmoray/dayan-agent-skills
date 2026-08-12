@@ -31,7 +31,18 @@ Skill、harness、hook 和 verifier，就是 AI 的半自动模式：
 
 这些机制迟早会成为行业公共能力。与其藏着等待别人重新发明，不如率先命名、实现、验证并公开。
 
-## 当前可用
+## 按任务选能力
+
+| 创作 Create | 思考 Think | 构建 Build | 验证与增长 Verify & Grow |
+| --- | --- | --- | --- |
+| [Deck](skills/dayan-deck/SKILL.md) | [Wenzhen](skills/dayan-wenzhen/SKILL.md) | [Agent Designer](skills/dayan-agent-designer/SKILL.md) | [Adversarial Reviewer](skills/dayan-adversarial-reviewer/SKILL.md) |
+| [Huashu Design](skills/dayan-huashu-design/SKILL.md) | [Plan](skills/dayan-plan/SKILL.md) | [Agent Factory](skills/dayan-agent-factory/SKILL.md) | [AI SEO](skills/dayan-ai-seo/SKILL.md) |
+| [HTML](skills/dayan-html/SKILL.md) | [Orient](skills/dayan-orient/SKILL.md) | [Hook Factory](skills/dayan-hook-factory/SKILL.md) |  |
+| [Diagram](skills/dayan-diagram/SKILL.md) |  |  |  |
+
+12 个 Skill 均在同一个母包内提供 Public Beta 安装。前三个有独立验证器，其余九个通过统一的公开包结构验证，并在目录中明确剩余运行时证据。
+
+## 三个重点入口
 
 ### `dayan-deck` · Public Beta
 
@@ -82,7 +93,7 @@ python3 installers/install.py dayan-deck \
   --home "$HOME"
 ```
 
-把 `dayan-deck` 替换为 `dayan-adversarial-reviewer` 或 `dayan-wenzhen`，即可安装其他 Public Beta Skill。
+把 `dayan-deck` 替换为上表任一名称，即可安装对应 Public Beta Skill。
 
 Claude Code：
 
@@ -94,9 +105,9 @@ python3 installers/install.py dayan-deck \
 
 Beta 安装器只负责全新安装，遇到已有目录会停止，不会覆盖用户文件。
 
-## 接下来公开什么
+## 机器可读状态
 
-首批 12 个候选分成四组：Create、Think、Build、Verify & Grow。目前 `dayan-deck`、`dayan-adversarial-reviewer` 与 `dayan-wenzhen` 已作为 beta 发布，其余名称是公开路线图，不代表已经达到生产可用状态。机器可读状态见 [`catalog.json`](catalog.json)。
+[`catalog.json`](catalog.json) 逐项记录公开版本、示例、验证器、风险等级与尚未补齐的运行时证据，不把“已经打包”冒充“所有环境都已验证”。
 
 ## 开源原则
 

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "release": "0.3.0-beta.1",
+  "release": "0.4.0-beta.1",
   "status": "public-beta",
   "skills": [
     {
@@ -34,20 +34,15 @@
       "compatible_agents": [],
       "required_tools": [],
       "risk_level": "medium",
-      "public_version": "unreleased",
-      "quickstart": null,
-      "example": null,
-      "validator": null,
-      "source_license": "pending",
-      "maintenance_status": "candidate",
+      "public_version": "0.4.0-beta.1",
+      "quickstart": "docs/install.md",
+      "example": "skills/dayan-huashu-design/examples/starter.json",
+      "validator": "scripts/validate_public_skill.py",
+      "source_license": "MIT",
+      "maintenance_status": "beta",
       "star_potential": 90,
       "public_readiness": 64,
-      "blockers": [
-        "public source rewrite",
-        "brand-neutral starter",
-        "browser fixture",
-        "license audit"
-      ]
+      "blockers": ["real browser interaction smoke"]
     },
     {
       "name": "dayan-html",
@@ -56,19 +51,15 @@
       "compatible_agents": [],
       "required_tools": [],
       "risk_level": "medium",
-      "public_version": "unreleased",
-      "quickstart": null,
-      "example": null,
-      "validator": null,
-      "source_license": "pending",
-      "maintenance_status": "candidate",
+      "public_version": "0.4.0-beta.1",
+      "quickstart": "docs/install.md",
+      "example": "skills/dayan-html/examples/starter.json",
+      "validator": "scripts/validate_public_skill.py",
+      "source_license": "MIT",
+      "maintenance_status": "beta",
       "star_potential": 88,
       "public_readiness": 50,
-      "blockers": [
-        "public source rewrite",
-        "remove internal delivery policy",
-        "example and visual regression check"
-      ]
+      "blockers": ["visual regression fixture"]
     },
     {
       "name": "dayan-diagram",
@@ -77,20 +68,15 @@
       "compatible_agents": [],
       "required_tools": [],
       "risk_level": "low",
-      "public_version": "unreleased",
-      "quickstart": null,
-      "example": null,
-      "validator": null,
-      "source_license": "pending",
-      "maintenance_status": "candidate",
+      "public_version": "0.4.0-beta.1",
+      "quickstart": "docs/install.md",
+      "example": "skills/dayan-diagram/examples/starter.json",
+      "validator": "scripts/validate_public_skill.py",
+      "source_license": "MIT",
+      "maintenance_status": "beta",
       "star_potential": 82,
       "public_readiness": 54,
-      "blockers": [
-        "public source rewrite",
-        "SVG fixtures",
-        "accessibility checks",
-        "license audit"
-      ]
+      "blockers": ["rendered SVG fixture"]
     },
     {
       "name": "dayan-wenzhen",
@@ -121,19 +107,15 @@
       "compatible_agents": [],
       "required_tools": [],
       "risk_level": "low",
-      "public_version": "unreleased",
-      "quickstart": null,
-      "example": null,
-      "validator": null,
-      "source_license": "pending",
-      "maintenance_status": "candidate",
+      "public_version": "0.4.0-beta.1",
+      "quickstart": "docs/install.md",
+      "example": "skills/dayan-plan/examples/starter.json",
+      "validator": "scripts/validate_public_skill.py",
+      "source_license": "MIT",
+      "maintenance_status": "beta",
       "star_potential": 77,
       "public_readiness": 42,
-      "blockers": [
-        "public differentiation",
-        "plan schema",
-        "example and validator"
-      ]
+      "blockers": ["cross-session recovery smoke"]
     },
     {
       "name": "dayan-orient",
@@ -142,19 +124,15 @@
       "compatible_agents": [],
       "required_tools": [],
       "risk_level": "low",
-      "public_version": "unreleased",
-      "quickstart": null,
-      "example": null,
-      "validator": null,
-      "source_license": "pending",
-      "maintenance_status": "candidate",
+      "public_version": "0.4.0-beta.1",
+      "quickstart": "docs/install.md",
+      "example": "skills/dayan-orient/examples/starter.json",
+      "validator": "scripts/validate_public_skill.py",
+      "source_license": "MIT",
+      "maintenance_status": "beta",
       "star_potential": 80,
       "public_readiness": 55,
-      "blockers": [
-        "clean-room repository fixture",
-        "agent compatibility evidence",
-        "validator"
-      ]
+      "blockers": ["clean-room repository output fixture"]
     },
     {
       "name": "dayan-agent-designer",
@@ -163,19 +141,15 @@
       "compatible_agents": [],
       "required_tools": [],
       "risk_level": "medium",
-      "public_version": "unreleased",
-      "quickstart": null,
-      "example": null,
-      "validator": null,
-      "source_license": "pending",
-      "maintenance_status": "candidate",
+      "public_version": "0.4.0-beta.1",
+      "quickstart": "docs/install.md",
+      "example": "skills/dayan-agent-designer/examples/starter.json",
+      "validator": "scripts/validate_public_skill.py",
+      "source_license": "MIT",
+      "maintenance_status": "beta",
       "star_potential": 83,
       "public_readiness": 49,
-      "blockers": [
-        "brand-neutral schema",
-        "safe example",
-        "evaluation fixture"
-      ]
+      "blockers": ["independent architecture calibration"]
     },
     {
       "name": "dayan-agent-factory",
@@ -184,20 +158,15 @@
       "compatible_agents": [],
       "required_tools": [],
       "risk_level": "high",
-      "public_version": "unreleased",
-      "quickstart": null,
-      "example": null,
-      "validator": null,
-      "source_license": "pending",
-      "maintenance_status": "candidate",
+      "public_version": "0.4.0-beta.1",
+      "quickstart": "docs/install.md",
+      "example": "skills/dayan-agent-factory/examples/starter.json",
+      "validator": "scripts/validate_public_skill.py",
+      "source_license": "MIT",
+      "maintenance_status": "beta",
       "star_potential": 78,
       "public_readiness": 47,
-      "blockers": [
-        "remove internal orchestration",
-        "safe output boundary",
-        "factory fixture",
-        "validator"
-      ]
+      "blockers": ["generated package smoke"]
     },
     {
       "name": "dayan-hook-factory",
@@ -206,19 +175,15 @@
       "compatible_agents": [],
       "required_tools": [],
       "risk_level": "high",
-      "public_version": "unreleased",
-      "quickstart": null,
-      "example": null,
-      "validator": null,
-      "source_license": "pending",
-      "maintenance_status": "candidate",
+      "public_version": "0.4.0-beta.1",
+      "quickstart": "docs/install.md",
+      "example": "skills/dayan-hook-factory/examples/starter.json",
+      "validator": "scripts/validate_public_skill.py",
+      "source_license": "MIT",
+      "maintenance_status": "beta",
       "star_potential": 76,
       "public_readiness": 48,
-      "blockers": [
-        "sandboxed hook examples",
-        "failure containment",
-        "cross-platform fixture"
-      ]
+      "blockers": ["sandboxed cross-platform hook smoke"]
     },
     {
       "name": "dayan-adversarial-reviewer",
@@ -249,19 +214,15 @@
       "compatible_agents": [],
       "required_tools": [],
       "risk_level": "medium",
-      "public_version": "unreleased",
-      "quickstart": null,
-      "example": null,
-      "validator": null,
-      "source_license": "pending",
-      "maintenance_status": "candidate",
+      "public_version": "0.4.0-beta.1",
+      "quickstart": "docs/install.md",
+      "example": "skills/dayan-ai-seo/examples/starter.json",
+      "validator": "scripts/validate_public_skill.py",
+      "source_license": "MIT",
+      "maintenance_status": "beta",
       "star_potential": 79,
       "public_readiness": 53,
-      "blockers": [
-        "remove proprietary strategy",
-        "evidence fixture",
-        "no-ranking-promise safety language"
-      ]
+      "blockers": ["multi-engine observation fixture"]
     }
   ]
 }

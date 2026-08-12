@@ -36,7 +36,18 @@ Agent skills are the semi-automatic modes. A Skill chooses the workflow. A harne
 
 This repository publishes those control layers instead of hiding them.
 
-## Available now
+## Choose your route
+
+| Create | Think | Build | Verify & Grow |
+| --- | --- | --- | --- |
+| [Deck](skills/dayan-deck/SKILL.md) | [Wenzhen](skills/dayan-wenzhen/SKILL.md) | [Agent Designer](skills/dayan-agent-designer/SKILL.md) | [Adversarial Reviewer](skills/dayan-adversarial-reviewer/SKILL.md) |
+| [Huashu Design](skills/dayan-huashu-design/SKILL.md) | [Plan](skills/dayan-plan/SKILL.md) | [Agent Factory](skills/dayan-agent-factory/SKILL.md) | [AI SEO](skills/dayan-ai-seo/SKILL.md) |
+| [HTML](skills/dayan-html/SKILL.md) | [Orient](skills/dayan-orient/SKILL.md) | [Hook Factory](skills/dayan-hook-factory/SKILL.md) |  |
+| [Diagram](skills/dayan-diagram/SKILL.md) |  |  |  |
+
+All 12 are installable public betas. The first three below have dedicated validators; the other nine share a strict public bundle contract and are explicit about remaining runtime evidence.
+
+## Featured Skills
 
 ### `dayan-deck` · public beta
 
@@ -90,7 +101,7 @@ python3 installers/install.py dayan-deck \
   --home "$HOME"
 ```
 
-Replace `dayan-deck` with `dayan-adversarial-reviewer` or `dayan-wenzhen` to install another public beta Skill.
+Replace `dayan-deck` with any name in the route table to install another public beta Skill.
 
 Claude Code packaging target:
 
@@ -123,18 +134,13 @@ PASS: ...starter.html satisfies the structural deck contract (4 slides)
 
 The verifier deliberately rejects remote runtime dependencies, multiple active slides, missing slide headings, credential-like assignments, private paths, and presenter notes inside audience-facing HTML.
 
-## What comes next
+## Verify any new bundle
 
-The first 12 public candidates are organized as four product clusters:
+```bash
+python3 scripts/validate_public_skill.py dayan-orient
+```
 
-| Create | Think | Build | Verify & Grow |
-| --- | --- | --- | --- |
-| Dayan Deck | Wenzhen | Agent Designer | Adversarial Reviewer |
-| Huashu Design | Plan | Agent Factory | AI SEO |
-| Dayan HTML | Orient | Hook Factory |  |
-| Diagram |  |  |  |
-
-`dayan-deck`, `dayan-adversarial-reviewer`, and `dayan-wenzhen` are available as public betas. The other names are a public roadmap, not a production-readiness claim. See [`catalog.json`](catalog.json).
+See [`catalog.json`](catalog.json) for readiness evidence and unresolved runtime blockers for every Skill.
 
 ## Design principles
 
@@ -165,7 +171,7 @@ Start with [`CONTRIBUTING.md`](CONTRIBUTING.md) or propose a Skill using the iss
 
 ## Security and provenance
 
-The public beta is a clean-room package. It excludes customer material, private templates, internal infrastructure, machine-specific paths, credentials, and third-party binary assets. Read [`SANITIZATION.md`](SANITIZATION.md), [`SECURITY.md`](SECURITY.md), and the provenance records for [`dayan-deck`](skills/dayan-deck/PROVENANCE.md), [`dayan-adversarial-reviewer`](skills/dayan-adversarial-reviewer/PROVENANCE.md), and [`dayan-wenzhen`](skills/dayan-wenzhen/PROVENANCE.md).
+The public beta is a clean-room package. It excludes customer material, private templates, internal infrastructure, machine-specific paths, credentials, and third-party binary assets. Read [`SANITIZATION.md`](SANITIZATION.md), [`SECURITY.md`](SECURITY.md), and each Skill's local provenance and sanitization record.
 
 ## License
 

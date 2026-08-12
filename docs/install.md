@@ -11,6 +11,8 @@ python3 installers/install.py dayan-wenzhen --agent codex --home /path/to/test-h
 python3 installers/install.py dayan-wenzhen --agent claude-code --home /path/to/test-home
 ```
 
+All 12 Skills listed in `catalog.json` use the same command. Replace the first argument with the selected Skill name.
+
 Supported installation targets in this candidate:
 
 - Codex-compatible Skill directory: `.codex/skills/<skill-name>`;

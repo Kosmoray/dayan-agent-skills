@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.4.0-beta.1 — 2026-08-12
+
+- Completed the first public 12-Skill collection inside one repository.
+- Added Orient, Plan, Agent Designer, Agent Factory, Hook Factory, HTML, Huashu Design, Diagram, and AI SEO.
+- Added nine clean-room starter contracts, provenance records, sanitization records, and a shared deterministic bundle validator.
+- Expanded isolated Codex and Claude Code installer smoke coverage to all 12 Skills.
+- Reorganized discovery around Create, Think, Build, and Verify & Grow instead of a flat release list.
+
 ## 0.3.0-beta.1 — 2026-08-12
 
 - Released `dayan-wenzhen` as the third public beta Skill.
