@@ -1,13 +1,15 @@
 # Public roadmap
 
-## Available through v1.0 beta
+## Available through v1.1 beta
 
 - 56 installable public beta Skills in one repository.
 - 12 public method cards.
 - Shared catalog, installer, provenance, sanitization, fixtures, validators, and CI.
 - Quickstart, Skill chooser, FAQ, compatibility matrix, and issue templates for clean-environment reports.
 - Public playbooks and 11 sanitized example runs that show how to apply the methods.
+- Five public artifact fixtures that show copyable output shapes for high-value Skills.
 - Deterministic example-run verification in the release validator.
+- Deterministic artifact-fixture verification in the release validator.
 - Clean temporary-home compatibility smoke reports for Codex-style and Claude Code-style package installs.
 - All-Skill compatibility matrix JSON covering 56 Skills across 2 package targets.
 - Offline lifecycle smoke covering discovery, trigger routing, declared example commands, non-trigger rejection, and marker-guarded safe update across 56 Skills x 2 package targets.
@@ -17,7 +19,7 @@ See the [Skill index](docs/skills.md), [method index](docs/methods.md), and mach
 ## Next evidence wave
 
 - external host-version reports from current Codex and Claude Code product versions;
-- generated artifact fixtures for visual, architecture, hook, and agent-package Skills;
+- more generated artifact fixtures for visual, architecture, hook, and agent-package Skills;
 - compatibility reports from clean external environments;
 - narrower good-first-issue fixtures and contribution paths;
 - approved public demos and adoption evidence.

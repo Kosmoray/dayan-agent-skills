@@ -101,7 +101,7 @@ python3 scripts/runtime_smoke.py \
 
 See the full [Quickstart](docs/quickstart.md), [Skill chooser](docs/choose-a-skill.md), [Compatibility evidence](docs/compatibility.md), and [FAQ](docs/faq.md).
 
-## Copy-paste examples
+## Copy-paste examples and fixtures
 
 Try one sanitized run before integrating anything:
 
@@ -112,6 +112,8 @@ The repository now includes [11 sanitized example runs](examples/runs/README.md)
 - [Adversarial review verdict](examples/runs/adversarial-review-verdict.md): turn a release description into a concrete BLOCK/CONCERNS/CLEAN review.
 - [API pagination contract review](examples/runs/api-review-pagination-contract.md): block an unbounded endpoint before clients depend on it.
 - [AI visibility for open-source docs](examples/runs/ai-seo-open-source-docs.md): make claims easier for AI assistants to cite accurately.
+
+It also includes [5 artifact fixtures](docs/fixtures/README.md) that show copyable output shapes for repository orientation, agent design, guardrail hooks, API review, and AI visibility audits.
 
 Then use the public [playbooks](docs/playbooks/README.md) to decide whether your repeated workflow should become a checklist, Skill, verifier, hook, or agent.
 
@@ -218,6 +220,8 @@ The verifier deliberately rejects remote runtime dependencies, multiple active s
 
 ```bash
 python3 scripts/validate_public_skill.py dayan-orient
+
+python3 scripts/verify_fixtures.py
 ```
 
 See [`catalog.json`](catalog.json) for readiness evidence and unresolved host-version evidence for every Skill.

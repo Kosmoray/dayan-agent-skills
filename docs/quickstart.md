@@ -64,6 +64,22 @@ PASS: starter-contract.json satisfies the Wenzhen contract
 
 See [Choose a Skill](choose-a-skill.md) for the complete route.
 
+## 6. Inspect output fixtures
+
+Use the [artifact fixtures](fixtures/README.md) when you want to see copyable output shapes before running a full workflow:
+
+- repository orientation map;
+- support triage agent contract;
+- public redline hook spec;
+- pagination API review;
+- AI visibility docs audit.
+
+Verify them with:
+
+```bash
+python3 scripts/verify_fixtures.py
+```
+
 ## Compatibility smoke
 
 To generate a paste-ready clean-install report:

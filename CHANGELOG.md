@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.1.0-beta.1 — 2026-08-13
+
+- Added `docs/fixtures/`, a public artifact gallery with five copyable output fixtures for `dayan-orient`, `dayan-agent-designer`, `dayan-hook-factory`, `dayan-api-design-reviewer`, and `dayan-ai-seo`.
+- Added `scripts/verify_fixtures.py` and tests to keep artifact fixtures complete, linked, and sanitized.
+- Added a GitHub issue template for artifact fixture contributions.
+- Wired fixture verification into release validation and public docs.
+
 ## 1.0.0-beta.1 — 2026-08-13
 
 - Added `scripts/runtime_smoke.py`, an offline lifecycle harness for clean temporary homes.

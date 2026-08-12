@@ -94,7 +94,7 @@ python3 scripts/runtime_smoke.py \
   --json-output docs/runtime-smoke.json
 ```
 
-## 可复制样例
+## 可复制样例与产物 fixture
 
 仓库现在有 [11 个脱敏可复制样例](examples/runs/README.md)，包括：
 
@@ -103,6 +103,8 @@ python3 scripts/runtime_smoke.py \
 - [对抗审查裁决](examples/runs/adversarial-review-verdict.md)：把发版描述收成具体的 BLOCK / CONCERNS / CLEAN 审查。
 - [API 分页契约审查](examples/runs/api-review-pagination-contract.md)：在客户端依赖前阻断无上限接口。
 - [开源文档 AI 可见性](examples/runs/ai-seo-open-source-docs.md)：让 AI 助手更准确引用仓库声明。
+
+同时新增 [5 个产物 fixture](docs/fixtures/README.md)，展示仓库地图、Agent 设计、守门 Hook、API 审查和 AI 可见性审计的可复制输出形态。
 
 再用公开 [Playbook](docs/playbooks/README.md) 判断你的重复工作应该做成清单、Skill、验证器、Hook 还是 Agent。
 

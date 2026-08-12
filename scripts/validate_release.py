@@ -40,6 +40,12 @@ REQUIRED_FILES = [
     "docs/compatibility-matrix.json",
     "docs/runtime-smoke.md",
     "docs/runtime-smoke.json",
+    "docs/fixtures/README.md",
+    "docs/fixtures/orient-repo-map.md",
+    "docs/fixtures/agent-designer-triage-agent.md",
+    "docs/fixtures/hook-factory-public-redline.md",
+    "docs/fixtures/api-design-review.md",
+    "docs/fixtures/ai-seo-docs-audit.md",
     "docs/playbooks/README.md",
     "docs/playbooks/control-layer-design.md",
     "docs/playbooks/from-conversation-to-skill.md",
@@ -60,6 +66,7 @@ REQUIRED_FILES = [
     "examples/runs/content-production-launch-boundary.md",
     "scripts/verify_site.py",
     "scripts/verify_examples.py",
+    "scripts/verify_fixtures.py",
     "scripts/compatibility_smoke.py",
     "scripts/runtime_smoke.py",
     "skills/dayan-deck/SKILL.md",
@@ -106,13 +113,13 @@ def main() -> int:
         catalog = {}
         plugin = {}
 
-    if catalog.get("release") != "1.0.0-beta.1":
-        errors.append("catalog release must be 1.0.0-beta.1")
+    if catalog.get("release") != "1.1.0-beta.1":
+        errors.append("catalog release must be 1.1.0-beta.1")
     skills = catalog.get("skills", [])
     beta = [item for item in skills if item.get("maintenance_status") == "beta"]
     beta_names = [item.get("name") for item in beta]
     if len(beta_names) != 56:
-        errors.append("all 56 catalog Skills must be public beta in v1.0.0-beta.1")
+        errors.append("all 56 catalog Skills must be public beta in v1.1.0-beta.1")
     if plugin.get("version") != catalog.get("release"):
         errors.append("plugin and catalog versions must match")
     if plugin.get("license") != "MIT":
@@ -182,6 +189,7 @@ def main() -> int:
         Path("scripts/validate_public_skill.py"),
         Path("scripts/verify_site.py"),
         Path("scripts/verify_examples.py"),
+        Path("scripts/verify_fixtures.py"),
     }
     for path in sorted(item for item in ROOT.rglob("*") if item.is_file() and ".git" not in item.parts):
         relative = path.relative_to(ROOT)
@@ -201,6 +209,7 @@ def main() -> int:
     errors.extend(run([sys.executable, "scripts/scan_public_redlines.py", "skills"]))
     errors.extend(run([sys.executable, "scripts/verify_site.py"]))
     errors.extend(run([sys.executable, "scripts/verify_examples.py"]))
+    errors.extend(run([sys.executable, "scripts/verify_fixtures.py"]))
     errors.extend(run([sys.executable, "scripts/compatibility_smoke.py", "--all-skills"]))
     errors.extend(run([sys.executable, "scripts/runtime_smoke.py", "--all-skills"]))
     errors.extend(

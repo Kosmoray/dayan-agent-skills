@@ -1,0 +1,42 @@
+name: Artifact fixture contribution
+description: Propose a copyable public output fixture for one Skill.
+title: "[Fixture]: "
+labels:
+  - good first issue
+  - fixture
+body:
+  - type: input
+    id: skill
+    attributes:
+      label: Skill
+      placeholder: dayan-orient
+    validations:
+      required: true
+  - type: textarea
+    id: repeated_use
+    attributes:
+      label: Repeated use case
+      description: What common user situation should this fixture help people copy?
+    validations:
+      required: true
+  - type: textarea
+    id: safe_input
+    attributes:
+      label: Safe public input
+      description: Provide an anonymized request shape. Do not include private paths, secrets, or real customer identifiers.
+    validations:
+      required: true
+  - type: textarea
+    id: artifact
+    attributes:
+      label: Expected artifact shape
+      description: Show the sections or fields the fixture should contain.
+    validations:
+      required: true
+  - type: textarea
+    id: verification
+    attributes:
+      label: Verification and boundary
+      description: How should reviewers check the fixture, and what must it not claim?
+    validations:
+      required: true

@@ -1,1 +1,5 @@
 blank_issues_enabled: false
+contact_links:
+  - name: Browse artifact fixtures
+    url: https://github.com/Kosmoray/dayan-agent-skills/blob/main/docs/fixtures/README.md
+    about: Start here if you want to copy or improve a public output fixture.

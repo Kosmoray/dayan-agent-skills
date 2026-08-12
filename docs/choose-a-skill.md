@@ -61,3 +61,5 @@ Use:
 | a Skill you want to publish | `dayan-skill-builder` | `dayan-marketplace-publishing` |
 
 For the machine-readable list, use [`catalog.json`](../catalog.json).
+
+For copyable output shapes, inspect the [artifact fixtures](fixtures/README.md).
