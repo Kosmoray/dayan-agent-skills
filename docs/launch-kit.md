@@ -1,7 +1,7 @@
 # Dayan Agent Skills · launch kit
 
-Status: publication package awaiting channel approval  
-Source of truth: <https://github.com/Kosmoray/dayan-agent-skills>  
+Status: publication package approved for launch by owner on 2026-08-12
+Source of truth: <https://github.com/Kosmoray/dayan-agent-skills>
 Live demo: <https://kosmoray.github.io/dayan-agent-skills/>
 
 ## Audience and one action
@@ -14,8 +14,17 @@ For developers and AI workflow builders who are tired of recreating prompts, gua
 - 12 public method cards.
 - Isolated install smoke covers 56 Skills across Codex and Claude Code targets: 112 package installations.
 - Repository unit suite reported 30 passing tests at the v0.5 release.
-- GitHub verification and Pages deployment passed for commit `b433791`.
+- GitHub verification and Pages deployment passed for commit `1bbca20`.
 - Public beta describes packaging and structural verification, not universal runtime compatibility or external outcomes.
+
+## Channel links
+
+- GitHub profile pin: <https://github.com/Kosmoray>
+- Hacker News submit: <https://news.ycombinator.com/submit>
+- V2EX 分享创造: <https://www.v2ex.com/go/create>
+- Reddit appeal: <https://www.reddit.com/appeals>
+- Reddit candidate community: <https://www.reddit.com/r/ClaudeAI/>
+- X compose: <https://x.com/compose/post>
 
 ## GitHub release / pinned post
 
@@ -53,6 +62,10 @@ Try a Skill. If this is a library you want to return to, star it:
 
 Show HN: Dayan Agent Skills – 56 open control-layer Skills for AI workflows
 
+### URL
+
+https://github.com/Kosmoray/dayan-agent-skills
+
 ### First comment
 
 I built this because agent projects repeatedly recreated the same layer around the model: task framing, permission boundaries, evidence contracts, stop conditions, reviewer separation, and artifact verification.
@@ -85,6 +98,22 @@ I am looking for concrete compatibility reports, especially from clean Codex and
 
 Repository: <https://github.com/Kosmoray/dayan-agent-skills>
 
+## Reddit account recovery candidate
+
+Use this only from the affected account. Do not post from another account to work around an active sitewide suspension.
+
+### Appeal body
+
+Hello Reddit team,
+
+I believe my account may have been incorrectly restricted. I understand Reddit's rules on spam, inauthentic activity, and ban evasion, and I do not want to work around any enforcement action.
+
+I am trying to use this account for normal developer-community participation: sharing an MIT-licensed open-source repository, asking for compatibility feedback, and replying to technical comments. I will avoid repetitive promotional posting, mass cross-posting, vote solicitation, or reposting the same link across unrelated communities.
+
+Could you please review the restriction on this account and let me know whether it can be restored, or what specific behavior I need to correct before participating again?
+
+Thank you.
+
 ## 中文技术社区候选
 
 ### 标题
@@ -111,6 +140,42 @@ AI 能写，不等于工作能稳定完成。
 目前最需要的不是客气点赞，而是干净环境里的真实安装反馈。如果你觉得这个库值得以后再回来，也欢迎点一个 Star。
 
 仓库：<https://github.com/Kosmoray/dayan-agent-skills>
+
+## X thread candidate
+
+### Post 1
+
+I open-sourced Dayan Agent Skills: 56 reusable Skills in one MIT-licensed repo for giving AI agent work a control layer.
+
+The missing layer is usually not model capability. It is framing, boundaries, evidence, stop conditions, and verification.
+
+https://github.com/Kosmoray/dayan-agent-skills
+
+### Post 2
+
+The repo is intentionally one library, not dozens of tiny repos:
+
+- 56 installable public beta Skills
+- 12 public method cards
+- shared installer and catalog
+- provenance and sanitization records
+- validators and known evidence gaps
+
+### Post 3
+
+Start with the three one-screen demos:
+
+- Wenzhen: turn a vague ask into a falsifiable task contract
+- Dayan Deck: turn a crowded slide into one visible decision
+- Adversarial Reviewer: turn "looks good" into an evidence-backed release verdict
+
+https://kosmoray.github.io/dayan-agent-skills/
+
+### Post 4
+
+The most useful feedback right now is clean-environment compatibility data, especially from Codex and Claude Code homes.
+
+Stars are welcome if this is a library you want to return to, but failure reports are what make the repo stronger.
 
 ## 60-second video script
 
@@ -140,5 +205,4 @@ End card:
 
 ## Publication boundary
 
-This kit authorizes no post by itself. Before external submission, confirm the exact channel, account, final copy, posting time, link tracking, and owner responsible for reading replies. No bought stars, reciprocal-star schemes, bot traffic, mass direct messages, or duplicated spam submissions.
-
+This kit records the approved 2026-08-12 launch channels. Future channels, account changes, paid distribution, or materially different copy still need owner approval. No bought stars, reciprocal-star schemes, bot traffic, mass direct messages, or duplicated spam submissions.
