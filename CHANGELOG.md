@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.9.0-beta.1 — 2026-08-13
+
+- Extended `scripts/compatibility_smoke.py` with `--all-skills` and `--json-output`.
+- Added `docs/compatibility-matrix.json`, a machine-readable 56-Skill x 2-target clean install matrix.
+- Updated release validation to require the matrix and rerun all-Skill package smoke.
+- Expanded compatibility-smoke tests to cover all-Skill JSON output, conflict handling, and the default report.
+
 ## 0.8.0-beta.1 — 2026-08-13
 
 - Added `scripts/compatibility_smoke.py`, a clean temporary-home smoke harness that installs selected Skills into Codex-style and Claude Code-style directories and prints a paste-ready Markdown report.

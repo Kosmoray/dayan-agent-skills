@@ -37,6 +37,7 @@ REQUIRED_FILES = [
     "docs/choose-a-skill.md",
     "docs/faq.md",
     "docs/compatibility.md",
+    "docs/compatibility-matrix.json",
     "docs/playbooks/README.md",
     "docs/playbooks/control-layer-design.md",
     "docs/playbooks/from-conversation-to-skill.md",
@@ -102,19 +103,30 @@ def main() -> int:
         catalog = {}
         plugin = {}
 
-    if catalog.get("release") != "0.8.0-beta.1":
-        errors.append("catalog release must be 0.8.0-beta.1")
+    if catalog.get("release") != "0.9.0-beta.1":
+        errors.append("catalog release must be 0.9.0-beta.1")
     skills = catalog.get("skills", [])
     beta = [item for item in skills if item.get("maintenance_status") == "beta"]
     beta_names = [item.get("name") for item in beta]
     if len(beta_names) != 56:
-        errors.append("all 56 catalog Skills must be public beta in v0.8.0-beta.1")
+        errors.append("all 56 catalog Skills must be public beta in v0.9.0-beta.1")
     if plugin.get("version") != catalog.get("release"):
         errors.append("plugin and catalog versions must match")
     if plugin.get("license") != "MIT":
         errors.append("plugin license must be MIT")
     if plugin.get("skills") != "./skills/":
         errors.append("plugin skills path must be ./skills/")
+    try:
+        matrix = json.loads((ROOT / "docs/compatibility-matrix.json").read_text(encoding="utf-8"))
+        summary = matrix.get("summary", {})
+        if matrix.get("package_release") != catalog.get("release"):
+            errors.append("compatibility matrix release must match catalog release")
+        if matrix.get("skill_scope") != "all-public-beta-skills":
+            errors.append("compatibility matrix must cover all public beta Skills")
+        if summary.get("total") != 112 or summary.get("pass") != 112 or summary.get("fail") != 0:
+            errors.append("compatibility matrix must report 112/112 package install passes")
+    except (OSError, json.JSONDecodeError) as exc:
+        errors.append(f"compatibility matrix parse failure: {exc}")
 
     for markdown_name in ("README.md", "README.zh-CN.md", "CONTRIBUTING.md", "ROADMAP.md"):
         markdown_path = ROOT / markdown_name
@@ -163,7 +175,7 @@ def main() -> int:
     errors.extend(run([sys.executable, "scripts/scan_public_redlines.py", "skills"]))
     errors.extend(run([sys.executable, "scripts/verify_site.py"]))
     errors.extend(run([sys.executable, "scripts/verify_examples.py"]))
-    errors.extend(run([sys.executable, "scripts/compatibility_smoke.py"]))
+    errors.extend(run([sys.executable, "scripts/compatibility_smoke.py", "--all-skills"]))
     errors.extend(
         run(
             [

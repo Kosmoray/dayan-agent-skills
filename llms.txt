@@ -5,7 +5,7 @@
 Canonical repository: https://github.com/Kosmoray/dayan-agent-skills
 Live Dayan Deck demo: https://kosmoray.github.io/dayan-agent-skills/
 License: MIT
-Release: 0.8.0-beta.1
+Release: 0.9.0-beta.1
 
 ## Available Skills
 
@@ -21,6 +21,7 @@ Release: 0.8.0-beta.1
 - docs/playbooks/README.md: applied public methods.
 - examples/runs/README.md: 11 sanitized copy-paste example runs.
 - scripts/compatibility_smoke.py: clean temporary-home install smoke report.
+- docs/compatibility-matrix.json: machine-readable all-Skill package install matrix.
 
 ## Verified
 
@@ -31,6 +32,7 @@ Release: 0.8.0-beta.1
 - public redline scanning is part of CI.
 - public example runs are checked by scripts/verify_examples.py.
 - compatibility smoke is checked by scripts/compatibility_smoke.py.
+- all-Skill compatibility matrix reports 112 clean package install passes.
 
 ## Not claimed
 

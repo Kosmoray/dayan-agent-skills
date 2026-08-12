@@ -74,6 +74,14 @@ python3 scripts/compatibility_smoke.py
 
 This checks packaging into temporary Codex-style and Claude Code-style homes. It does not claim host discovery or runtime triggering.
 
+To smoke all public beta Skills and produce JSON:
+
+```bash
+python3 scripts/compatibility_smoke.py \
+  --all-skills \
+  --json-output docs/compatibility-matrix.json
+```
+
 ## What this proves
 
 This quickstart proves package structure, installation into a clean home, and fixture-level verification for the selected Skill.

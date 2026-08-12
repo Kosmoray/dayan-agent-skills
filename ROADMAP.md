@@ -1,6 +1,6 @@
 # Public roadmap
 
-## Available through v0.8
+## Available through v0.9
 
 - 56 installable public beta Skills in one repository.
 - 12 public method cards.
@@ -9,6 +9,7 @@
 - Public playbooks and 11 sanitized example runs that show how to apply the methods.
 - Deterministic example-run verification in the release validator.
 - Clean temporary-home compatibility smoke reports for Codex-style and Claude Code-style package installs.
+- All-Skill compatibility matrix JSON covering 56 Skills across 2 package targets.
 
 See the [Skill index](docs/skills.md), [method index](docs/methods.md), and machine-readable [`catalog.json`](catalog.json).
 

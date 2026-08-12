@@ -7,7 +7,7 @@ import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-VERSION = "0.8.0-beta.1"
+VERSION = "0.9.0-beta.1"
 
 # name, category, purpose, artifact, distinctive verification
 SKILLS = [

@@ -72,6 +72,14 @@ python3 skills/dayan-wenzhen/scripts/verify_contract.py \
 python3 scripts/compatibility_smoke.py
 ```
 
+对完整 56-Skill 母舰做 smoke，并生成 JSON 矩阵：
+
+```bash
+python3 scripts/compatibility_smoke.py \
+  --all-skills \
+  --json-output docs/compatibility-matrix.json
+```
+
 ## 可复制样例
 
 仓库现在有 [11 个脱敏可复制样例](examples/runs/README.md)，包括：

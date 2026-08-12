@@ -36,6 +36,16 @@ python3 scripts/compatibility_smoke.py \
   --skill dayan-adversarial-reviewer
 ```
 
+Smoke every public beta Skill and write a machine-readable matrix:
+
+```bash
+python3 scripts/compatibility_smoke.py \
+  --all-skills \
+  --json-output docs/compatibility-matrix.json
+```
+
+The current checked-in matrix is [`docs/compatibility-matrix.json`](compatibility-matrix.json). It proves clean package installation for every public beta Skill across both packaging targets. It still does not prove host discovery or runtime triggering.
+
 Keep the temporary home only when you need to inspect it:
 
 ```bash
@@ -62,6 +72,7 @@ Open a compatibility report with:
 - OS;
 - exact install command;
 - `scripts/compatibility_smoke.py` output;
+- `docs/compatibility-matrix.json` if you ran the all-Skill matrix;
 - selected Skill;
 - whether the host discovered it;
 - one successful trigger or the exact failure;

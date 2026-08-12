@@ -17,4 +17,4 @@ Useful entry points:
 - https://github.com/Kosmoray/dayan-agent-skills/blob/main/docs/playbooks/README.md
 - https://github.com/Kosmoray/dayan-agent-skills/blob/main/examples/runs/README.md
 
-Current public package release: 0.8.0-beta.1. The example-run index contains 11 sanitized scenarios. Use scripts/compatibility_smoke.py for clean temporary-home package install reports.
+Current public package release: 0.9.0-beta.1. The example-run index contains 11 sanitized scenarios. Use scripts/compatibility_smoke.py for clean temporary-home package install reports, or docs/compatibility-matrix.json for the all-Skill package install matrix.

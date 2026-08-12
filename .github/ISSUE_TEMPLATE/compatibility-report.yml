@@ -37,7 +37,7 @@ body:
     id: smoke
     attributes:
       label: Compatibility smoke report
-      description: Paste the output of `python3 scripts/compatibility_smoke.py`.
+      description: Paste the output of `python3 scripts/compatibility_smoke.py`, or note that you generated `docs/compatibility-matrix.json` with `--all-skills`.
       render: markdown
     validations:
       required: true

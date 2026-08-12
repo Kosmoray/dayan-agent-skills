@@ -77,6 +77,14 @@ Generate a paste-ready compatibility report:
 python3 scripts/compatibility_smoke.py
 ```
 
+Smoke the full library and write a compatibility matrix:
+
+```bash
+python3 scripts/compatibility_smoke.py \
+  --all-skills \
+  --json-output docs/compatibility-matrix.json
+```
+
 See the full [Quickstart](docs/quickstart.md), [Skill chooser](docs/choose-a-skill.md), [Compatibility evidence](docs/compatibility.md), and [FAQ](docs/faq.md).
 
 ## Copy-paste examples
