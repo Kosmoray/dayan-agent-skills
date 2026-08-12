@@ -1,15 +1,15 @@
 # Public sanitization record
 
-Date: 2026-07-29
-Release: `0.2.0-beta.1`
+Date: 2026-08-13
+Release: `1.0.0-beta.1`
 
 ## Included
 
-- one clean-room Dayan Deck Skill;
-- one newly written HTML starter;
-- one newly written structural verifier;
-- one explicit-home installer;
-- public documentation, tests, CI, catalog, and brand assets.
+- 56 clean-room public beta Skills in one repository;
+- public examples, playbooks, method cards, and discovery docs;
+- explicit-home installer with marker-guarded safe update;
+- compatibility and runtime smoke harnesses;
+- public documentation, tests, CI, catalog, provenance records, sanitization records, and brand assets.
 
 ## Excluded
 

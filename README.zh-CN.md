@@ -80,6 +80,20 @@ python3 scripts/compatibility_smoke.py \
   --json-output docs/compatibility-matrix.json
 ```
 
+运行离线生命周期 smoke：
+
+```bash
+python3 scripts/runtime_smoke.py
+```
+
+对完整母舰验证发现、触发路由、示例命令与安全更新：
+
+```bash
+python3 scripts/runtime_smoke.py \
+  --all-skills \
+  --json-output docs/runtime-smoke.json
+```
+
 ## 可复制样例
 
 仓库现在有 [11 个脱敏可复制样例](examples/runs/README.md)，包括：
@@ -101,7 +115,7 @@ python3 scripts/compatibility_smoke.py \
 | [HTML](skills/dayan-html/SKILL.md) | [Orient](skills/dayan-orient/SKILL.md) | [Hook Factory](skills/dayan-hook-factory/SKILL.md) |  |
 | [Diagram](skills/dayan-diagram/SKILL.md) |  |  |  |
 
-56 个 Skill 均在同一个母包内提供 Public Beta 安装。旗舰 Skill 有独立验证器，Core Library 通过统一公开包合同验证，并在 catalog 中明确剩余运行时证据。
+56 个 Skill 均在同一个母包内提供 Public Beta 安装。旗舰 Skill 有独立验证器，Core Library 通过统一公开包合同、安装矩阵和离线生命周期 smoke 验证，并在 catalog 中明确真实宿主版本证据边界。
 
 ## 三个重点入口
 

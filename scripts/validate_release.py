@@ -38,6 +38,8 @@ REQUIRED_FILES = [
     "docs/faq.md",
     "docs/compatibility.md",
     "docs/compatibility-matrix.json",
+    "docs/runtime-smoke.md",
+    "docs/runtime-smoke.json",
     "docs/playbooks/README.md",
     "docs/playbooks/control-layer-design.md",
     "docs/playbooks/from-conversation-to-skill.md",
@@ -59,6 +61,7 @@ REQUIRED_FILES = [
     "scripts/verify_site.py",
     "scripts/verify_examples.py",
     "scripts/compatibility_smoke.py",
+    "scripts/runtime_smoke.py",
     "skills/dayan-deck/SKILL.md",
     "skills/dayan-deck/examples/starter.html",
     "skills/dayan-deck/scripts/verify_deck.py",
@@ -103,13 +106,13 @@ def main() -> int:
         catalog = {}
         plugin = {}
 
-    if catalog.get("release") != "0.9.0-beta.1":
-        errors.append("catalog release must be 0.9.0-beta.1")
+    if catalog.get("release") != "1.0.0-beta.1":
+        errors.append("catalog release must be 1.0.0-beta.1")
     skills = catalog.get("skills", [])
     beta = [item for item in skills if item.get("maintenance_status") == "beta"]
     beta_names = [item.get("name") for item in beta]
     if len(beta_names) != 56:
-        errors.append("all 56 catalog Skills must be public beta in v0.9.0-beta.1")
+        errors.append("all 56 catalog Skills must be public beta in v1.0.0-beta.1")
     if plugin.get("version") != catalog.get("release"):
         errors.append("plugin and catalog versions must match")
     if plugin.get("license") != "MIT":
@@ -127,6 +130,29 @@ def main() -> int:
             errors.append("compatibility matrix must report 112/112 package install passes")
     except (OSError, json.JSONDecodeError) as exc:
         errors.append(f"compatibility matrix parse failure: {exc}")
+    try:
+        runtime = json.loads((ROOT / "docs/runtime-smoke.json").read_text(encoding="utf-8"))
+        summary = runtime.get("summary", {})
+        if runtime.get("package_release") != catalog.get("release"):
+            errors.append("runtime smoke matrix release must match catalog release")
+        if runtime.get("skill_scope") != "all-public-beta-skills":
+            errors.append("runtime smoke matrix must cover all public beta Skills")
+        if summary.get("total") != 112 or summary.get("pass") != 112 or summary.get("fail") != 0:
+            errors.append("runtime smoke matrix must report 112/112 offline lifecycle passes")
+        for item in runtime.get("results", []):
+            checks = item.get("checks", {})
+            required_checks = {
+                "discovery_found_skill",
+                "trigger_routes_to_expected_skill",
+                "example_command_exit_zero",
+                "safe_update_exit_zero",
+                "non_trigger_prompt_not_routed",
+            }
+            if not required_checks.issubset(checks):
+                errors.append("runtime smoke result is missing required lifecycle checks")
+                break
+    except (OSError, json.JSONDecodeError) as exc:
+        errors.append(f"runtime smoke matrix parse failure: {exc}")
 
     for markdown_name in ("README.md", "README.zh-CN.md", "CONTRIBUTING.md", "ROADMAP.md"):
         markdown_path = ROOT / markdown_name
@@ -176,6 +202,7 @@ def main() -> int:
     errors.extend(run([sys.executable, "scripts/verify_site.py"]))
     errors.extend(run([sys.executable, "scripts/verify_examples.py"]))
     errors.extend(run([sys.executable, "scripts/compatibility_smoke.py", "--all-skills"]))
+    errors.extend(run([sys.executable, "scripts/runtime_smoke.py", "--all-skills"]))
     errors.extend(
         run(
             [

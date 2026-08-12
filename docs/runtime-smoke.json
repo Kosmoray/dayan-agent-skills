@@ -1,0 +1,2380 @@
+{
+  "agents": [
+    "codex",
+    "claude-code"
+  ],
+  "environment": {
+    "os": "macOS-26.3.1-arm64-arm-64bit-Mach-O",
+    "python": "3.14.6"
+  },
+  "generated_at": "2026-08-12T16:24:34Z",
+  "not_claimed": [
+    "actual host application UI loading",
+    "LLM model decision quality",
+    "networked marketplace install flows",
+    "uninstall behavior in a user's live configuration"
+  ],
+  "package_release": "1.0.0-beta.1",
+  "results": [
+    {
+      "agent": "codex",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "skills/dayan-deck/scripts/verify_deck.py",
+        "skills/dayan-deck/examples/starter.html"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-deck",
+      "skill": "dayan-deck"
+    },
+    {
+      "agent": "codex",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-huashu-design"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-huashu-design",
+      "skill": "dayan-huashu-design"
+    },
+    {
+      "agent": "codex",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-html"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-html",
+      "skill": "dayan-html"
+    },
+    {
+      "agent": "codex",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-diagram"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-diagram",
+      "skill": "dayan-diagram"
+    },
+    {
+      "agent": "codex",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "skills/dayan-wenzhen/scripts/verify_contract.py",
+        "skills/dayan-wenzhen/examples/starter-contract.json"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-wenzhen",
+      "skill": "dayan-wenzhen"
+    },
+    {
+      "agent": "codex",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-plan"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-plan",
+      "skill": "dayan-plan"
+    },
+    {
+      "agent": "codex",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-orient"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-orient",
+      "skill": "dayan-orient"
+    },
+    {
+      "agent": "codex",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-agent-designer"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-agent-designer",
+      "skill": "dayan-agent-designer"
+    },
+    {
+      "agent": "codex",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-agent-factory"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-agent-factory",
+      "skill": "dayan-agent-factory"
+    },
+    {
+      "agent": "codex",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-hook-factory"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-hook-factory",
+      "skill": "dayan-hook-factory"
+    },
+    {
+      "agent": "codex",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "skills/dayan-adversarial-reviewer/scripts/verify_review.py",
+        "skills/dayan-adversarial-reviewer/examples/clean-review.json"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-adversarial-reviewer",
+      "skill": "dayan-adversarial-reviewer"
+    },
+    {
+      "agent": "codex",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-ai-seo"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-ai-seo",
+      "skill": "dayan-ai-seo"
+    },
+    {
+      "agent": "codex",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-a11y-audit"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-a11y-audit",
+      "skill": "dayan-a11y-audit"
+    },
+    {
+      "agent": "codex",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-api-design-reviewer"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-api-design-reviewer",
+      "skill": "dayan-api-design-reviewer"
+    },
+    {
+      "agent": "codex",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-code-reviewer"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-code-reviewer",
+      "skill": "dayan-code-reviewer"
+    },
+    {
+      "agent": "codex",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-code-to-design"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-code-to-design",
+      "skill": "dayan-code-to-design"
+    },
+    {
+      "agent": "codex",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-crap-analysis"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-crap-analysis",
+      "skill": "dayan-crap-analysis"
+    },
+    {
+      "agent": "codex",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-database-performance"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-database-performance",
+      "skill": "dayan-database-performance"
+    },
+    {
+      "agent": "codex",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-frontend-responsive-ui"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-frontend-responsive-ui",
+      "skill": "dayan-frontend-responsive-ui"
+    },
+    {
+      "agent": "codex",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-local-tools"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-local-tools",
+      "skill": "dayan-local-tools"
+    },
+    {
+      "agent": "codex",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-system-ops"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-system-ops",
+      "skill": "dayan-system-ops"
+    },
+    {
+      "agent": "codex",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-update-docs"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-update-docs",
+      "skill": "dayan-update-docs"
+    },
+    {
+      "agent": "codex",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-autoresearch-agent"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-autoresearch-agent",
+      "skill": "dayan-autoresearch-agent"
+    },
+    {
+      "agent": "codex",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-clarify"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-clarify",
+      "skill": "dayan-clarify"
+    },
+    {
+      "agent": "codex",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-industry-research"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-industry-research",
+      "skill": "dayan-industry-research"
+    },
+    {
+      "agent": "codex",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-learning-opportunities"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-learning-opportunities",
+      "skill": "dayan-learning-opportunities"
+    },
+    {
+      "agent": "codex",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-llm-council"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-llm-council",
+      "skill": "dayan-llm-council"
+    },
+    {
+      "agent": "codex",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-prompt-factory"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-prompt-factory",
+      "skill": "dayan-prompt-factory"
+    },
+    {
+      "agent": "codex",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-read-github"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-read-github",
+      "skill": "dayan-read-github"
+    },
+    {
+      "agent": "codex",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-schematic"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-schematic",
+      "skill": "dayan-schematic"
+    },
+    {
+      "agent": "codex",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-second-opinion"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-second-opinion",
+      "skill": "dayan-second-opinion"
+    },
+    {
+      "agent": "codex",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-claude-md-enhancer"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-claude-md-enhancer",
+      "skill": "dayan-claude-md-enhancer"
+    },
+    {
+      "agent": "codex",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-co-design"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-co-design",
+      "skill": "dayan-co-design"
+    },
+    {
+      "agent": "codex",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-create-hook"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-create-hook",
+      "skill": "dayan-create-hook"
+    },
+    {
+      "agent": "codex",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-dispatch"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-dispatch",
+      "skill": "dayan-dispatch"
+    },
+    {
+      "agent": "codex",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-marketplace-publishing"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-marketplace-publishing",
+      "skill": "dayan-marketplace-publishing"
+    },
+    {
+      "agent": "codex",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-role-creator"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-role-creator",
+      "skill": "dayan-role-creator"
+    },
+    {
+      "agent": "codex",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-scrum-master-agent"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-scrum-master-agent",
+      "skill": "dayan-scrum-master-agent"
+    },
+    {
+      "agent": "codex",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-skill-builder"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-skill-builder",
+      "skill": "dayan-skill-builder"
+    },
+    {
+      "agent": "codex",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-brand-guidelines"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-brand-guidelines",
+      "skill": "dayan-brand-guidelines"
+    },
+    {
+      "agent": "codex",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-canvas-design"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-canvas-design",
+      "skill": "dayan-canvas-design"
+    },
+    {
+      "agent": "codex",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-compress-image"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-compress-image",
+      "skill": "dayan-compress-image"
+    },
+    {
+      "agent": "codex",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-content-production"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-content-production",
+      "skill": "dayan-content-production"
+    },
+    {
+      "agent": "codex",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-copywriting"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-copywriting",
+      "skill": "dayan-copywriting"
+    },
+    {
+      "agent": "codex",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-cover-image"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-cover-image",
+      "skill": "dayan-cover-image"
+    },
+    {
+      "agent": "codex",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-d3-viz"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-d3-viz",
+      "skill": "dayan-d3-viz"
+    },
+    {
+      "agent": "codex",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-explain"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-explain",
+      "skill": "dayan-explain"
+    },
+    {
+      "agent": "codex",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-extract-design-md"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-extract-design-md",
+      "skill": "dayan-extract-design-md"
+    },
+    {
+      "agent": "codex",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-extract-static-html"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-extract-static-html",
+      "skill": "dayan-extract-static-html"
+    },
+    {
+      "agent": "codex",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-humanize"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-humanize",
+      "skill": "dayan-humanize"
+    },
+    {
+      "agent": "codex",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-img-to-frontend"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-img-to-frontend",
+      "skill": "dayan-img-to-frontend"
+    },
+    {
+      "agent": "codex",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-theme-factory"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-theme-factory",
+      "skill": "dayan-theme-factory"
+    },
+    {
+      "agent": "codex",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-aws-solution-architect"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-aws-solution-architect",
+      "skill": "dayan-aws-solution-architect"
+    },
+    {
+      "agent": "codex",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-tech-stack-evaluator"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-tech-stack-evaluator",
+      "skill": "dayan-tech-stack-evaluator"
+    },
+    {
+      "agent": "codex",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-write-concisely"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-write-concisely",
+      "skill": "dayan-write-concisely"
+    },
+    {
+      "agent": "codex",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-image-gen"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-image-gen",
+      "skill": "dayan-image-gen"
+    },
+    {
+      "agent": "claude-code",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "skills/dayan-deck/scripts/verify_deck.py",
+        "skills/dayan-deck/examples/starter.html"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-deck",
+      "skill": "dayan-deck"
+    },
+    {
+      "agent": "claude-code",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-huashu-design"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-huashu-design",
+      "skill": "dayan-huashu-design"
+    },
+    {
+      "agent": "claude-code",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-html"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-html",
+      "skill": "dayan-html"
+    },
+    {
+      "agent": "claude-code",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-diagram"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-diagram",
+      "skill": "dayan-diagram"
+    },
+    {
+      "agent": "claude-code",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "skills/dayan-wenzhen/scripts/verify_contract.py",
+        "skills/dayan-wenzhen/examples/starter-contract.json"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-wenzhen",
+      "skill": "dayan-wenzhen"
+    },
+    {
+      "agent": "claude-code",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-plan"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-plan",
+      "skill": "dayan-plan"
+    },
+    {
+      "agent": "claude-code",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-orient"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-orient",
+      "skill": "dayan-orient"
+    },
+    {
+      "agent": "claude-code",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-agent-designer"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-agent-designer",
+      "skill": "dayan-agent-designer"
+    },
+    {
+      "agent": "claude-code",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-agent-factory"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-agent-factory",
+      "skill": "dayan-agent-factory"
+    },
+    {
+      "agent": "claude-code",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-hook-factory"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-hook-factory",
+      "skill": "dayan-hook-factory"
+    },
+    {
+      "agent": "claude-code",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "skills/dayan-adversarial-reviewer/scripts/verify_review.py",
+        "skills/dayan-adversarial-reviewer/examples/clean-review.json"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-adversarial-reviewer",
+      "skill": "dayan-adversarial-reviewer"
+    },
+    {
+      "agent": "claude-code",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-ai-seo"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-ai-seo",
+      "skill": "dayan-ai-seo"
+    },
+    {
+      "agent": "claude-code",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-a11y-audit"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-a11y-audit",
+      "skill": "dayan-a11y-audit"
+    },
+    {
+      "agent": "claude-code",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-api-design-reviewer"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-api-design-reviewer",
+      "skill": "dayan-api-design-reviewer"
+    },
+    {
+      "agent": "claude-code",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-code-reviewer"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-code-reviewer",
+      "skill": "dayan-code-reviewer"
+    },
+    {
+      "agent": "claude-code",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-code-to-design"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-code-to-design",
+      "skill": "dayan-code-to-design"
+    },
+    {
+      "agent": "claude-code",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-crap-analysis"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-crap-analysis",
+      "skill": "dayan-crap-analysis"
+    },
+    {
+      "agent": "claude-code",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-database-performance"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-database-performance",
+      "skill": "dayan-database-performance"
+    },
+    {
+      "agent": "claude-code",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-frontend-responsive-ui"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-frontend-responsive-ui",
+      "skill": "dayan-frontend-responsive-ui"
+    },
+    {
+      "agent": "claude-code",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-local-tools"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-local-tools",
+      "skill": "dayan-local-tools"
+    },
+    {
+      "agent": "claude-code",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-system-ops"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-system-ops",
+      "skill": "dayan-system-ops"
+    },
+    {
+      "agent": "claude-code",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-update-docs"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-update-docs",
+      "skill": "dayan-update-docs"
+    },
+    {
+      "agent": "claude-code",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-autoresearch-agent"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-autoresearch-agent",
+      "skill": "dayan-autoresearch-agent"
+    },
+    {
+      "agent": "claude-code",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-clarify"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-clarify",
+      "skill": "dayan-clarify"
+    },
+    {
+      "agent": "claude-code",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-industry-research"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-industry-research",
+      "skill": "dayan-industry-research"
+    },
+    {
+      "agent": "claude-code",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-learning-opportunities"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-learning-opportunities",
+      "skill": "dayan-learning-opportunities"
+    },
+    {
+      "agent": "claude-code",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-llm-council"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-llm-council",
+      "skill": "dayan-llm-council"
+    },
+    {
+      "agent": "claude-code",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-prompt-factory"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-prompt-factory",
+      "skill": "dayan-prompt-factory"
+    },
+    {
+      "agent": "claude-code",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-read-github"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-read-github",
+      "skill": "dayan-read-github"
+    },
+    {
+      "agent": "claude-code",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-schematic"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-schematic",
+      "skill": "dayan-schematic"
+    },
+    {
+      "agent": "claude-code",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-second-opinion"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-second-opinion",
+      "skill": "dayan-second-opinion"
+    },
+    {
+      "agent": "claude-code",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-claude-md-enhancer"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-claude-md-enhancer",
+      "skill": "dayan-claude-md-enhancer"
+    },
+    {
+      "agent": "claude-code",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-co-design"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-co-design",
+      "skill": "dayan-co-design"
+    },
+    {
+      "agent": "claude-code",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-create-hook"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-create-hook",
+      "skill": "dayan-create-hook"
+    },
+    {
+      "agent": "claude-code",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-dispatch"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-dispatch",
+      "skill": "dayan-dispatch"
+    },
+    {
+      "agent": "claude-code",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-marketplace-publishing"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-marketplace-publishing",
+      "skill": "dayan-marketplace-publishing"
+    },
+    {
+      "agent": "claude-code",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-role-creator"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-role-creator",
+      "skill": "dayan-role-creator"
+    },
+    {
+      "agent": "claude-code",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-scrum-master-agent"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-scrum-master-agent",
+      "skill": "dayan-scrum-master-agent"
+    },
+    {
+      "agent": "claude-code",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-skill-builder"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-skill-builder",
+      "skill": "dayan-skill-builder"
+    },
+    {
+      "agent": "claude-code",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-brand-guidelines"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-brand-guidelines",
+      "skill": "dayan-brand-guidelines"
+    },
+    {
+      "agent": "claude-code",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-canvas-design"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-canvas-design",
+      "skill": "dayan-canvas-design"
+    },
+    {
+      "agent": "claude-code",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-compress-image"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-compress-image",
+      "skill": "dayan-compress-image"
+    },
+    {
+      "agent": "claude-code",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-content-production"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-content-production",
+      "skill": "dayan-content-production"
+    },
+    {
+      "agent": "claude-code",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-copywriting"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-copywriting",
+      "skill": "dayan-copywriting"
+    },
+    {
+      "agent": "claude-code",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-cover-image"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-cover-image",
+      "skill": "dayan-cover-image"
+    },
+    {
+      "agent": "claude-code",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-d3-viz"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-d3-viz",
+      "skill": "dayan-d3-viz"
+    },
+    {
+      "agent": "claude-code",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-explain"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-explain",
+      "skill": "dayan-explain"
+    },
+    {
+      "agent": "claude-code",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-extract-design-md"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-extract-design-md",
+      "skill": "dayan-extract-design-md"
+    },
+    {
+      "agent": "claude-code",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-extract-static-html"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-extract-static-html",
+      "skill": "dayan-extract-static-html"
+    },
+    {
+      "agent": "claude-code",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-humanize"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-humanize",
+      "skill": "dayan-humanize"
+    },
+    {
+      "agent": "claude-code",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-img-to-frontend"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-img-to-frontend",
+      "skill": "dayan-img-to-frontend"
+    },
+    {
+      "agent": "claude-code",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-theme-factory"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-theme-factory",
+      "skill": "dayan-theme-factory"
+    },
+    {
+      "agent": "claude-code",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-aws-solution-architect"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-aws-solution-architect",
+      "skill": "dayan-aws-solution-architect"
+    },
+    {
+      "agent": "claude-code",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-tech-stack-evaluator"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-tech-stack-evaluator",
+      "skill": "dayan-tech-stack-evaluator"
+    },
+    {
+      "agent": "claude-code",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-write-concisely"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-write-concisely",
+      "skill": "dayan-write-concisely"
+    },
+    {
+      "agent": "claude-code",
+      "checks": {
+        "discovery_found_skill": true,
+        "example_command_exit_zero": true,
+        "marker_valid": true,
+        "non_trigger_prompt_not_routed": true,
+        "safe_update_exit_zero": true,
+        "skill_md_present": true,
+        "trigger_routes_to_expected_skill": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_public_skill.py",
+        "dayan-image-gen"
+      ],
+      "evidence": "discovered, trigger routed, example command passed, safe update passed",
+      "result": "pass",
+      "routed_skill": "dayan-image-gen",
+      "skill": "dayan-image-gen"
+    }
+  ],
+  "schema_version": 1,
+  "skill_scope": "all-public-beta-skills",
+  "summary": {
+    "fail": 0,
+    "pass": 112,
+    "total": 112
+  },
+  "target_home": "temporary-clean-directory"
+}

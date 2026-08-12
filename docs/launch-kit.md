@@ -13,9 +13,9 @@ For developers and AI workflow builders who are tired of recreating prompts, gua
 - 56 installable public beta Skills in one repository.
 - 12 public method cards.
 - Isolated install smoke covers 56 Skills across Codex and Claude Code targets: 112 package installations.
-- Repository unit suite reported 30 passing tests at the v0.5 release.
-- GitHub verification and Pages deployment passed for commit `1bbca20`.
-- Public beta describes packaging and structural verification, not universal runtime compatibility or external outcomes.
+- Offline lifecycle smoke covers discovery, trigger routing, declared example commands, non-trigger rejection, and safe update across the same 112 targets.
+- Repository unit suite currently covers installer safety, compatibility smoke, runtime smoke, public bundles, and featured Skill validators.
+- Public beta describes packaging, structural verification, and offline lifecycle evidence; it does not claim universal host-version compatibility or external outcomes.
 
 ## Channel links
 
@@ -51,7 +51,7 @@ Start with one of three one-screen demos:
 
 All 56 Skills live in one repository with one issue tracker, release history, contributor graph, and star count. Each package publishes its boundary, starter contract, provenance, sanitization record, and known evidence gap.
 
-Public beta means inspectable and installable. It does not mean every Skill has proven behavior in every runtime.
+Public beta means inspectable, installable, and lifecycle-smoked in a clean temporary home. It does not mean every Skill has proven behavior in every host version.
 
 Try a Skill. If this is a library you want to return to, star it:
 <https://github.com/Kosmoray/dayan-agent-skills>

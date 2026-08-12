@@ -5,7 +5,7 @@
 Canonical repository: https://github.com/Kosmoray/dayan-agent-skills
 Live Dayan Deck demo: https://kosmoray.github.io/dayan-agent-skills/
 License: MIT
-Release: 0.9.0-beta.1
+Release: 1.0.0-beta.1
 
 ## Available Skills
 
@@ -22,6 +22,8 @@ Release: 0.9.0-beta.1
 - examples/runs/README.md: 11 sanitized copy-paste example runs.
 - scripts/compatibility_smoke.py: clean temporary-home install smoke report.
 - docs/compatibility-matrix.json: machine-readable all-Skill package install matrix.
+- scripts/runtime_smoke.py: offline lifecycle smoke for discovery, trigger routing, example commands, non-trigger rejection, and safe update.
+- docs/runtime-smoke.json: machine-readable all-Skill offline lifecycle matrix.
 
 ## Verified
 
@@ -33,10 +35,12 @@ Release: 0.9.0-beta.1
 - public example runs are checked by scripts/verify_examples.py.
 - compatibility smoke is checked by scripts/compatibility_smoke.py.
 - all-Skill compatibility matrix reports 112 clean package install passes.
+- runtime smoke is checked by scripts/runtime_smoke.py.
+- all-Skill runtime smoke reports 112 offline lifecycle passes.
 
 ## Not claimed
 
-- universal behavioral compatibility across agent versions;
+- universal behavioral compatibility across host or model versions;
 - verified PPTX export;
 - visual quality from structural tests alone;
 - suitability for consequential decisions without human review.

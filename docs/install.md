@@ -11,13 +11,24 @@ python3 installers/install.py dayan-wenzhen --agent codex --home /path/to/test-h
 python3 installers/install.py dayan-wenzhen --agent claude-code --home /path/to/test-home
 ```
 
-All 12 Skills listed in `catalog.json` use the same command. Replace the first argument with the selected Skill name.
+All 56 Skills listed in `catalog.json` use the same command. Replace the first argument with the selected Skill name.
 
 Supported installation targets in this candidate:
 
 - Codex-compatible Skill directory: `.codex/skills/<skill-name>`;
 - Claude Code-compatible Skill directory: `.claude/skills/<skill-name>`.
 
-These are verified packaging targets, not universal behavioral compatibility claims. A real agent trigger and output smoke test is still required before `compatible_agents` is populated.
+These are verified packaging targets. The offline lifecycle smoke tests discovery, trigger routing, declared example commands, and safe update in temporary homes; product-version-specific host behavior still requires external reports before `compatible_agents` is populated.
 
-The public beta performs new installs only. It refuses to overwrite an existing directory and does not ship an automated uninstall command. Remove only the exact installed directory after verifying its `.dayan-package.json` marker. Safe update and uninstall behavior remain on the public roadmap.
+By default the installer performs new installs only. It refuses to overwrite an existing directory.
+
+Use `--update` only when replacing a Skill that was already installed from this package:
+
+```bash
+python3 installers/install.py dayan-deck \
+  --agent codex \
+  --home /path/to/test-home \
+  --update
+```
+
+The update path replaces only directories whose `.dayan-package.json` marker matches `dayan-agent-skills`, the same Skill name, and the same target agent. The package does not ship an automated uninstall command. Remove only the exact installed directory after verifying its marker.

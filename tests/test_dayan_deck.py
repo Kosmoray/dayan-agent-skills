@@ -95,6 +95,24 @@ class InstallerTests(unittest.TestCase):
             with self.assertRaises(FileExistsError):
                 installer.install(home, "codex", "dayan-deck")
 
+    def test_update_replaces_only_owned_install(self):
+        with tempfile.TemporaryDirectory(prefix="openclaw-install-test-", dir="/tmp") as directory:
+            home = Path(directory)
+            first = installer.install(home, "codex", "dayan-deck")
+            marker = first / ".dayan-package.json"
+            marker.write_text(marker.read_text(encoding="utf-8").replace("dayan-agent-skills", "other-package"), encoding="utf-8")
+            with self.assertRaises(FileExistsError):
+                installer.install(home, "codex", "dayan-deck", update=True)
+
+        with tempfile.TemporaryDirectory(prefix="openclaw-install-test-", dir="/tmp") as directory:
+            home = Path(directory)
+            first = installer.install(home, "codex", "dayan-deck")
+            sentinel = first / "local-change.txt"
+            sentinel.write_text("old local file", encoding="utf-8")
+            updated = installer.install(home, "codex", "dayan-deck", update=True)
+            self.assertTrue((updated / "SKILL.md").is_file())
+            self.assertFalse(sentinel.exists())
+
 
 if __name__ == "__main__":
     unittest.main()

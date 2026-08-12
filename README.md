@@ -85,6 +85,20 @@ python3 scripts/compatibility_smoke.py \
   --json-output docs/compatibility-matrix.json
 ```
 
+Run the offline lifecycle smoke:
+
+```bash
+python3 scripts/runtime_smoke.py
+```
+
+Smoke discovery, trigger routing, example commands, and safe update for the full library:
+
+```bash
+python3 scripts/runtime_smoke.py \
+  --all-skills \
+  --json-output docs/runtime-smoke.json
+```
+
 See the full [Quickstart](docs/quickstart.md), [Skill chooser](docs/choose-a-skill.md), [Compatibility evidence](docs/compatibility.md), and [FAQ](docs/faq.md).
 
 ## Copy-paste examples
@@ -110,7 +124,7 @@ Then use the public [playbooks](docs/playbooks/README.md) to decide whether your
 | [HTML](skills/dayan-html/SKILL.md) | [Orient](skills/dayan-orient/SKILL.md) | [Hook Factory](skills/dayan-hook-factory/SKILL.md) |  |
 | [Diagram](skills/dayan-diagram/SKILL.md) |  |  |  |
 
-All 56 are installable public betas. Featured Skills have dedicated validators; the Core Library uses a shared strict public bundle contract and exposes remaining runtime evidence in the catalog.
+All 56 are installable public betas. Featured Skills have dedicated validators; the Core Library uses a shared strict public bundle contract, package-install matrix, and offline lifecycle smoke.
 
 ## Featured Skills
 
@@ -206,7 +220,7 @@ The verifier deliberately rejects remote runtime dependencies, multiple active s
 python3 scripts/validate_public_skill.py dayan-orient
 ```
 
-See [`catalog.json`](catalog.json) for readiness evidence and unresolved runtime blockers for every Skill.
+See [`catalog.json`](catalog.json) for readiness evidence and unresolved host-version evidence for every Skill.
 
 ## Design principles
 
@@ -218,9 +232,9 @@ See [`catalog.json`](catalog.json) for readiness evidence and unresolved runtime
 
 ## Compatibility
 
-The repository currently verifies packaging into Codex and Claude Code Skill directories in isolated temporary homes. That is not yet a claim that every product version discovers and triggers the Skill identically. Behavioral compatibility evidence will be added release by release.
+The repository verifies packaging into Codex and Claude Code Skill directories in isolated temporary homes, then runs an offline lifecycle smoke that discovers installed Skills, routes catalog trigger text, executes declared example commands, and tests marker-guarded update. That is still not a claim that every product version loads the Skill UI or that every model routes identically.
 
-See [`docs/compatibility.md`](docs/compatibility.md).
+See [`docs/compatibility.md`](docs/compatibility.md) and [`docs/runtime-smoke.md`](docs/runtime-smoke.md).
 
 ## Contributing
 

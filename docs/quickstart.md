@@ -82,8 +82,26 @@ python3 scripts/compatibility_smoke.py \
   --json-output docs/compatibility-matrix.json
 ```
 
+## Runtime smoke
+
+To test the offline lifecycle contract:
+
+```bash
+python3 scripts/runtime_smoke.py
+```
+
+This installs into a temporary home, discovers installed Skills from agent-style directories, routes catalog trigger text to the expected Skill, runs the declared example command, and verifies marker-guarded `--update`.
+
+To run the same lifecycle smoke for all public beta Skills:
+
+```bash
+python3 scripts/runtime_smoke.py \
+  --all-skills \
+  --json-output docs/runtime-smoke.json
+```
+
 ## What this proves
 
-This quickstart proves package structure, installation into a clean home, and fixture-level verification for the selected Skill.
+This quickstart proves package structure, installation into a clean home, fixture-level verification, offline discovery, trigger routing, and safe update for the selected Skill.
 
-It does not prove that every host application version discovers and triggers the Skill identically. See [Compatibility evidence](compatibility.md).
+It does not prove that every host application version loads the Skill UI or that every model routes identically. See [Compatibility evidence](compatibility.md).

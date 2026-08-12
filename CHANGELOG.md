@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0.0-beta.1 — 2026-08-13
+
+- Added `scripts/runtime_smoke.py`, an offline lifecycle harness for clean temporary homes.
+- Added marker-guarded `installers/install.py --update`; updates replace only matching Dayan-owned Skill directories.
+- Added `docs/runtime-smoke.md` and `docs/runtime-smoke.json`, covering discovery, trigger routing, declared example commands, non-trigger rejection, and safe update across 56 Skills x 2 targets.
+- Updated release validation to require the runtime smoke matrix and rerun all-Skill lifecycle smoke.
+
 ## 0.9.0-beta.1 — 2026-08-13
 
 - Extended `scripts/compatibility_smoke.py` with `--all-skills` and `--json-output`.
