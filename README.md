@@ -113,9 +113,9 @@ The repository now includes [11 sanitized example runs](examples/runs/README.md)
 - [API pagination contract review](examples/runs/api-review-pagination-contract.md): block an unbounded endpoint before clients depend on it.
 - [AI visibility for open-source docs](examples/runs/ai-seo-open-source-docs.md): make claims easier for AI assistants to cite accurately.
 
-It also includes [5 artifact fixtures](docs/fixtures/README.md) that show copyable output shapes for repository orientation, agent design, guardrail hooks, API review, and AI visibility audits.
+It also includes [9 artifact fixtures](docs/fixtures/README.md) that show copyable output shapes for repository orientation, agent design, guardrail hooks, API review, AI visibility audits, visual deck briefs, architecture decisions, agent packages, and responsive UI acceptance.
 
-Then use the public [playbooks](docs/playbooks/README.md) to decide whether your repeated workflow should become a checklist, Skill, verifier, hook, or agent.
+Then use the public [playbooks](docs/playbooks/README.md) to decide whether your repeated workflow should become a checklist, Skill, verifier, hook, or agent. If you want a bounded contribution, start with [Good first issues](docs/good-first-issues.md).
 
 ## Choose your route
 
@@ -222,6 +222,8 @@ The verifier deliberately rejects remote runtime dependencies, multiple active s
 python3 scripts/validate_public_skill.py dayan-orient
 
 python3 scripts/verify_fixtures.py
+
+python3 scripts/verify_good_first_issues.py
 ```
 
 See [`catalog.json`](catalog.json) for readiness evidence and unresolved host-version evidence for every Skill.

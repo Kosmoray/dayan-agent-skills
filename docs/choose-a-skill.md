@@ -63,3 +63,5 @@ Use:
 For the machine-readable list, use [`catalog.json`](../catalog.json).
 
 For copyable output shapes, inspect the [artifact fixtures](fixtures/README.md).
+
+For bounded contribution tasks, inspect [Good first issues](good-first-issues.md).

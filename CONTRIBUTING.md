@@ -15,6 +15,8 @@ Thank you for helping make AI control layers more useful and inspectable.
 ```bash
 python3 scripts/validate_catalog.py catalog.json
 python3 scripts/scan_public_redlines.py skills
+python3 scripts/verify_fixtures.py
+python3 scripts/verify_good_first_issues.py
 python3 scripts/validate_release.py
 python3 -m unittest discover -s tests -v
 ```
@@ -32,6 +34,10 @@ Open a Skill proposal issue. Explain:
 - which consequential actions retain human authority.
 
 Small, evidenced Skills are preferred over large speculative frameworks.
+
+## Good first issues
+
+If you want a bounded first contribution, start with [`docs/good-first-issues.md`](docs/good-first-issues.md). Most good first issues should touch one fixture, one example, one issue template, or one documentation link.
 
 ## Reporting compatibility
 

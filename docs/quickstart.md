@@ -73,12 +73,18 @@ Use the [artifact fixtures](fixtures/README.md) when you want to see copyable ou
 - public redline hook spec;
 - pagination API review;
 - AI visibility docs audit.
+- visual deck brief;
+- architecture decision record;
+- agent package manifest;
+- responsive UI acceptance plan.
 
 Verify them with:
 
 ```bash
 python3 scripts/verify_fixtures.py
 ```
+
+If you want to contribute without designing a new Skill, pick one task from [Good first issues](good-first-issues.md).
 
 ## Compatibility smoke
 

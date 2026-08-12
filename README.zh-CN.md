@@ -104,9 +104,9 @@ python3 scripts/runtime_smoke.py \
 - [API 分页契约审查](examples/runs/api-review-pagination-contract.md)：在客户端依赖前阻断无上限接口。
 - [开源文档 AI 可见性](examples/runs/ai-seo-open-source-docs.md)：让 AI 助手更准确引用仓库声明。
 
-同时新增 [5 个产物 fixture](docs/fixtures/README.md)，展示仓库地图、Agent 设计、守门 Hook、API 审查和 AI 可见性审计的可复制输出形态。
+同时新增 [9 个产物 fixture](docs/fixtures/README.md)，展示仓库地图、Agent 设计、守门 Hook、API 审查、AI 可见性审计、视觉演示 brief、架构决策、Agent 包和响应式 UI 验收的可复制输出形态。
 
-再用公开 [Playbook](docs/playbooks/README.md) 判断你的重复工作应该做成清单、Skill、验证器、Hook 还是 Agent。
+再用公开 [Playbook](docs/playbooks/README.md) 判断你的重复工作应该做成清单、Skill、验证器、Hook 还是 Agent。想做小贡献时，从 [Good first issues](docs/good-first-issues.md) 开始。
 
 ## 按任务选能力
 

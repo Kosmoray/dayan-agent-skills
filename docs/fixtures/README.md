@@ -17,6 +17,10 @@ Each fixture includes:
 - [Public redline hook spec](hook-factory-public-redline.md) — `dayan-hook-factory`
 - [Pagination API review](api-design-review.md) — `dayan-api-design-reviewer`
 - [AI visibility docs audit](ai-seo-docs-audit.md) — `dayan-ai-seo`
+- [Visual deck brief](deck-visual-brief.md) — `dayan-deck`
+- [Architecture decision record](architecture-decision-record.md) — `dayan-tech-stack-evaluator`
+- [Agent package manifest](agent-package-manifest.md) — `dayan-agent-factory`
+- [Responsive UI acceptance plan](frontend-responsive-plan.md) — `dayan-frontend-responsive-ui`
 
 ## Add a fixture
 

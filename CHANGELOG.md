@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.2.0-beta.1 — 2026-08-13
+
+- Expanded `docs/fixtures/` from 5 to 9 copyable artifact fixtures, adding visual deck brief, architecture decision record, agent package manifest, and responsive UI acceptance plan.
+- Added `docs/good-first-issues.md`, an actionable contribution board with eight bounded tasks.
+- Added `scripts/verify_good_first_issues.py` and tests, then wired good-first-issue verification into release validation.
+- Updated README, quickstart, chooser, and contributing docs so external contributors can start from a small verified change.
+
 ## 1.1.0-beta.1 — 2026-08-13
 
 - Added `docs/fixtures/`, a public artifact gallery with five copyable output fixtures for `dayan-orient`, `dayan-agent-designer`, `dayan-hook-factory`, `dayan-api-design-reviewer`, and `dayan-ai-seo`.

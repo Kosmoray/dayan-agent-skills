@@ -5,7 +5,7 @@
 Canonical repository: https://github.com/Kosmoray/dayan-agent-skills
 Live Dayan Deck demo: https://kosmoray.github.io/dayan-agent-skills/
 License: MIT
-Release: 1.1.0-beta.1
+Release: 1.2.0-beta.1
 
 ## Available Skills
 
@@ -20,7 +20,8 @@ Release: 1.1.0-beta.1
 - docs/choose-a-skill.md: choose the first Skill by failure mode.
 - docs/playbooks/README.md: applied public methods.
 - examples/runs/README.md: 11 sanitized copy-paste example runs.
-- docs/fixtures/README.md: 5 copyable artifact fixtures.
+- docs/fixtures/README.md: 9 copyable artifact fixtures.
+- docs/good-first-issues.md: 8 bounded contribution tasks.
 - scripts/compatibility_smoke.py: clean temporary-home install smoke report.
 - docs/compatibility-matrix.json: machine-readable all-Skill package install matrix.
 - scripts/runtime_smoke.py: offline lifecycle smoke for discovery, trigger routing, example commands, non-trigger rejection, and safe update.
@@ -35,6 +36,7 @@ Release: 1.1.0-beta.1
 - public redline scanning is part of CI.
 - public example runs are checked by scripts/verify_examples.py.
 - public artifact fixtures are checked by scripts/verify_fixtures.py.
+- good-first issues are checked by scripts/verify_good_first_issues.py.
 - compatibility smoke is checked by scripts/compatibility_smoke.py.
 - all-Skill compatibility matrix reports 112 clean package install passes.
 - runtime smoke is checked by scripts/runtime_smoke.py.
