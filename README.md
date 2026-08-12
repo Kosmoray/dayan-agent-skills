@@ -64,6 +64,19 @@ Review a concrete change before merge or release through three distinct lenses:
 
 [Read the Skill](skills/dayan-adversarial-reviewer/SKILL.md) · [Inspect the rubric](skills/dayan-adversarial-reviewer/references/rubric.md) · [Run the validator](skills/dayan-adversarial-reviewer/scripts/verify_review.py)
 
+### `dayan-wenzhen` · public beta
+
+Turn a vague, risky, or solution-shaped request into a decision-ready task contract before the agent starts generating a polished answer:
+
+- triage the work type, risk level, currently allowed action, release authority, and minimum evidence;
+- state a falsifiable best-current problem hypothesis rather than pretending certainty;
+- ask only questions whose answers can change the route;
+- compare the current route, alternatives, a reframed third route, and a genuine defer-or-shrink option;
+- end with the smallest reversible bet, pause signal, checkpoint, and evidence needed to continue;
+- return human-readable Markdown plus a machine-verifiable JSON contract.
+
+[Read the Skill](skills/dayan-wenzhen/SKILL.md) · [Inspect the schema](skills/dayan-wenzhen/references/contract-schema.md) · [Run the validator](skills/dayan-wenzhen/scripts/verify_contract.py)
+
 ## Install in under a minute
 
 Clone the repository, then install into an explicit agent home:
@@ -77,7 +90,7 @@ python3 installers/install.py dayan-deck \
   --home "$HOME"
 ```
 
-Replace `dayan-deck` with `dayan-adversarial-reviewer` to install the review Skill.
+Replace `dayan-deck` with `dayan-adversarial-reviewer` or `dayan-wenzhen` to install another public beta Skill.
 
 Claude Code packaging target:
 
@@ -97,6 +110,9 @@ python3 skills/dayan-deck/scripts/verify_deck.py \
 
 python3 skills/dayan-adversarial-reviewer/scripts/verify_review.py \
   skills/dayan-adversarial-reviewer/examples/block-review.json
+
+python3 skills/dayan-wenzhen/scripts/verify_contract.py \
+  skills/dayan-wenzhen/examples/starter-contract.json
 ```
 
 Expected result:
@@ -118,7 +134,7 @@ The first 12 public candidates are organized as four product clusters:
 | Dayan HTML | Orient | Hook Factory |  |
 | Diagram |  |  |  |
 
-`dayan-deck` and `dayan-adversarial-reviewer` are available as public betas. The other names are a public roadmap, not a production-readiness claim. See [`catalog.json`](catalog.json).
+`dayan-deck`, `dayan-adversarial-reviewer`, and `dayan-wenzhen` are available as public betas. The other names are a public roadmap, not a production-readiness claim. See [`catalog.json`](catalog.json).
 
 ## Design principles
 
@@ -149,7 +165,7 @@ Start with [`CONTRIBUTING.md`](CONTRIBUTING.md) or propose a Skill using the iss
 
 ## Security and provenance
 
-The public beta is a clean-room package. It excludes customer material, private templates, internal infrastructure, machine-specific paths, credentials, and third-party binary assets. Read [`SANITIZATION.md`](SANITIZATION.md), [`SECURITY.md`](SECURITY.md), and the provenance records for [`dayan-deck`](skills/dayan-deck/PROVENANCE.md) and [`dayan-adversarial-reviewer`](skills/dayan-adversarial-reviewer/PROVENANCE.md).
+The public beta is a clean-room package. It excludes customer material, private templates, internal infrastructure, machine-specific paths, credentials, and third-party binary assets. Read [`SANITIZATION.md`](SANITIZATION.md), [`SECURITY.md`](SECURITY.md), and the provenance records for [`dayan-deck`](skills/dayan-deck/PROVENANCE.md), [`dayan-adversarial-reviewer`](skills/dayan-adversarial-reviewer/PROVENANCE.md), and [`dayan-wenzhen`](skills/dayan-wenzhen/PROVENANCE.md).
 
 ## License
 

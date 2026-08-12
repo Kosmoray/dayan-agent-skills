@@ -40,6 +40,13 @@ REQUIRED_FILES = [
     "skills/dayan-adversarial-reviewer/scripts/verify_review.py",
     "skills/dayan-adversarial-reviewer/PROVENANCE.md",
     "skills/dayan-adversarial-reviewer/SANITIZATION.md",
+    "skills/dayan-wenzhen/SKILL.md",
+    "skills/dayan-wenzhen/references/contract-schema.md",
+    "skills/dayan-wenzhen/examples/starter-contract.json",
+    "skills/dayan-wenzhen/examples/rejected-missing-stop.json",
+    "skills/dayan-wenzhen/scripts/verify_contract.py",
+    "skills/dayan-wenzhen/PROVENANCE.md",
+    "skills/dayan-wenzhen/SANITIZATION.md",
 ]
 PROHIBITED_PUBLIC_PATTERNS = {
     "private user path": re.compile(r"(?:/Users|/home)/[A-Za-z0-9._-]+/|/Desktop/"),
@@ -66,12 +73,12 @@ def main() -> int:
         catalog = {}
         plugin = {}
 
-    if catalog.get("release") != "0.2.0-beta.1":
-        errors.append("catalog release must be 0.2.0-beta.1")
+    if catalog.get("release") != "0.3.0-beta.1":
+        errors.append("catalog release must be 0.3.0-beta.1")
     skills = catalog.get("skills", [])
     beta = [item for item in skills if item.get("maintenance_status") == "beta"]
-    if [item.get("name") for item in beta] != ["dayan-deck", "dayan-adversarial-reviewer"]:
-        errors.append("dayan-deck and dayan-adversarial-reviewer must be the beta Skills")
+    if [item.get("name") for item in beta] != ["dayan-deck", "dayan-wenzhen", "dayan-adversarial-reviewer"]:
+        errors.append("dayan-deck, dayan-wenzhen, and dayan-adversarial-reviewer must be the beta Skills")
     if plugin.get("version") != catalog.get("release"):
         errors.append("plugin and catalog versions must match")
     if plugin.get("license") != "MIT":
@@ -89,7 +96,7 @@ def main() -> int:
             if local_target and not (markdown_path.parent / local_target).exists():
                 errors.append(f"broken local link in {markdown_name}: {target}")
 
-    for skill_name in ("dayan-deck", "dayan-adversarial-reviewer"):
+    for skill_name in ("dayan-deck", "dayan-adversarial-reviewer", "dayan-wenzhen"):
         skill_text = (ROOT / "skills" / skill_name / "SKILL.md").read_text(encoding="utf-8")
         if not skill_text.startswith("---\n"):
             errors.append(f"{skill_name} SKILL.md is missing frontmatter")
@@ -103,6 +110,7 @@ def main() -> int:
         Path("scripts/scan_public_redlines.py"),
         Path("skills/dayan-deck/scripts/verify_deck.py"),
         Path("skills/dayan-adversarial-reviewer/scripts/verify_review.py"),
+        Path("skills/dayan-wenzhen/scripts/verify_contract.py"),
     }
     for path in sorted(item for item in ROOT.rglob("*") if item.is_file() and ".git" not in item.parts):
         relative = path.relative_to(ROOT)
@@ -139,6 +147,16 @@ def main() -> int:
                 ]
             )
         )
+
+    errors.extend(
+        run(
+            [
+                sys.executable,
+                "skills/dayan-wenzhen/scripts/verify_contract.py",
+                "skills/dayan-wenzhen/examples/starter-contract.json",
+            ]
+        )
+    )
 
     if errors:
         for error in errors:

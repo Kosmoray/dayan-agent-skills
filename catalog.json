@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "release": "0.2.0-beta.1",
+  "release": "0.3.0-beta.1",
   "status": "public-beta",
   "skills": [
     {
@@ -97,20 +97,21 @@
       "category": "think",
       "trigger": "Turn a vague or risky request into a falsifiable problem hypothesis and a minimal task contract.",
       "compatible_agents": [],
-      "required_tools": [],
+      "required_tools": [
+        "python3"
+      ],
       "risk_level": "medium",
-      "public_version": "unreleased",
-      "quickstart": null,
-      "example": null,
-      "validator": null,
-      "source_license": "pending",
-      "maintenance_status": "candidate",
+      "public_version": "0.3.0-beta.1",
+      "quickstart": "docs/install.md",
+      "example": "skills/dayan-wenzhen/examples/starter-contract.json",
+      "validator": "skills/dayan-wenzhen/scripts/verify_contract.py",
+      "source_license": "MIT",
+      "maintenance_status": "beta",
       "star_potential": 85,
-      "public_readiness": 48,
+      "public_readiness": 81,
       "blockers": [
-        "brand-neutral rewrite",
-        "passing and rejected fixtures",
-        "output schema"
+        "real agent trigger smoke",
+        "independent calibration of problem hypotheses"
       ]
     },
     {

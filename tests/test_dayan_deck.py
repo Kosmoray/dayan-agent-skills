@@ -79,7 +79,7 @@ class InstallerTests(unittest.TestCase):
     def test_installs_beta_skills_into_both_isolated_agent_homes(self):
         with tempfile.TemporaryDirectory(prefix="openclaw-install-test-", dir="/tmp") as directory:
             home = Path(directory)
-            for skill_name in ("dayan-deck", "dayan-adversarial-reviewer"):
+            for skill_name in ("dayan-deck", "dayan-adversarial-reviewer", "dayan-wenzhen"):
                 for agent in ("codex", "claude-code"):
                     destination = installer.install(home, agent, skill_name)
                     self.assertTrue((destination / "SKILL.md").is_file())

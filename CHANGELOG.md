@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.3.0-beta.1 — 2026-08-12
+
+- Released `dayan-wenzhen` as the third public beta Skill.
+- Added a falsifiable problem-hypothesis and minimal task-contract workflow.
+- Added a JSON contract schema, safe starter fixture, rejected unsafe fixture, and deterministic validator.
+- Added tests for a real defer-or-shrink option, high-risk release boundaries, and private-path rejection.
+
 ## 0.2.0-beta.1 — 2026-07-29
 
 - Released `dayan-adversarial-reviewer` as the second public beta Skill.

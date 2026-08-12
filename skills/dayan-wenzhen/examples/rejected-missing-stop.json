@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "title": "Publish a public launch announcement",
+  "triage": {
+    "work_type": "build",
+    "risk_level": "L2",
+    "allowed_action": "publish the announcement immediately",
+    "release_authority": "project owner",
+    "minimum_evidence": "a draft"
+  },
+  "hypothesis": {
+    "surface_request": "Publish the announcement.",
+    "best_current_hypothesis": "A public announcement will create awareness.",
+    "supporting_facts": ["A draft exists."],
+    "alternatives": ["The message may need review first."],
+    "falsification_signal": "No relevant audience response occurs."
+  },
+  "contract": {
+    "goal": "Create awareness.",
+    "outcome": "The announcement is visible.",
+    "context": "The audience is not yet defined.",
+    "risks_review": "The draft should be checked.",
+    "output": "A public announcement.",
+    "evidence": "A visible post."
+  },
+  "options": {
+    "current_route": "Publish now.",
+    "alternative_route": "Edit the draft.",
+    "third_route": "Ask a colleague.",
+    "defer_or_shrink": "Wait."
+  },
+  "reversible_bet": {
+    "next_step": "Publish the announcement.",
+    "expected_signal": "Views.",
+    "pause_signal": "No views.",
+    "checkpoint": "Tomorrow.",
+    "continue_evidence": "Views.",
+    "rollback": "Delete the post."
+  },
+  "next_route": "build"
+}
+

@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "title": "Decide whether to trial a weekly internal research digest",
+  "triage": {
+    "work_type": "experiment",
+    "risk_level": "L1",
+    "allowed_action": "prepare a small internal pilot and collect voluntary feedback",
+    "release_authority": "team lead",
+    "minimum_evidence": "three pilot readers and a before-and-after time comparison"
+  },
+  "hypothesis": {
+    "surface_request": "Start a weekly research digest.",
+    "best_current_hypothesis": "A short, curated digest may reduce repeated research effort without creating an unread reporting burden.",
+    "supporting_facts": [
+      "Several team members ask the same research questions during the week.",
+      "No shared summary is currently available."
+    ],
+    "alternatives": [
+      "The repeated questions may need a searchable reference rather than a digest.",
+      "The main delay may be decision ownership, not missing research."
+    ],
+    "falsification_signal": "Pilot readers do not report a useful decision or time saving after two issues."
+  },
+  "contract": {
+    "goal": "Help the team reuse relevant research while the team lead retains the decision to continue.",
+    "outcome": "A two-issue pilot shows whether readers can use one summary to avoid repeated work.",
+    "context": "The pilot uses public sources, voluntary readers, and a fixed thirty-minute preparation limit; usefulness is unknown.",
+    "risks_review": "Pause after two issues if preparation exceeds the limit or feedback shows no use; the team lead reviews the pilot before any expansion.",
+    "output": "Two internal digest drafts and a one-page pilot summary.",
+    "evidence": "Reader feedback, preparation time, and one concrete example of reused research."
+  },
+  "options": {
+    "current_route": "Run a two-issue internal digest pilot.",
+    "alternative_route": "Create a small searchable reference for recurring questions.",
+    "third_route": "Assign a decision owner for repeated questions before adding a content process.",
+    "defer_or_shrink": "Collect one week of repeated-question examples before producing any digest."
+  },
+  "reversible_bet": {
+    "next_step": "Draft one issue from public sources for three voluntary readers.",
+    "expected_signal": "At least one reader uses an item in a current decision or task.",
+    "pause_signal": "No reader can name a use, or preparation exceeds thirty minutes.",
+    "checkpoint": "Review after the second weekly issue.",
+    "continue_evidence": "Two readers report a concrete reuse or a measurable reduction in duplicated research.",
+    "rollback": "Stop the pilot and retain only the non-sensitive summary notes."
+  },
+  "next_route": "experiment"
+}
+

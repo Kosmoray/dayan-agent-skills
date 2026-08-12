@@ -58,6 +58,19 @@ Skill、harness、hook 和 verifier，就是 AI 的半自动模式：
 
 [阅读 Skill](skills/dayan-adversarial-reviewer/SKILL.md) · [查看审查量表](skills/dayan-adversarial-reviewer/references/rubric.md) · [查看验证器](skills/dayan-adversarial-reviewer/scripts/verify_review.py)
 
+### `dayan-wenzhen` · Public Beta
+
+在 AI 急着给方案前，把一个模糊、高影响或已被“解法”绑架的请求收成可检验的任务契约：
+
+- 先分诊工作类型、风险、当前允许动作、放行权与最低证据；
+- 只提出可被现实推翻的“当前最佳问题假设”；
+- 只问会改变路线的问题；
+- 同时保留替代路径、第三路径和缩小/推迟下注；
+- 以最小可逆试验、暂停信号、检查点与继续证据收口；
+- 同时产出人可读 Markdown 与机器可验证 JSON。
+
+[阅读 Skill](skills/dayan-wenzhen/SKILL.md) · [查看契约结构](skills/dayan-wenzhen/references/contract-schema.md) · [查看验证器](skills/dayan-wenzhen/scripts/verify_contract.py)
+
 ## 一分钟安装
 
 ```bash
@@ -69,7 +82,7 @@ python3 installers/install.py dayan-deck \
   --home "$HOME"
 ```
 
-把 `dayan-deck` 替换为 `dayan-adversarial-reviewer`，即可安装对抗审查 Skill。
+把 `dayan-deck` 替换为 `dayan-adversarial-reviewer` 或 `dayan-wenzhen`，即可安装其他 Public Beta Skill。
 
 Claude Code：
 
@@ -83,7 +96,7 @@ Beta 安装器只负责全新安装，遇到已有目录会停止，不会覆盖
 
 ## 接下来公开什么
 
-首批 12 个候选分成四组：Create、Think、Build、Verify & Grow。目前 `dayan-deck` 与 `dayan-adversarial-reviewer` 已作为 beta 发布，其余名称是公开路线图，不代表已经达到生产可用状态。机器可读状态见 [`catalog.json`](catalog.json)。
+首批 12 个候选分成四组：Create、Think、Build、Verify & Grow。目前 `dayan-deck`、`dayan-adversarial-reviewer` 与 `dayan-wenzhen` 已作为 beta 发布，其余名称是公开路线图，不代表已经达到生产可用状态。机器可读状态见 [`catalog.json`](catalog.json)。
 
 ## 开源原则
 

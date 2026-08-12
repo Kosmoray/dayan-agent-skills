@@ -7,6 +7,8 @@ python3 installers/install.py dayan-deck --agent codex --home /path/to/test-home
 python3 installers/install.py dayan-deck --agent claude-code --home /path/to/test-home
 python3 installers/install.py dayan-adversarial-reviewer --agent codex --home /path/to/test-home
 python3 installers/install.py dayan-adversarial-reviewer --agent claude-code --home /path/to/test-home
+python3 installers/install.py dayan-wenzhen --agent codex --home /path/to/test-home
+python3 installers/install.py dayan-wenzhen --agent claude-code --home /path/to/test-home
 ```
 
 Supported installation targets in this candidate:
