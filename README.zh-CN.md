@@ -11,7 +11,9 @@
 <p align="center"><strong>给概率性 AI 装上一层可控机制。</strong></p>
 
 <p align="center">
-  <a href="https://kosmoray.github.io/dayan-agent-skills/"><strong>打开 Dayan Deck 演示</strong></a>
+  <a href="docs/quickstart.md"><strong>60 秒开始试用</strong></a>
+  ·
+  <a href="https://kosmoray.github.io/dayan-agent-skills/">在线演示</a>
   ·
   <a href="README.md">English</a>
   ·
@@ -35,7 +37,34 @@ Skill、harness、hook 和 verifier，就是 AI 的半自动模式：
 
 公开库现已覆盖工程质量、研究决策、Agent 系统、内容设计与产品架构；所有 Star、Issue、贡献者和发布历史继续集中在一个仓库。
 
-[浏览 56 个 Skill](docs/skills.md) · [阅读 12 张公开方法卡](docs/methods.md) · [查看机器可读证据](catalog.json)
+[60 秒开始试用](docs/quickstart.md) · [按任务选择 Skill](docs/choose-a-skill.md) · [浏览 56 个 Skill](docs/skills.md) · [阅读 12 张公开方法卡](docs/methods.md) · [查看机器可读证据](catalog.json)
+
+## 先从这里开始
+
+不要先翻 56 个目录。先按你要阻止的问题选入口：
+
+| 你的问题 | 先用 | 作用 |
+| --- | --- | --- |
+| 任务模糊或风险高 | [`dayan-wenzhen`](skills/dayan-wenzhen/SKILL.md) | 先生成可证伪任务契约，避免 AI 把错问题写得很漂亮 |
+| 演示或报告讲不清 | [`dayan-deck`](skills/dayan-deck/SKILL.md) | 每页一个任务，并验证演示结构 |
+| 发版前审查太软 | [`dayan-adversarial-reviewer`](skills/dayan-adversarial-reviewer/SKILL.md) | 分开检查失败模式、维护陷阱和信任边界 |
+| 代码库不熟 | [`dayan-orient`](skills/dayan-orient/SKILL.md) | 先建立仓库地图，再开始改动 |
+| Agent 职责不清 | [`dayan-agent-designer`](skills/dayan-agent-designer/SKILL.md) | 定义职责、工具、记忆、边界和评估 |
+
+最快的安全试用方式是安装到临时 home：
+
+```bash
+git clone https://github.com/Kosmoray/dayan-agent-skills.git
+cd dayan-agent-skills
+DAYAN_TEST_HOME="$(mktemp -d)"
+
+python3 installers/install.py dayan-wenzhen \
+  --agent codex \
+  --home "$DAYAN_TEST_HOME"
+
+python3 skills/dayan-wenzhen/scripts/verify_contract.py \
+  skills/dayan-wenzhen/examples/starter-contract.json
+```
 
 ## 按任务选能力
 

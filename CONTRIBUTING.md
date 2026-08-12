@@ -32,3 +32,7 @@ Open a Skill proposal issue. Explain:
 - which consequential actions retain human authority.
 
 Small, evidenced Skills are preferred over large speculative frameworks.
+
+## Reporting compatibility
+
+Use the compatibility report issue template when you test a clean install in Codex, Claude Code, or another host. The most useful report includes the host version, OS, exact install command, selected Skill, discovery result, trigger result, and the smallest output that proves the behavior.

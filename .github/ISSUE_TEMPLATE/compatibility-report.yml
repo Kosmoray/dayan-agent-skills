@@ -1,0 +1,54 @@
+name: Compatibility report
+description: Report install, discovery, or trigger behavior in a clean environment.
+title: "[Compatibility]: "
+labels:
+  - compatibility
+body:
+  - type: input
+    id: host
+    attributes:
+      label: Host application and version
+      placeholder: Codex CLI version, Claude Code version, or other host
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: Operating system
+      placeholder: macOS 15, Ubuntu 24.04, Windows 11
+    validations:
+      required: true
+  - type: input
+    id: skill
+    attributes:
+      label: Skill tested
+      placeholder: dayan-wenzhen
+    validations:
+      required: true
+  - type: textarea
+    id: install
+    attributes:
+      label: Install command
+      description: Paste the exact command you ran. Remove private paths if needed.
+      render: bash
+    validations:
+      required: true
+  - type: dropdown
+    id: result
+    attributes:
+      label: Result
+      options:
+        - Installed and discovered
+        - Installed but not discovered
+        - Install failed
+        - Trigger failed
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Include terminal output, host behavior, and what you expected. Do not include secrets.
+    validations:
+      required: true

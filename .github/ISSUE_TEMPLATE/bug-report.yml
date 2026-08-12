@@ -1,0 +1,35 @@
+name: Bug report
+description: Report a reproducible package, fixture, validator, or documentation problem.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: Describe the observed behavior and the expected behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction steps
+      render: bash
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Release or commit
+      placeholder: v0.5.2-beta.1 or commit SHA
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or output
+      description: Remove credentials, tokens, private paths, and customer data.
+      render: text
+    validations:
+      required: false

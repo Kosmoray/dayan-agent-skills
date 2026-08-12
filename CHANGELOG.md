@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.5.2-beta.1 — 2026-08-12
+
+- Added a 60-second quickstart that installs into a temporary home instead of a live agent configuration.
+- Added a Skill chooser and FAQ so visitors can start from a concrete failure mode instead of browsing 56 folders.
+- Expanded compatibility evidence into a clear matrix and added GitHub issue templates for compatibility reports and bugs.
+- Recorded the first external publication runbook with Hacker News and V2EX live links, X status, and Reddit account boundary.
+- Tightened README and Chinese README conversion paths around quick trial, evidence, and compatibility reports.
+
 ## 0.5.1-beta.1 — 2026-08-12
 
 - Rebuilt the GitHub Pages front door around the full 56-Skill library instead of a generic repository overview.

@@ -15,7 +15,9 @@
 </p>
 
 <p align="center">
-  <a href="https://kosmoray.github.io/dayan-agent-skills/"><strong>OPEN THE DAYAN DECK DEMO</strong></a>
+  <a href="docs/quickstart.md"><strong>START IN 60 SECONDS</strong></a>
+  ·
+  <a href="https://kosmoray.github.io/dayan-agent-skills/">Live demos</a>
   ·
   <a href="README.zh-CN.md">中文</a>
   ·
@@ -40,7 +42,36 @@ This repository publishes those control layers instead of hiding them.
 
 The library now spans engineering quality, research and decisions, agent systems, content and design, and product architecture—without splitting stars, issues, or contributors across small repositories.
 
-[Browse all 56 Skills](docs/skills.md) · [Read the 12 public methods](docs/methods.md) · [Inspect machine-readable evidence](catalog.json)
+[Start in 60 seconds](docs/quickstart.md) · [Choose a Skill](docs/choose-a-skill.md) · [Browse all 56 Skills](docs/skills.md) · [Read the 12 public methods](docs/methods.md) · [Inspect machine-readable evidence](catalog.json)
+
+## Start here
+
+Do not begin by reading 56 folders. Pick the route that matches the failure you want to stop:
+
+| If the work fails because... | Start with | Why |
+| --- | --- | --- |
+| the task is vague or risky | [`dayan-wenzhen`](skills/dayan-wenzhen/SKILL.md) | creates a falsifiable task contract before polished output hides a wrong assumption |
+| the artifact is hard to explain | [`dayan-deck`](skills/dayan-deck/SKILL.md) | gives each slide one job and verifies the deck structure |
+| release review is too soft | [`dayan-adversarial-reviewer`](skills/dayan-adversarial-reviewer/SKILL.md) | checks failure modes, maintenance traps, and trust boundaries separately |
+| the repository is unfamiliar | [`dayan-orient`](skills/dayan-orient/SKILL.md) | maps code before changes start |
+| the agent itself is unclear | [`dayan-agent-designer`](skills/dayan-agent-designer/SKILL.md) | defines responsibilities, tools, memory, boundaries, and evaluation |
+
+The fastest safe trial is a temporary-home install:
+
+```bash
+git clone https://github.com/Kosmoray/dayan-agent-skills.git
+cd dayan-agent-skills
+DAYAN_TEST_HOME="$(mktemp -d)"
+
+python3 installers/install.py dayan-wenzhen \
+  --agent codex \
+  --home "$DAYAN_TEST_HOME"
+
+python3 skills/dayan-wenzhen/scripts/verify_contract.py \
+  skills/dayan-wenzhen/examples/starter-contract.json
+```
+
+See the full [Quickstart](docs/quickstart.md), [Skill chooser](docs/choose-a-skill.md), and [FAQ](docs/faq.md).
 
 ## Choose your route
 
@@ -96,15 +127,16 @@ Turn a vague, risky, or solution-shaped request into a decision-ready task contr
 
 ## Install in under a minute
 
-Clone the repository, then install into an explicit agent home:
+Clone the repository, then install into an explicit agent home. Use a temporary home for first inspection:
 
 ```bash
 git clone https://github.com/Kosmoray/dayan-agent-skills.git
 cd dayan-agent-skills
+DAYAN_TEST_HOME="$(mktemp -d)"
 
 python3 installers/install.py dayan-deck \
   --agent codex \
-  --home "$HOME"
+  --home "$DAYAN_TEST_HOME"
 ```
 
 Replace `dayan-deck` with any name in the route table to install another public beta Skill.
@@ -114,7 +146,7 @@ Claude Code packaging target:
 ```bash
 python3 installers/install.py dayan-deck \
   --agent claude-code \
-  --home "$HOME"
+  --home "$DAYAN_TEST_HOME"
 ```
 
 The beta installer performs new installs only and refuses to overwrite an existing Skill directory. See the [installation contract](docs/install.md).

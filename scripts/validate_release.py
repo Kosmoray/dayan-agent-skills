@@ -33,7 +33,12 @@ REQUIRED_FILES = [
     "docs/demos/wenzhen.html",
     "docs/demos/deck.html",
     "docs/demos/reviewer.html",
+    "docs/quickstart.md",
+    "docs/choose-a-skill.md",
+    "docs/faq.md",
+    "docs/compatibility.md",
     "docs/launch-kit.md",
+    "docs/publication-runbook.md",
     "scripts/verify_site.py",
     "skills/dayan-deck/SKILL.md",
     "skills/dayan-deck/examples/starter.html",
@@ -79,13 +84,13 @@ def main() -> int:
         catalog = {}
         plugin = {}
 
-    if catalog.get("release") != "0.5.1-beta.1":
-        errors.append("catalog release must be 0.5.1-beta.1")
+    if catalog.get("release") != "0.5.2-beta.1":
+        errors.append("catalog release must be 0.5.2-beta.1")
     skills = catalog.get("skills", [])
     beta = [item for item in skills if item.get("maintenance_status") == "beta"]
     beta_names = [item.get("name") for item in beta]
     if len(beta_names) != 56:
-        errors.append("all 56 catalog Skills must be public beta in v0.5.1-beta.1")
+        errors.append("all 56 catalog Skills must be public beta in v0.5.2-beta.1")
     if plugin.get("version") != catalog.get("release"):
         errors.append("plugin and catalog versions must match")
     if plugin.get("license") != "MIT":
