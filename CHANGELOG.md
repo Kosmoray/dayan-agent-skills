@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.5.1-beta.1 — 2026-08-12
+
+- Rebuilt the GitHub Pages front door around the full 56-Skill library instead of a generic repository overview.
+- Added three 60-second proof demos for Wenzhen, Deck, and Code Reviewer.
+- Added a channel-ready launch kit with factual claims, copy variants, and ethical distribution boundaries.
+- Added an automated public-site verifier and wired it into release validation.
+
 ## 0.5.0-beta.1 — 2026-08-12
 
 - Expanded the single repository from 12 to 56 installable public beta Skills.

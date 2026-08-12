@@ -30,6 +30,11 @@ REQUIRED_FILES = [
     "docs/index.html",
     "docs/robots.txt",
     "docs/sitemap.xml",
+    "docs/demos/wenzhen.html",
+    "docs/demos/deck.html",
+    "docs/demos/reviewer.html",
+    "docs/launch-kit.md",
+    "scripts/verify_site.py",
     "skills/dayan-deck/SKILL.md",
     "skills/dayan-deck/examples/starter.html",
     "skills/dayan-deck/scripts/verify_deck.py",
@@ -74,13 +79,13 @@ def main() -> int:
         catalog = {}
         plugin = {}
 
-    if catalog.get("release") != "0.5.0-beta.1":
-        errors.append("catalog release must be 0.5.0-beta.1")
+    if catalog.get("release") != "0.5.1-beta.1":
+        errors.append("catalog release must be 0.5.1-beta.1")
     skills = catalog.get("skills", [])
     beta = [item for item in skills if item.get("maintenance_status") == "beta"]
     beta_names = [item.get("name") for item in beta]
     if len(beta_names) != 56:
-        errors.append("all 56 catalog Skills must be public beta in v0.5.0-beta.1")
+        errors.append("all 56 catalog Skills must be public beta in v0.5.1-beta.1")
     if plugin.get("version") != catalog.get("release"):
         errors.append("plugin and catalog versions must match")
     if plugin.get("license") != "MIT":
@@ -114,6 +119,7 @@ def main() -> int:
         Path("skills/dayan-adversarial-reviewer/scripts/verify_review.py"),
         Path("skills/dayan-wenzhen/scripts/verify_contract.py"),
         Path("scripts/validate_public_skill.py"),
+        Path("scripts/verify_site.py"),
     }
     for path in sorted(item for item in ROOT.rglob("*") if item.is_file() and ".git" not in item.parts):
         relative = path.relative_to(ROOT)
@@ -131,6 +137,7 @@ def main() -> int:
 
     errors.extend(run([sys.executable, "scripts/validate_catalog.py", "catalog.json"]))
     errors.extend(run([sys.executable, "scripts/scan_public_redlines.py", "skills"]))
+    errors.extend(run([sys.executable, "scripts/verify_site.py"]))
     errors.extend(
         run(
             [
