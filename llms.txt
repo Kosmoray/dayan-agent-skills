@@ -5,19 +5,28 @@
 Canonical repository: https://github.com/Kosmoray/dayan-agent-skills
 Live Dayan Deck demo: https://kosmoray.github.io/dayan-agent-skills/
 License: MIT
-Release: 0.2.0-beta.1
+Release: 0.6.0-beta.1
 
 ## Available Skills
 
+- 56 installable public beta Skills are listed in catalog.json.
 - Dayan Deck: turns structured content into a self-contained HTML presentation with one narrative job per slide, a coherent visual system, editable text, and a deterministic structural verifier.
+- Dayan Wenzhen: turns a vague or risky request into a falsifiable problem hypothesis and minimal task contract.
 - Dayan Adversarial Reviewer: reviews a bounded engineering change through failure-mode, maintainability, and trust-boundary lenses, then returns evidence-backed Markdown and machine-verifiable JSON.
+
+## Start Here
+
+- docs/quickstart.md: temporary-home install and verifier path.
+- docs/choose-a-skill.md: choose the first Skill by failure mode.
+- docs/playbooks/README.md: applied public methods.
+- examples/runs/README.md: sanitized copy-paste example runs.
 
 ## Verified
 
 - catalog and plugin manifests parse;
-- fourteen-plus positive and negative tests pass;
+- thirty positive and negative tests pass;
 - isolated packaging into Codex and Claude Code Skill directories passes;
-- the example deck passes its structural verifier;
+- flagship examples pass their deterministic verifiers;
 - public redline scanning is part of CI.
 
 ## Not claimed
@@ -29,7 +38,4 @@ Release: 0.2.0-beta.1
 
 ## Roadmap
 
-Create: Huashu Design, Dayan HTML, Diagram.
-Think: Wenzhen, Plan, Orient.
-Build: Agent Designer, Agent Factory, Hook Factory.
-Verify & Grow roadmap: AI SEO.
+Next evidence wave: runtime trigger reports, clean external compatibility reports, stronger generated artifact fixtures, and narrower good-first-issue paths.

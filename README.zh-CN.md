@@ -37,7 +37,7 @@ Skill、harness、hook 和 verifier，就是 AI 的半自动模式：
 
 公开库现已覆盖工程质量、研究决策、Agent 系统、内容设计与产品架构；所有 Star、Issue、贡献者和发布历史继续集中在一个仓库。
 
-[60 秒开始试用](docs/quickstart.md) · [按任务选择 Skill](docs/choose-a-skill.md) · [浏览 56 个 Skill](docs/skills.md) · [阅读 12 张公开方法卡](docs/methods.md) · [查看机器可读证据](catalog.json)
+[60 秒开始试用](docs/quickstart.md) · [按任务选择 Skill](docs/choose-a-skill.md) · [阅读 Playbook](docs/playbooks/README.md) · [浏览 56 个 Skill](docs/skills.md) · [查看机器可读证据](catalog.json)
 
 ## 先从这里开始
 
@@ -65,6 +65,14 @@ python3 installers/install.py dayan-wenzhen \
 python3 skills/dayan-wenzhen/scripts/verify_contract.py \
   skills/dayan-wenzhen/examples/starter-contract.json
 ```
+
+## 可复制样例
+
+- [Wenzhen 模糊需求](examples/runs/wenzhen-fuzzy-request.md)：把一句泛泛的 AI 改造需求收成可证伪任务契约。
+- [Deck 提纲成稿](examples/runs/deck-from-outline.md)：把一个实用提纲收成可验证演示请求。
+- [对抗审查裁决](examples/runs/adversarial-review-verdict.md)：把发版描述收成具体的 BLOCK / CONCERNS / CLEAN 审查。
+
+再用公开 [Playbook](docs/playbooks/README.md) 判断你的重复工作应该做成清单、Skill、验证器、Hook 还是 Agent。
 
 ## 按任务选能力
 

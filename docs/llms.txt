@@ -5,5 +5,14 @@ Live demo: https://kosmoray.github.io/dayan-agent-skills/
 
 Available public betas:
 
+- 56 installable public beta Skills are listed in catalog.json.
+- Dayan Wenzhen: falsifiable task contracts for vague or risky requests.
 - Dayan Deck: an HTML-first presentation Skill with a structural verifier and explicit human-review boundaries.
 - Dayan Adversarial Reviewer: an evidence-backed engineering review Skill with a machine-verifiable JSON verdict.
+
+Useful entry points:
+
+- https://github.com/Kosmoray/dayan-agent-skills/blob/main/docs/quickstart.md
+- https://github.com/Kosmoray/dayan-agent-skills/blob/main/docs/choose-a-skill.md
+- https://github.com/Kosmoray/dayan-agent-skills/blob/main/docs/playbooks/README.md
+- https://github.com/Kosmoray/dayan-agent-skills/blob/main/examples/runs/README.md

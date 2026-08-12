@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.6.0-beta.1 — 2026-08-12
+
+- Added public playbooks for control-layer design, conversation-to-Skill extraction, and release review loops.
+- Added sanitized example runs for Wenzhen, Deck, and Adversarial Reviewer so visitors can copy a realistic trial path.
+- Connected playbooks and example runs from README, README.zh-CN, methods, contributing, roadmap, and llms.txt.
+- Raised the package release to the first v0.6 beta without changing individual Skill behavior claims.
+
 ## 0.5.2-beta.1 — 2026-08-12
 
 - Added a 60-second quickstart that installs into a temporary home instead of a live agent configuration.

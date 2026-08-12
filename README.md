@@ -42,7 +42,7 @@ This repository publishes those control layers instead of hiding them.
 
 The library now spans engineering quality, research and decisions, agent systems, content and design, and product architecture—without splitting stars, issues, or contributors across small repositories.
 
-[Start in 60 seconds](docs/quickstart.md) · [Choose a Skill](docs/choose-a-skill.md) · [Browse all 56 Skills](docs/skills.md) · [Read the 12 public methods](docs/methods.md) · [Inspect machine-readable evidence](catalog.json)
+[Start in 60 seconds](docs/quickstart.md) · [Choose a Skill](docs/choose-a-skill.md) · [Read the playbooks](docs/playbooks/README.md) · [Browse all 56 Skills](docs/skills.md) · [Inspect evidence](catalog.json)
 
 ## Start here
 
@@ -72,6 +72,16 @@ python3 skills/dayan-wenzhen/scripts/verify_contract.py \
 ```
 
 See the full [Quickstart](docs/quickstart.md), [Skill chooser](docs/choose-a-skill.md), and [FAQ](docs/faq.md).
+
+## Copy-paste examples
+
+Try one sanitized run before integrating anything:
+
+- [Wenzhen fuzzy request](examples/runs/wenzhen-fuzzy-request.md): turn a vague AI-support idea into a falsifiable task contract.
+- [Deck from outline](examples/runs/deck-from-outline.md): turn a practical outline into a verifier-ready presentation request.
+- [Adversarial review verdict](examples/runs/adversarial-review-verdict.md): turn a release description into a concrete BLOCK/CONCERNS/CLEAN review.
+
+Then use the public [playbooks](docs/playbooks/README.md) to decide whether your repeated workflow should become a checklist, Skill, verifier, hook, or agent.
 
 ## Choose your route
 

@@ -36,3 +36,7 @@ Small, evidenced Skills are preferred over large speculative frameworks.
 ## Reporting compatibility
 
 Use the compatibility report issue template when you test a clean install in Codex, Claude Code, or another host. The most useful report includes the host version, OS, exact install command, selected Skill, discovery result, trigger result, and the smallest output that proves the behavior.
+
+## Turning a pattern into a Skill
+
+Start with the [From conversation to Skill](docs/playbooks/from-conversation-to-skill.md) playbook. A good public contribution should include an accepted example, a rejected or boundary example, provenance, sanitization notes, and either a deterministic validator or a clear human-review contract.
