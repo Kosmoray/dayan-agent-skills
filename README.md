@@ -77,9 +77,13 @@ See the full [Quickstart](docs/quickstart.md), [Skill chooser](docs/choose-a-ski
 
 Try one sanitized run before integrating anything:
 
+The repository now includes [11 sanitized example runs](examples/runs/README.md), including:
+
 - [Wenzhen fuzzy request](examples/runs/wenzhen-fuzzy-request.md): turn a vague AI-support idea into a falsifiable task contract.
 - [Deck from outline](examples/runs/deck-from-outline.md): turn a practical outline into a verifier-ready presentation request.
 - [Adversarial review verdict](examples/runs/adversarial-review-verdict.md): turn a release description into a concrete BLOCK/CONCERNS/CLEAN review.
+- [API pagination contract review](examples/runs/api-review-pagination-contract.md): block an unbounded endpoint before clients depend on it.
+- [AI visibility for open-source docs](examples/runs/ai-seo-open-source-docs.md): make claims easier for AI assistants to cite accurately.
 
 Then use the public [playbooks](docs/playbooks/README.md) to decide whether your repeated workflow should become a checklist, Skill, verifier, hook, or agent.
 

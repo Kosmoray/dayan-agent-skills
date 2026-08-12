@@ -47,7 +47,16 @@ REQUIRED_FILES = [
     "examples/runs/wenzhen-fuzzy-request.md",
     "examples/runs/deck-from-outline.md",
     "examples/runs/adversarial-review-verdict.md",
+    "examples/runs/orient-unknown-repository.md",
+    "examples/runs/agent-designer-support-triage.md",
+    "examples/runs/hook-factory-public-redline.md",
+    "examples/runs/api-review-pagination-contract.md",
+    "examples/runs/a11y-checkout-flow.md",
+    "examples/runs/database-performance-list-endpoint.md",
+    "examples/runs/ai-seo-open-source-docs.md",
+    "examples/runs/content-production-launch-boundary.md",
     "scripts/verify_site.py",
+    "scripts/verify_examples.py",
     "skills/dayan-deck/SKILL.md",
     "skills/dayan-deck/examples/starter.html",
     "skills/dayan-deck/scripts/verify_deck.py",
@@ -92,13 +101,13 @@ def main() -> int:
         catalog = {}
         plugin = {}
 
-    if catalog.get("release") != "0.6.0-beta.1":
-        errors.append("catalog release must be 0.6.0-beta.1")
+    if catalog.get("release") != "0.7.0-beta.1":
+        errors.append("catalog release must be 0.7.0-beta.1")
     skills = catalog.get("skills", [])
     beta = [item for item in skills if item.get("maintenance_status") == "beta"]
     beta_names = [item.get("name") for item in beta]
     if len(beta_names) != 56:
-        errors.append("all 56 catalog Skills must be public beta in v0.6.0-beta.1")
+        errors.append("all 56 catalog Skills must be public beta in v0.7.0-beta.1")
     if plugin.get("version") != catalog.get("release"):
         errors.append("plugin and catalog versions must match")
     if plugin.get("license") != "MIT":
@@ -133,6 +142,7 @@ def main() -> int:
         Path("skills/dayan-wenzhen/scripts/verify_contract.py"),
         Path("scripts/validate_public_skill.py"),
         Path("scripts/verify_site.py"),
+        Path("scripts/verify_examples.py"),
     }
     for path in sorted(item for item in ROOT.rglob("*") if item.is_file() and ".git" not in item.parts):
         relative = path.relative_to(ROOT)
@@ -151,6 +161,7 @@ def main() -> int:
     errors.extend(run([sys.executable, "scripts/validate_catalog.py", "catalog.json"]))
     errors.extend(run([sys.executable, "scripts/scan_public_redlines.py", "skills"]))
     errors.extend(run([sys.executable, "scripts/verify_site.py"]))
+    errors.extend(run([sys.executable, "scripts/verify_examples.py"]))
     errors.extend(
         run(
             [

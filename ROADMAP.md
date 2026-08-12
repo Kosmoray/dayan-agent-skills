@@ -1,12 +1,13 @@
 # Public roadmap
 
-## Available through v0.6
+## Available through v0.7
 
 - 56 installable public beta Skills in one repository.
 - 12 public method cards.
 - Shared catalog, installer, provenance, sanitization, fixtures, validators, and CI.
 - Quickstart, Skill chooser, FAQ, compatibility matrix, and issue templates for clean-environment reports.
-- Public playbooks and sanitized example runs that show how to apply the methods.
+- Public playbooks and 11 sanitized example runs that show how to apply the methods.
+- Deterministic example-run verification in the release validator.
 
 See the [Skill index](docs/skills.md), [method index](docs/methods.md), and machine-readable [`catalog.json`](catalog.json).
 

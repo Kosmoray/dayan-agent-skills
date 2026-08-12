@@ -1,6 +1,6 @@
 {
   "name": "dayan-agent-skills",
-  "version": "0.6.0-beta.1",
+  "version": "0.7.0-beta.1",
   "description": "Open skills, harnesses, hooks, and verifiers for making AI agent work more repeatable and inspectable.",
   "author": {
     "name": "Dayan AI",

@@ -5,7 +5,7 @@
 Canonical repository: https://github.com/Kosmoray/dayan-agent-skills
 Live Dayan Deck demo: https://kosmoray.github.io/dayan-agent-skills/
 License: MIT
-Release: 0.6.0-beta.1
+Release: 0.7.0-beta.1
 
 ## Available Skills
 
@@ -19,7 +19,7 @@ Release: 0.6.0-beta.1
 - docs/quickstart.md: temporary-home install and verifier path.
 - docs/choose-a-skill.md: choose the first Skill by failure mode.
 - docs/playbooks/README.md: applied public methods.
-- examples/runs/README.md: sanitized copy-paste example runs.
+- examples/runs/README.md: 11 sanitized copy-paste example runs.
 
 ## Verified
 
@@ -28,6 +28,7 @@ Release: 0.6.0-beta.1
 - isolated packaging into Codex and Claude Code Skill directories passes;
 - flagship examples pass their deterministic verifiers;
 - public redline scanning is part of CI.
+- public example runs are checked by scripts/verify_examples.py.
 
 ## Not claimed
 

@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.7.0-beta.1 — 2026-08-13
+
+- Expanded sanitized example runs from 3 to 11 across repository orientation, agent design, hooks, API review, accessibility, database performance, AI visibility, and launch content boundaries.
+- Added `scripts/verify_examples.py` to keep public example runs complete, linked from the index, and free of configured redlines.
+- Wired example verification into release validation and updated README, README.zh-CN, roadmap, and llms entry points around the larger example surface.
+
 ## 0.6.0-beta.1 — 2026-08-12
 
 - Added public playbooks for control-layer design, conversation-to-Skill extraction, and release review loops.

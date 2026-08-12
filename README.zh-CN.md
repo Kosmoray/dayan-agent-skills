@@ -68,9 +68,13 @@ python3 skills/dayan-wenzhen/scripts/verify_contract.py \
 
 ## 可复制样例
 
+仓库现在有 [11 个脱敏可复制样例](examples/runs/README.md)，包括：
+
 - [Wenzhen 模糊需求](examples/runs/wenzhen-fuzzy-request.md)：把一句泛泛的 AI 改造需求收成可证伪任务契约。
 - [Deck 提纲成稿](examples/runs/deck-from-outline.md)：把一个实用提纲收成可验证演示请求。
 - [对抗审查裁决](examples/runs/adversarial-review-verdict.md)：把发版描述收成具体的 BLOCK / CONCERNS / CLEAN 审查。
+- [API 分页契约审查](examples/runs/api-review-pagination-contract.md)：在客户端依赖前阻断无上限接口。
+- [开源文档 AI 可见性](examples/runs/ai-seo-open-source-docs.md)：让 AI 助手更准确引用仓库声明。
 
 再用公开 [Playbook](docs/playbooks/README.md) 判断你的重复工作应该做成清单、Skill、验证器、Hook 还是 Agent。
 
