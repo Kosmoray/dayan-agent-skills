@@ -9,7 +9,7 @@ import re
 import sys
 from pathlib import Path
 
-EXPECTED_COUNT = 12
+EXPECTED_COUNT = 56
 ALLOWED_CATEGORIES = {"create", "think", "build", "verify-grow"}
 ALLOWED_RISKS = {"low", "medium", "high"}
 ALLOWED_STATUSES = {"candidate", "beta", "ready", "paused", "retired"}

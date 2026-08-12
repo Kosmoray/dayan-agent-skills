@@ -36,6 +36,12 @@ Agent skills are the semi-automatic modes. A Skill chooses the workflow. A harne
 
 This repository publishes those control layers instead of hiding them.
 
+## 56 Skills. One control library.
+
+The library now spans engineering quality, research and decisions, agent systems, content and design, and product architecture—without splitting stars, issues, or contributors across small repositories.
+
+[Browse all 56 Skills](docs/skills.md) · [Read the 12 public methods](docs/methods.md) · [Inspect machine-readable evidence](catalog.json)
+
 ## Choose your route
 
 | Create | Think | Build | Verify & Grow |
@@ -45,7 +51,7 @@ This repository publishes those control layers instead of hiding them.
 | [HTML](skills/dayan-html/SKILL.md) | [Orient](skills/dayan-orient/SKILL.md) | [Hook Factory](skills/dayan-hook-factory/SKILL.md) |  |
 | [Diagram](skills/dayan-diagram/SKILL.md) |  |  |  |
 
-All 12 are installable public betas. The first three below have dedicated validators; the other nine share a strict public bundle contract and are explicit about remaining runtime evidence.
+All 56 are installable public betas. Featured Skills have dedicated validators; the Core Library uses a shared strict public bundle contract and exposes remaining runtime evidence in the catalog.
 
 ## Featured Skills
 

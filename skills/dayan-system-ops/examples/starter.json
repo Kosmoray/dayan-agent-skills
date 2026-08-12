@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "skill": "dayan-system-ops",
+  "input": {
+    "goal": "Perform read-only system triage and translate machine symptoms into safe next actions",
+    "scope": "bounded public or fictional fixture"
+  },
+  "output": {
+    "artifact": "system-triage.md",
+    "status": "reviewable draft"
+  },
+  "checks": [
+    "Facts, inference, assumptions, and unknowns are separated",
+    "Observations are separated from hypotheses and any state-changing command",
+    "No private path, credential, customer identity, or unapproved external action is present"
+  ],
+  "stop_conditions": [
+    "Required evidence is missing or contradictory",
+    "A consequential external action lacks explicit authority"
+  ]
+}

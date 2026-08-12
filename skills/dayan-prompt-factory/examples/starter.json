@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "skill": "dayan-prompt-factory",
+  "input": {
+    "goal": "Compile a vague recurring request into a reusable prompt contract with fixtures and evaluation",
+    "scope": "bounded public or fictional fixture"
+  },
+  "output": {
+    "artifact": "prompt-package.md",
+    "status": "reviewable draft"
+  },
+  "checks": [
+    "Facts, inference, assumptions, and unknowns are separated",
+    "The package includes trigger, non-trigger, accepted, rejected, and adversarial fixtures",
+    "No private path, credential, customer identity, or unapproved external action is present"
+  ],
+  "stop_conditions": [
+    "Required evidence is missing or contradictory",
+    "A consequential external action lacks explicit authority"
+  ]
+}

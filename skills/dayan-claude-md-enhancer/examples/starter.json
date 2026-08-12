@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "skill": "dayan-claude-md-enhancer",
+  "input": {
+    "goal": "Compress repository collaboration rules into a short, enforceable project entry file",
+    "scope": "bounded public or fictional fixture"
+  },
+  "output": {
+    "artifact": "project-agent-rules.md",
+    "status": "reviewable draft"
+  },
+  "checks": [
+    "Facts, inference, assumptions, and unknowns are separated",
+    "Rules are scoped, testable, non-duplicative, and linked to deeper references",
+    "No private path, credential, customer identity, or unapproved external action is present"
+  ],
+  "stop_conditions": [
+    "Required evidence is missing or contradictory",
+    "A consequential external action lacks explicit authority"
+  ]
+}

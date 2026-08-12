@@ -31,6 +31,12 @@ Skill、harness、hook 和 verifier，就是 AI 的半自动模式：
 
 这些机制迟早会成为行业公共能力。与其藏着等待别人重新发明，不如率先命名、实现、验证并公开。
 
+## 56 个 Skill，一个能力母舰
+
+公开库现已覆盖工程质量、研究决策、Agent 系统、内容设计与产品架构；所有 Star、Issue、贡献者和发布历史继续集中在一个仓库。
+
+[浏览 56 个 Skill](docs/skills.md) · [阅读 12 张公开方法卡](docs/methods.md) · [查看机器可读证据](catalog.json)
+
 ## 按任务选能力
 
 | 创作 Create | 思考 Think | 构建 Build | 验证与增长 Verify & Grow |
@@ -40,7 +46,7 @@ Skill、harness、hook 和 verifier，就是 AI 的半自动模式：
 | [HTML](skills/dayan-html/SKILL.md) | [Orient](skills/dayan-orient/SKILL.md) | [Hook Factory](skills/dayan-hook-factory/SKILL.md) |  |
 | [Diagram](skills/dayan-diagram/SKILL.md) |  |  |  |
 
-12 个 Skill 均在同一个母包内提供 Public Beta 安装。前三个有独立验证器，其余九个通过统一的公开包结构验证，并在目录中明确剩余运行时证据。
+56 个 Skill 均在同一个母包内提供 Public Beta 安装。旗舰 Skill 有独立验证器，Core Library 通过统一公开包合同验证，并在 catalog 中明确剩余运行时证据。
 
 ## 三个重点入口
 

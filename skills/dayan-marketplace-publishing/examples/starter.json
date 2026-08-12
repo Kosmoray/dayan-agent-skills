@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "skill": "dayan-marketplace-publishing",
+  "input": {
+    "goal": "Package a reusable Skill or agent so strangers can install, understand, validate, and remove it",
+    "scope": "bounded public or fictional fixture"
+  },
+  "output": {
+    "artifact": "release-package.md",
+    "status": "reviewable draft"
+  },
+  "checks": [
+    "Facts, inference, assumptions, and unknowns are separated",
+    "Manifest, paths, provenance, redline scan, install smoke, and version agree",
+    "No private path, credential, customer identity, or unapproved external action is present"
+  ],
+  "stop_conditions": [
+    "Required evidence is missing or contradictory",
+    "A consequential external action lacks explicit authority"
+  ]
+}

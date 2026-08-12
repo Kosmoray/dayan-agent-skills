@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "skill": "dayan-scrum-master-agent",
+  "input": {
+    "goal": "Turn sprint evidence into a small set of flow decisions rather than meeting summaries",
+    "scope": "bounded public or fictional fixture"
+  },
+  "output": {
+    "artifact": "sprint-flow-review.md",
+    "status": "reviewable draft"
+  },
+  "checks": [
+    "Facts, inference, assumptions, and unknowns are separated",
+    "Blocked work, aging, throughput, ownership, and next intervention are evidenced",
+    "No private path, credential, customer identity, or unapproved external action is present"
+  ],
+  "stop_conditions": [
+    "Required evidence is missing or contradictory",
+    "A consequential external action lacks explicit authority"
+  ]
+}

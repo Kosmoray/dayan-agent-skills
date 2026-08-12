@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "skill": "dayan-aws-solution-architect",
+  "input": {
+    "goal": "Translate workload, security, operations, team capability, and cost constraints into a reviewable AWS architecture",
+    "scope": "bounded public or fictional fixture"
+  },
+  "output": {
+    "artifact": "aws-architecture-decision.md",
+    "status": "reviewable draft"
+  },
+  "checks": [
+    "Facts, inference, assumptions, and unknowns are separated",
+    "Assumptions, alternatives, failure domains, cost drivers, security, and rollback are explicit",
+    "No private path, credential, customer identity, or unapproved external action is present"
+  ],
+  "stop_conditions": [
+    "Required evidence is missing or contradictory",
+    "A consequential external action lacks explicit authority"
+  ]
+}

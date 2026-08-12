@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "skill": "dayan-frontend-responsive-ui",
+  "input": {
+    "goal": "Turn a fixed desktop interface into a usable phone, tablet, and desktop experience",
+    "scope": "bounded public or fictional fixture"
+  },
+  "output": {
+    "artifact": "responsive-ui-plan.md",
+    "status": "reviewable draft"
+  },
+  "checks": [
+    "Facts, inference, assumptions, and unknowns are separated",
+    "Target viewports pass overflow, focus, touch-target, and content-priority checks",
+    "No private path, credential, customer identity, or unapproved external action is present"
+  ],
+  "stop_conditions": [
+    "Required evidence is missing or contradictory",
+    "A consequential external action lacks explicit authority"
+  ]
+}

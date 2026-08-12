@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.5.0-beta.1 — 2026-08-12
+
+- Expanded the single repository from 12 to 56 installable public beta Skills.
+- Added 44 clean-room Skill bundles across engineering quality, research and decisions, agent systems, content and design, and product architecture.
+- Published 12 concise Dayan method cards covering complexity, evidence, authority, verification, completion, project harnesses, delivery assets, and audience-clean artifacts.
+- Added deterministic generation, public indexes, provenance, sanitization records, starter contracts, and isolated install smoke coverage for all 56 Skills.
+- Kept customer material, private operating data, personalized finance workflows, logged-in integrations, and unresolved third-party assets outside the public package.
+
 ## 0.4.0-beta.1 — 2026-08-12
 
 - Completed the first public 12-Skill collection inside one repository.

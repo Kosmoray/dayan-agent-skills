@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "skill": "dayan-crap-analysis",
+  "input": {
+    "goal": "Combine complexity and test coverage evidence to rank the code most likely to fail during change",
+    "scope": "bounded public or fictional fixture"
+  },
+  "output": {
+    "artifact": "risk-ranking.json",
+    "status": "reviewable draft"
+  },
+  "checks": [
+    "Facts, inference, assumptions, and unknowns are separated",
+    "Scores preserve raw complexity, coverage, formula, and uncertainty",
+    "No private path, credential, customer identity, or unapproved external action is present"
+  ],
+  "stop_conditions": [
+    "Required evidence is missing or contradictory",
+    "A consequential external action lacks explicit authority"
+  ]
+}

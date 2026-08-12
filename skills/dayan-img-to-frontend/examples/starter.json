@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "skill": "dayan-img-to-frontend",
+  "input": {
+    "goal": "Translate a visual reference into responsive frontend structure without copying protected identity or hiding text in images",
+    "scope": "bounded public or fictional fixture"
+  },
+  "output": {
+    "artifact": "frontend-implementation",
+    "status": "reviewable draft"
+  },
+  "checks": [
+    "Facts, inference, assumptions, and unknowns are separated",
+    "Layout, components, assets, interactions, responsive states, and accessibility are explicit",
+    "No private path, credential, customer identity, or unapproved external action is present"
+  ],
+  "stop_conditions": [
+    "Required evidence is missing or contradictory",
+    "A consequential external action lacks explicit authority"
+  ]
+}

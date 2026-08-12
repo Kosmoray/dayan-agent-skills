@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "skill": "dayan-second-opinion",
+  "input": {
+    "goal": "Challenge an important judgment with an independent counter-case and explicit decision impact",
+    "scope": "bounded public or fictional fixture"
+  },
+  "output": {
+    "artifact": "second-opinion.md",
+    "status": "reviewable draft"
+  },
+  "checks": [
+    "Facts, inference, assumptions, and unknowns are separated",
+    "The review names the strongest alternative, disconfirming evidence, and decision delta",
+    "No private path, credential, customer identity, or unapproved external action is present"
+  ],
+  "stop_conditions": [
+    "Required evidence is missing or contradictory",
+    "A consequential external action lacks explicit authority"
+  ]
+}

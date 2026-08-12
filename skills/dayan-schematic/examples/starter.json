@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "skill": "dayan-schematic",
+  "input": {
+    "goal": "Reverse-engineer an implemented branch into product behavior and technical specifications",
+    "scope": "bounded public or fictional fixture"
+  },
+  "output": {
+    "artifact": "implementation-spec.md",
+    "status": "reviewable draft"
+  },
+  "checks": [
+    "Facts, inference, assumptions, and unknowns are separated",
+    "Every requirement maps to code, test, or observed behavior",
+    "No private path, credential, customer identity, or unapproved external action is present"
+  ],
+  "stop_conditions": [
+    "Required evidence is missing or contradictory",
+    "A consequential external action lacks explicit authority"
+  ]
+}

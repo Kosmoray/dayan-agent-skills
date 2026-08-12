@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "skill": "dayan-co-design",
+  "input": {
+    "goal": "Coordinate product, visual, frontend, and verification work without mixing ownership",
+    "scope": "bounded public or fictional fixture"
+  },
+  "output": {
+    "artifact": "co-design-contract.json",
+    "status": "reviewable draft"
+  },
+  "checks": [
+    "Facts, inference, assumptions, and unknowns are separated",
+    "Each workstream has inputs, outputs, owner, dependencies, and acceptance evidence",
+    "No private path, credential, customer identity, or unapproved external action is present"
+  ],
+  "stop_conditions": [
+    "Required evidence is missing or contradictory",
+    "A consequential external action lacks explicit authority"
+  ]
+}

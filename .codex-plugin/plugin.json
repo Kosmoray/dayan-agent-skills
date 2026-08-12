@@ -1,6 +1,6 @@
 {
   "name": "dayan-agent-skills",
-  "version": "0.4.0-beta.1",
+  "version": "0.5.0-beta.1",
   "description": "Open skills, harnesses, hooks, and verifiers for making AI agent work more repeatable and inspectable.",
   "author": {
     "name": "Dayan AI",
@@ -21,7 +21,7 @@
   "interface": {
     "displayName": "Dayan Agent Skills",
     "shortDescription": "Give probabilistic AI a control layer",
-    "longDescription": "Build more repeatable and inspectable agent workflows with open Skills, guardrails, examples, and deterministic verifiers.",
+    "longDescription": "A 56-Skill public control library for creating, reasoning, building, verifying, and growing with inspectable AI workflows.",
     "developerName": "Dayan AI",
     "category": "Developer Tools",
     "capabilities": [

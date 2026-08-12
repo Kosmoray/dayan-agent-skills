@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "skill": "dayan-theme-factory",
+  "input": {
+    "goal": "Compile reusable color, typography, spacing, component, and motion tokens for a coherent artifact family",
+    "scope": "bounded public or fictional fixture"
+  },
+  "output": {
+    "artifact": "theme-package.json",
+    "status": "reviewable draft"
+  },
+  "checks": [
+    "Facts, inference, assumptions, and unknowns are separated",
+    "Tokens have semantic names, contrast checks, component examples, and reduced-motion rules",
+    "No private path, credential, customer identity, or unapproved external action is present"
+  ],
+  "stop_conditions": [
+    "Required evidence is missing or contradictory",
+    "A consequential external action lacks explicit authority"
+  ]
+}

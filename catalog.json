@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "release": "0.4.0-beta.1",
+  "release": "0.5.0-beta.1",
   "status": "public-beta",
   "skills": [
     {
@@ -42,7 +42,9 @@
       "maintenance_status": "beta",
       "star_potential": 90,
       "public_readiness": 64,
-      "blockers": ["real browser interaction smoke"]
+      "blockers": [
+        "real browser interaction smoke"
+      ]
     },
     {
       "name": "dayan-html",
@@ -59,7 +61,9 @@
       "maintenance_status": "beta",
       "star_potential": 88,
       "public_readiness": 50,
-      "blockers": ["visual regression fixture"]
+      "blockers": [
+        "visual regression fixture"
+      ]
     },
     {
       "name": "dayan-diagram",
@@ -76,7 +80,9 @@
       "maintenance_status": "beta",
       "star_potential": 82,
       "public_readiness": 54,
-      "blockers": ["rendered SVG fixture"]
+      "blockers": [
+        "rendered SVG fixture"
+      ]
     },
     {
       "name": "dayan-wenzhen",
@@ -115,7 +121,9 @@
       "maintenance_status": "beta",
       "star_potential": 77,
       "public_readiness": 42,
-      "blockers": ["cross-session recovery smoke"]
+      "blockers": [
+        "cross-session recovery smoke"
+      ]
     },
     {
       "name": "dayan-orient",
@@ -132,7 +140,9 @@
       "maintenance_status": "beta",
       "star_potential": 80,
       "public_readiness": 55,
-      "blockers": ["clean-room repository output fixture"]
+      "blockers": [
+        "clean-room repository output fixture"
+      ]
     },
     {
       "name": "dayan-agent-designer",
@@ -149,7 +159,9 @@
       "maintenance_status": "beta",
       "star_potential": 83,
       "public_readiness": 49,
-      "blockers": ["independent architecture calibration"]
+      "blockers": [
+        "independent architecture calibration"
+      ]
     },
     {
       "name": "dayan-agent-factory",
@@ -166,7 +178,9 @@
       "maintenance_status": "beta",
       "star_potential": 78,
       "public_readiness": 47,
-      "blockers": ["generated package smoke"]
+      "blockers": [
+        "generated package smoke"
+      ]
     },
     {
       "name": "dayan-hook-factory",
@@ -183,7 +197,9 @@
       "maintenance_status": "beta",
       "star_potential": 76,
       "public_readiness": 48,
-      "blockers": ["sandboxed cross-platform hook smoke"]
+      "blockers": [
+        "sandboxed cross-platform hook smoke"
+      ]
     },
     {
       "name": "dayan-adversarial-reviewer",
@@ -222,7 +238,845 @@
       "maintenance_status": "beta",
       "star_potential": 79,
       "public_readiness": 53,
-      "blockers": ["multi-engine observation fixture"]
+      "blockers": [
+        "multi-engine observation fixture"
+      ]
+    },
+    {
+      "name": "dayan-a11y-audit",
+      "category": "verify-grow",
+      "trigger": "Audit a digital interface for accessibility barriers and translate findings into reproducible fixes.",
+      "compatible_agents": [],
+      "required_tools": [],
+      "risk_level": "medium",
+      "public_version": "0.5.0-beta.1",
+      "quickstart": "docs/install.md",
+      "example": "skills/dayan-a11y-audit/examples/starter.json",
+      "validator": "scripts/validate_public_skill.py",
+      "source_license": "MIT",
+      "maintenance_status": "beta",
+      "star_potential": 75,
+      "public_readiness": 70,
+      "blockers": [
+        "independent runtime calibration"
+      ]
+    },
+    {
+      "name": "dayan-api-design-reviewer",
+      "category": "verify-grow",
+      "trigger": "Review an API change as a durable contract before implementation or release.",
+      "compatible_agents": [],
+      "required_tools": [],
+      "risk_level": "medium",
+      "public_version": "0.5.0-beta.1",
+      "quickstart": "docs/install.md",
+      "example": "skills/dayan-api-design-reviewer/examples/starter.json",
+      "validator": "scripts/validate_public_skill.py",
+      "source_license": "MIT",
+      "maintenance_status": "beta",
+      "star_potential": 75,
+      "public_readiness": 70,
+      "blockers": [
+        "independent runtime calibration"
+      ]
+    },
+    {
+      "name": "dayan-code-reviewer",
+      "category": "verify-grow",
+      "trigger": "Review a concrete code change for correctness, data safety, runtime failure, and maintainability.",
+      "compatible_agents": [],
+      "required_tools": [],
+      "risk_level": "medium",
+      "public_version": "0.5.0-beta.1",
+      "quickstart": "docs/install.md",
+      "example": "skills/dayan-code-reviewer/examples/starter.json",
+      "validator": "scripts/validate_public_skill.py",
+      "source_license": "MIT",
+      "maintenance_status": "beta",
+      "star_potential": 75,
+      "public_readiness": 70,
+      "blockers": [
+        "independent runtime calibration"
+      ]
+    },
+    {
+      "name": "dayan-code-to-design",
+      "category": "create",
+      "trigger": "Extract a reviewable design system and component inventory from a running frontend.",
+      "compatible_agents": [],
+      "required_tools": [],
+      "risk_level": "medium",
+      "public_version": "0.5.0-beta.1",
+      "quickstart": "docs/install.md",
+      "example": "skills/dayan-code-to-design/examples/starter.json",
+      "validator": "scripts/validate_public_skill.py",
+      "source_license": "MIT",
+      "maintenance_status": "beta",
+      "star_potential": 75,
+      "public_readiness": 70,
+      "blockers": [
+        "independent runtime calibration"
+      ]
+    },
+    {
+      "name": "dayan-crap-analysis",
+      "category": "verify-grow",
+      "trigger": "Combine complexity and test coverage evidence to rank the code most likely to fail during change.",
+      "compatible_agents": [],
+      "required_tools": [],
+      "risk_level": "medium",
+      "public_version": "0.5.0-beta.1",
+      "quickstart": "docs/install.md",
+      "example": "skills/dayan-crap-analysis/examples/starter.json",
+      "validator": "scripts/validate_public_skill.py",
+      "source_license": "MIT",
+      "maintenance_status": "beta",
+      "star_potential": 75,
+      "public_readiness": 70,
+      "blockers": [
+        "independent runtime calibration"
+      ]
+    },
+    {
+      "name": "dayan-database-performance",
+      "category": "verify-grow",
+      "trigger": "Diagnose query shape, boundedness, indexing, and transaction risks before tuning.",
+      "compatible_agents": [],
+      "required_tools": [],
+      "risk_level": "medium",
+      "public_version": "0.5.0-beta.1",
+      "quickstart": "docs/install.md",
+      "example": "skills/dayan-database-performance/examples/starter.json",
+      "validator": "scripts/validate_public_skill.py",
+      "source_license": "MIT",
+      "maintenance_status": "beta",
+      "star_potential": 75,
+      "public_readiness": 70,
+      "blockers": [
+        "independent runtime calibration"
+      ]
+    },
+    {
+      "name": "dayan-frontend-responsive-ui",
+      "category": "create",
+      "trigger": "Turn a fixed desktop interface into a usable phone, tablet, and desktop experience.",
+      "compatible_agents": [],
+      "required_tools": [],
+      "risk_level": "medium",
+      "public_version": "0.5.0-beta.1",
+      "quickstart": "docs/install.md",
+      "example": "skills/dayan-frontend-responsive-ui/examples/starter.json",
+      "validator": "scripts/validate_public_skill.py",
+      "source_license": "MIT",
+      "maintenance_status": "beta",
+      "star_potential": 75,
+      "public_readiness": 70,
+      "blockers": [
+        "independent runtime calibration"
+      ]
+    },
+    {
+      "name": "dayan-local-tools",
+      "category": "build",
+      "trigger": "Pin repository-scoped developer tools so setup and CI use the same versions.",
+      "compatible_agents": [],
+      "required_tools": [],
+      "risk_level": "medium",
+      "public_version": "0.5.0-beta.1",
+      "quickstart": "docs/install.md",
+      "example": "skills/dayan-local-tools/examples/starter.json",
+      "validator": "scripts/validate_public_skill.py",
+      "source_license": "MIT",
+      "maintenance_status": "beta",
+      "star_potential": 75,
+      "public_readiness": 70,
+      "blockers": [
+        "independent runtime calibration"
+      ]
+    },
+    {
+      "name": "dayan-system-ops",
+      "category": "verify-grow",
+      "trigger": "Perform read-only system triage and translate machine symptoms into safe next actions.",
+      "compatible_agents": [],
+      "required_tools": [],
+      "risk_level": "medium",
+      "public_version": "0.5.0-beta.1",
+      "quickstart": "docs/install.md",
+      "example": "skills/dayan-system-ops/examples/starter.json",
+      "validator": "scripts/validate_public_skill.py",
+      "source_license": "MIT",
+      "maintenance_status": "beta",
+      "star_potential": 75,
+      "public_readiness": 70,
+      "blockers": [
+        "independent runtime calibration"
+      ]
+    },
+    {
+      "name": "dayan-update-docs",
+      "category": "build",
+      "trigger": "Update only the documentation whose user-visible contract changed.",
+      "compatible_agents": [],
+      "required_tools": [],
+      "risk_level": "medium",
+      "public_version": "0.5.0-beta.1",
+      "quickstart": "docs/install.md",
+      "example": "skills/dayan-update-docs/examples/starter.json",
+      "validator": "scripts/validate_public_skill.py",
+      "source_license": "MIT",
+      "maintenance_status": "beta",
+      "star_potential": 75,
+      "public_readiness": 70,
+      "blockers": [
+        "independent runtime calibration"
+      ]
+    },
+    {
+      "name": "dayan-autoresearch-agent",
+      "category": "think",
+      "trigger": "Run bounded single-variable research experiments with metrics, stop rules, and an audit trail.",
+      "compatible_agents": [],
+      "required_tools": [],
+      "risk_level": "medium",
+      "public_version": "0.5.0-beta.1",
+      "quickstart": "docs/install.md",
+      "example": "skills/dayan-autoresearch-agent/examples/starter.json",
+      "validator": "scripts/validate_public_skill.py",
+      "source_license": "MIT",
+      "maintenance_status": "beta",
+      "star_potential": 75,
+      "public_readiness": 70,
+      "blockers": [
+        "independent runtime calibration"
+      ]
+    },
+    {
+      "name": "dayan-clarify",
+      "category": "think",
+      "trigger": "Separate discoverable facts from preferences and ask only questions that can change the result.",
+      "compatible_agents": [],
+      "required_tools": [],
+      "risk_level": "medium",
+      "public_version": "0.5.0-beta.1",
+      "quickstart": "docs/install.md",
+      "example": "skills/dayan-clarify/examples/starter.json",
+      "validator": "scripts/validate_public_skill.py",
+      "source_license": "MIT",
+      "maintenance_status": "beta",
+      "star_potential": 75,
+      "public_readiness": 70,
+      "blockers": [
+        "independent runtime calibration"
+      ]
+    },
+    {
+      "name": "dayan-industry-research",
+      "category": "think",
+      "trigger": "Build an evidence-led industry map from primary sources without turning market narrative into fact.",
+      "compatible_agents": [],
+      "required_tools": [],
+      "risk_level": "medium",
+      "public_version": "0.5.0-beta.1",
+      "quickstart": "docs/install.md",
+      "example": "skills/dayan-industry-research/examples/starter.json",
+      "validator": "scripts/validate_public_skill.py",
+      "source_license": "MIT",
+      "maintenance_status": "beta",
+      "star_potential": 75,
+      "public_readiness": 70,
+      "blockers": [
+        "independent runtime calibration"
+      ]
+    },
+    {
+      "name": "dayan-learning-opportunities",
+      "category": "think",
+      "trigger": "Turn a real technical decision into a short exercise that builds transferable understanding.",
+      "compatible_agents": [],
+      "required_tools": [],
+      "risk_level": "medium",
+      "public_version": "0.5.0-beta.1",
+      "quickstart": "docs/install.md",
+      "example": "skills/dayan-learning-opportunities/examples/starter.json",
+      "validator": "scripts/validate_public_skill.py",
+      "source_license": "MIT",
+      "maintenance_status": "beta",
+      "star_potential": 75,
+      "public_readiness": 70,
+      "blockers": [
+        "independent runtime calibration"
+      ]
+    },
+    {
+      "name": "dayan-llm-council",
+      "category": "think",
+      "trigger": "Compare independent reasoning paths for a consequential decision and expose disagreement before synthesis.",
+      "compatible_agents": [],
+      "required_tools": [],
+      "risk_level": "medium",
+      "public_version": "0.5.0-beta.1",
+      "quickstart": "docs/install.md",
+      "example": "skills/dayan-llm-council/examples/starter.json",
+      "validator": "scripts/validate_public_skill.py",
+      "source_license": "MIT",
+      "maintenance_status": "beta",
+      "star_potential": 75,
+      "public_readiness": 70,
+      "blockers": [
+        "independent runtime calibration"
+      ]
+    },
+    {
+      "name": "dayan-prompt-factory",
+      "category": "build",
+      "trigger": "Compile a vague recurring request into a reusable prompt contract with fixtures and evaluation.",
+      "compatible_agents": [],
+      "required_tools": [],
+      "risk_level": "medium",
+      "public_version": "0.5.0-beta.1",
+      "quickstart": "docs/install.md",
+      "example": "skills/dayan-prompt-factory/examples/starter.json",
+      "validator": "scripts/validate_public_skill.py",
+      "source_license": "MIT",
+      "maintenance_status": "beta",
+      "star_potential": 75,
+      "public_readiness": 70,
+      "blockers": [
+        "independent runtime calibration"
+      ]
+    },
+    {
+      "name": "dayan-read-github",
+      "category": "think",
+      "trigger": "Read an unfamiliar GitHub repository as untrusted evidence and produce a source-linked technical assessment.",
+      "compatible_agents": [],
+      "required_tools": [],
+      "risk_level": "medium",
+      "public_version": "0.5.0-beta.1",
+      "quickstart": "docs/install.md",
+      "example": "skills/dayan-read-github/examples/starter.json",
+      "validator": "scripts/validate_public_skill.py",
+      "source_license": "MIT",
+      "maintenance_status": "beta",
+      "star_potential": 75,
+      "public_readiness": 70,
+      "blockers": [
+        "independent runtime calibration"
+      ]
+    },
+    {
+      "name": "dayan-schematic",
+      "category": "think",
+      "trigger": "Reverse-engineer an implemented branch into product behavior and technical specifications.",
+      "compatible_agents": [],
+      "required_tools": [],
+      "risk_level": "medium",
+      "public_version": "0.5.0-beta.1",
+      "quickstart": "docs/install.md",
+      "example": "skills/dayan-schematic/examples/starter.json",
+      "validator": "scripts/validate_public_skill.py",
+      "source_license": "MIT",
+      "maintenance_status": "beta",
+      "star_potential": 75,
+      "public_readiness": 70,
+      "blockers": [
+        "independent runtime calibration"
+      ]
+    },
+    {
+      "name": "dayan-second-opinion",
+      "category": "verify-grow",
+      "trigger": "Challenge an important judgment with an independent counter-case and explicit decision impact.",
+      "compatible_agents": [],
+      "required_tools": [],
+      "risk_level": "medium",
+      "public_version": "0.5.0-beta.1",
+      "quickstart": "docs/install.md",
+      "example": "skills/dayan-second-opinion/examples/starter.json",
+      "validator": "scripts/validate_public_skill.py",
+      "source_license": "MIT",
+      "maintenance_status": "beta",
+      "star_potential": 75,
+      "public_readiness": 70,
+      "blockers": [
+        "independent runtime calibration"
+      ]
+    },
+    {
+      "name": "dayan-claude-md-enhancer",
+      "category": "build",
+      "trigger": "Compress repository collaboration rules into a short, enforceable project entry file.",
+      "compatible_agents": [],
+      "required_tools": [],
+      "risk_level": "medium",
+      "public_version": "0.5.0-beta.1",
+      "quickstart": "docs/install.md",
+      "example": "skills/dayan-claude-md-enhancer/examples/starter.json",
+      "validator": "scripts/validate_public_skill.py",
+      "source_license": "MIT",
+      "maintenance_status": "beta",
+      "star_potential": 75,
+      "public_readiness": 70,
+      "blockers": [
+        "independent runtime calibration"
+      ]
+    },
+    {
+      "name": "dayan-co-design",
+      "category": "build",
+      "trigger": "Coordinate product, visual, frontend, and verification work without mixing ownership.",
+      "compatible_agents": [],
+      "required_tools": [],
+      "risk_level": "medium",
+      "public_version": "0.5.0-beta.1",
+      "quickstart": "docs/install.md",
+      "example": "skills/dayan-co-design/examples/starter.json",
+      "validator": "scripts/validate_public_skill.py",
+      "source_license": "MIT",
+      "maintenance_status": "beta",
+      "star_potential": 75,
+      "public_readiness": 70,
+      "blockers": [
+        "independent runtime calibration"
+      ]
+    },
+    {
+      "name": "dayan-create-hook",
+      "category": "build",
+      "trigger": "Create one minimal lifecycle guard for a repeated deterministic rule.",
+      "compatible_agents": [],
+      "required_tools": [],
+      "risk_level": "medium",
+      "public_version": "0.5.0-beta.1",
+      "quickstart": "docs/install.md",
+      "example": "skills/dayan-create-hook/examples/starter.json",
+      "validator": "scripts/validate_public_skill.py",
+      "source_license": "MIT",
+      "maintenance_status": "beta",
+      "star_potential": 75,
+      "public_readiness": 70,
+      "blockers": [
+        "independent runtime calibration"
+      ]
+    },
+    {
+      "name": "dayan-dispatch",
+      "category": "build",
+      "trigger": "Split a bounded plan into independent assignments with non-overlapping write scopes.",
+      "compatible_agents": [],
+      "required_tools": [],
+      "risk_level": "medium",
+      "public_version": "0.5.0-beta.1",
+      "quickstart": "docs/install.md",
+      "example": "skills/dayan-dispatch/examples/starter.json",
+      "validator": "scripts/validate_public_skill.py",
+      "source_license": "MIT",
+      "maintenance_status": "beta",
+      "star_potential": 75,
+      "public_readiness": 70,
+      "blockers": [
+        "independent runtime calibration"
+      ]
+    },
+    {
+      "name": "dayan-marketplace-publishing",
+      "category": "build",
+      "trigger": "Package a reusable Skill or agent so strangers can install, understand, validate, and remove it.",
+      "compatible_agents": [],
+      "required_tools": [],
+      "risk_level": "medium",
+      "public_version": "0.5.0-beta.1",
+      "quickstart": "docs/install.md",
+      "example": "skills/dayan-marketplace-publishing/examples/starter.json",
+      "validator": "scripts/validate_public_skill.py",
+      "source_license": "MIT",
+      "maintenance_status": "beta",
+      "star_potential": 75,
+      "public_readiness": 70,
+      "blockers": [
+        "independent runtime calibration"
+      ]
+    },
+    {
+      "name": "dayan-role-creator",
+      "category": "build",
+      "trigger": "Define a reusable agent role with one responsibility, bounded authority, and an evaluation contract.",
+      "compatible_agents": [],
+      "required_tools": [],
+      "risk_level": "medium",
+      "public_version": "0.5.0-beta.1",
+      "quickstart": "docs/install.md",
+      "example": "skills/dayan-role-creator/examples/starter.json",
+      "validator": "scripts/validate_public_skill.py",
+      "source_license": "MIT",
+      "maintenance_status": "beta",
+      "star_potential": 75,
+      "public_readiness": 70,
+      "blockers": [
+        "independent runtime calibration"
+      ]
+    },
+    {
+      "name": "dayan-scrum-master-agent",
+      "category": "build",
+      "trigger": "Turn sprint evidence into a small set of flow decisions rather than meeting summaries.",
+      "compatible_agents": [],
+      "required_tools": [],
+      "risk_level": "medium",
+      "public_version": "0.5.0-beta.1",
+      "quickstart": "docs/install.md",
+      "example": "skills/dayan-scrum-master-agent/examples/starter.json",
+      "validator": "scripts/validate_public_skill.py",
+      "source_license": "MIT",
+      "maintenance_status": "beta",
+      "star_potential": 75,
+      "public_readiness": 70,
+      "blockers": [
+        "independent runtime calibration"
+      ]
+    },
+    {
+      "name": "dayan-skill-builder",
+      "category": "build",
+      "trigger": "Forge a recurring workflow into a triggerable Skill with progressive disclosure and verification.",
+      "compatible_agents": [],
+      "required_tools": [],
+      "risk_level": "medium",
+      "public_version": "0.5.0-beta.1",
+      "quickstart": "docs/install.md",
+      "example": "skills/dayan-skill-builder/examples/starter.json",
+      "validator": "scripts/validate_public_skill.py",
+      "source_license": "MIT",
+      "maintenance_status": "beta",
+      "star_potential": 75,
+      "public_readiness": 70,
+      "blockers": [
+        "independent runtime calibration"
+      ]
+    },
+    {
+      "name": "dayan-brand-guidelines",
+      "category": "create",
+      "trigger": "Translate brand identity, visual rules, voice, and claims into an executable public guide.",
+      "compatible_agents": [],
+      "required_tools": [],
+      "risk_level": "medium",
+      "public_version": "0.5.0-beta.1",
+      "quickstart": "docs/install.md",
+      "example": "skills/dayan-brand-guidelines/examples/starter.json",
+      "validator": "scripts/validate_public_skill.py",
+      "source_license": "MIT",
+      "maintenance_status": "beta",
+      "star_potential": 75,
+      "public_readiness": 70,
+      "blockers": [
+        "independent runtime calibration"
+      ]
+    },
+    {
+      "name": "dayan-canvas-design",
+      "category": "create",
+      "trigger": "Turn a theme into a focused high-resolution visual composition with one visual philosophy.",
+      "compatible_agents": [],
+      "required_tools": [],
+      "risk_level": "medium",
+      "public_version": "0.5.0-beta.1",
+      "quickstart": "docs/install.md",
+      "example": "skills/dayan-canvas-design/examples/starter.json",
+      "validator": "scripts/validate_public_skill.py",
+      "source_license": "MIT",
+      "maintenance_status": "beta",
+      "star_potential": 75,
+      "public_readiness": 70,
+      "blockers": [
+        "independent runtime calibration"
+      ]
+    },
+    {
+      "name": "dayan-compress-image",
+      "category": "build",
+      "trigger": "Reduce image size while preserving the dimensions, transparency, and visual quality required by delivery.",
+      "compatible_agents": [],
+      "required_tools": [],
+      "risk_level": "medium",
+      "public_version": "0.5.0-beta.1",
+      "quickstart": "docs/install.md",
+      "example": "skills/dayan-compress-image/examples/starter.json",
+      "validator": "scripts/validate_public_skill.py",
+      "source_license": "MIT",
+      "maintenance_status": "beta",
+      "star_potential": 75,
+      "public_readiness": 70,
+      "blockers": [
+        "independent runtime calibration"
+      ]
+    },
+    {
+      "name": "dayan-content-production",
+      "category": "create",
+      "trigger": "Turn raw conversation or research into a reader-ready content package without leaking internal context.",
+      "compatible_agents": [],
+      "required_tools": [],
+      "risk_level": "medium",
+      "public_version": "0.5.0-beta.1",
+      "quickstart": "docs/install.md",
+      "example": "skills/dayan-content-production/examples/starter.json",
+      "validator": "scripts/validate_public_skill.py",
+      "source_license": "MIT",
+      "maintenance_status": "beta",
+      "star_potential": 75,
+      "public_readiness": 70,
+      "blockers": [
+        "independent runtime calibration"
+      ]
+    },
+    {
+      "name": "dayan-copywriting",
+      "category": "create",
+      "trigger": "Rewrite product value into clear customer language with a concrete next action and bounded claims.",
+      "compatible_agents": [],
+      "required_tools": [],
+      "risk_level": "medium",
+      "public_version": "0.5.0-beta.1",
+      "quickstart": "docs/install.md",
+      "example": "skills/dayan-copywriting/examples/starter.json",
+      "validator": "scripts/validate_public_skill.py",
+      "source_license": "MIT",
+      "maintenance_status": "beta",
+      "star_potential": 75,
+      "public_readiness": 70,
+      "blockers": [
+        "independent runtime calibration"
+      ]
+    },
+    {
+      "name": "dayan-cover-image",
+      "category": "create",
+      "trigger": "Convert an article or campaign idea into a legible, distinctive cover image direction.",
+      "compatible_agents": [],
+      "required_tools": [],
+      "risk_level": "medium",
+      "public_version": "0.5.0-beta.1",
+      "quickstart": "docs/install.md",
+      "example": "skills/dayan-cover-image/examples/starter.json",
+      "validator": "scripts/validate_public_skill.py",
+      "source_license": "MIT",
+      "maintenance_status": "beta",
+      "star_potential": 75,
+      "public_readiness": 70,
+      "blockers": [
+        "independent runtime calibration"
+      ]
+    },
+    {
+      "name": "dayan-d3-viz",
+      "category": "create",
+      "trigger": "Build a custom interactive data visualization when relationships cannot be explained by a simple chart.",
+      "compatible_agents": [],
+      "required_tools": [],
+      "risk_level": "medium",
+      "public_version": "0.5.0-beta.1",
+      "quickstart": "docs/install.md",
+      "example": "skills/dayan-d3-viz/examples/starter.json",
+      "validator": "scripts/validate_public_skill.py",
+      "source_license": "MIT",
+      "maintenance_status": "beta",
+      "star_potential": 75,
+      "public_readiness": 70,
+      "blockers": [
+        "independent runtime calibration"
+      ]
+    },
+    {
+      "name": "dayan-explain",
+      "category": "create",
+      "trigger": "Explain a complex system so a decision-maker and operator can each repeat the relevant part.",
+      "compatible_agents": [],
+      "required_tools": [],
+      "risk_level": "medium",
+      "public_version": "0.5.0-beta.1",
+      "quickstart": "docs/install.md",
+      "example": "skills/dayan-explain/examples/starter.json",
+      "validator": "scripts/validate_public_skill.py",
+      "source_license": "MIT",
+      "maintenance_status": "beta",
+      "star_potential": 75,
+      "public_readiness": 70,
+      "blockers": [
+        "independent runtime calibration"
+      ]
+    },
+    {
+      "name": "dayan-extract-design-md",
+      "category": "create",
+      "trigger": "Extract reusable design tokens and component rules from frontend source.",
+      "compatible_agents": [],
+      "required_tools": [],
+      "risk_level": "medium",
+      "public_version": "0.5.0-beta.1",
+      "quickstart": "docs/install.md",
+      "example": "skills/dayan-extract-design-md/examples/starter.json",
+      "validator": "scripts/validate_public_skill.py",
+      "source_license": "MIT",
+      "maintenance_status": "beta",
+      "star_potential": 75,
+      "public_readiness": 70,
+      "blockers": [
+        "independent runtime calibration"
+      ]
+    },
+    {
+      "name": "dayan-extract-static-html",
+      "category": "build",
+      "trigger": "Freeze a specific webpage state into an offline review artifact without claiming full application behavior.",
+      "compatible_agents": [],
+      "required_tools": [],
+      "risk_level": "medium",
+      "public_version": "0.5.0-beta.1",
+      "quickstart": "docs/install.md",
+      "example": "skills/dayan-extract-static-html/examples/starter.json",
+      "validator": "scripts/validate_public_skill.py",
+      "source_license": "MIT",
+      "maintenance_status": "beta",
+      "star_potential": 75,
+      "public_readiness": 70,
+      "blockers": [
+        "independent runtime calibration"
+      ]
+    },
+    {
+      "name": "dayan-humanize",
+      "category": "create",
+      "trigger": "Remove formulaic model language while preserving facts, author intent, and audience action.",
+      "compatible_agents": [],
+      "required_tools": [],
+      "risk_level": "medium",
+      "public_version": "0.5.0-beta.1",
+      "quickstart": "docs/install.md",
+      "example": "skills/dayan-humanize/examples/starter.json",
+      "validator": "scripts/validate_public_skill.py",
+      "source_license": "MIT",
+      "maintenance_status": "beta",
+      "star_potential": 75,
+      "public_readiness": 70,
+      "blockers": [
+        "independent runtime calibration"
+      ]
+    },
+    {
+      "name": "dayan-img-to-frontend",
+      "category": "create",
+      "trigger": "Translate a visual reference into responsive frontend structure without copying protected identity or hiding text in images.",
+      "compatible_agents": [],
+      "required_tools": [],
+      "risk_level": "medium",
+      "public_version": "0.5.0-beta.1",
+      "quickstart": "docs/install.md",
+      "example": "skills/dayan-img-to-frontend/examples/starter.json",
+      "validator": "scripts/validate_public_skill.py",
+      "source_license": "MIT",
+      "maintenance_status": "beta",
+      "star_potential": 75,
+      "public_readiness": 70,
+      "blockers": [
+        "independent runtime calibration"
+      ]
+    },
+    {
+      "name": "dayan-theme-factory",
+      "category": "create",
+      "trigger": "Compile reusable color, typography, spacing, component, and motion tokens for a coherent artifact family.",
+      "compatible_agents": [],
+      "required_tools": [],
+      "risk_level": "medium",
+      "public_version": "0.5.0-beta.1",
+      "quickstart": "docs/install.md",
+      "example": "skills/dayan-theme-factory/examples/starter.json",
+      "validator": "scripts/validate_public_skill.py",
+      "source_license": "MIT",
+      "maintenance_status": "beta",
+      "star_potential": 75,
+      "public_readiness": 70,
+      "blockers": [
+        "independent runtime calibration"
+      ]
+    },
+    {
+      "name": "dayan-aws-solution-architect",
+      "category": "think",
+      "trigger": "Translate workload, security, operations, team capability, and cost constraints into a reviewable AWS architecture.",
+      "compatible_agents": [],
+      "required_tools": [],
+      "risk_level": "medium",
+      "public_version": "0.5.0-beta.1",
+      "quickstart": "docs/install.md",
+      "example": "skills/dayan-aws-solution-architect/examples/starter.json",
+      "validator": "scripts/validate_public_skill.py",
+      "source_license": "MIT",
+      "maintenance_status": "beta",
+      "star_potential": 75,
+      "public_readiness": 70,
+      "blockers": [
+        "independent runtime calibration"
+      ]
+    },
+    {
+      "name": "dayan-tech-stack-evaluator",
+      "category": "think",
+      "trigger": "Compare technology choices against product constraints, team capability, lock-in, cost, and failure recovery.",
+      "compatible_agents": [],
+      "required_tools": [],
+      "risk_level": "medium",
+      "public_version": "0.5.0-beta.1",
+      "quickstart": "docs/install.md",
+      "example": "skills/dayan-tech-stack-evaluator/examples/starter.json",
+      "validator": "scripts/validate_public_skill.py",
+      "source_license": "MIT",
+      "maintenance_status": "beta",
+      "star_potential": 75,
+      "public_readiness": 70,
+      "blockers": [
+        "independent runtime calibration"
+      ]
+    },
+    {
+      "name": "dayan-write-concisely",
+      "category": "create",
+      "trigger": "Reduce human-facing writing to the shortest form that preserves decision, evidence, and action.",
+      "compatible_agents": [],
+      "required_tools": [],
+      "risk_level": "medium",
+      "public_version": "0.5.0-beta.1",
+      "quickstart": "docs/install.md",
+      "example": "skills/dayan-write-concisely/examples/starter.json",
+      "validator": "scripts/validate_public_skill.py",
+      "source_license": "MIT",
+      "maintenance_status": "beta",
+      "star_potential": 75,
+      "public_readiness": 70,
+      "blockers": [
+        "independent runtime calibration"
+      ]
+    },
+    {
+      "name": "dayan-image-gen",
+      "category": "create",
+      "trigger": "Turn a visual goal into a safe generation or editing brief with composition, style, constraints, and review.",
+      "compatible_agents": [],
+      "required_tools": [],
+      "risk_level": "medium",
+      "public_version": "0.5.0-beta.1",
+      "quickstart": "docs/install.md",
+      "example": "skills/dayan-image-gen/examples/starter.json",
+      "validator": "scripts/validate_public_skill.py",
+      "source_license": "MIT",
+      "maintenance_status": "beta",
+      "star_potential": 75,
+      "public_readiness": 70,
+      "blockers": [
+        "independent runtime calibration"
+      ]
     }
   ]
 }

@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "skill": "dayan-image-gen",
+  "input": {
+    "goal": "Turn a visual goal into a safe generation or editing brief with composition, style, constraints, and review",
+    "scope": "bounded public or fictional fixture"
+  },
+  "output": {
+    "artifact": "image-brief.json",
+    "status": "reviewable draft"
+  },
+  "checks": [
+    "Facts, inference, assumptions, and unknowns are separated",
+    "Rights, identity, composition, dimensions, text handling, and review criteria are explicit",
+    "No private path, credential, customer identity, or unapproved external action is present"
+  ],
+  "stop_conditions": [
+    "Required evidence is missing or contradictory",
+    "A consequential external action lacks explicit authority"
+  ]
+}

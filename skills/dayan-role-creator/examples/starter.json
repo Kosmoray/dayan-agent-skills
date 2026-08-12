@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "skill": "dayan-role-creator",
+  "input": {
+    "goal": "Define a reusable agent role with one responsibility, bounded authority, and an evaluation contract",
+    "scope": "bounded public or fictional fixture"
+  },
+  "output": {
+    "artifact": "role-contract.md",
+    "status": "reviewable draft"
+  },
+  "checks": [
+    "Facts, inference, assumptions, and unknowns are separated",
+    "The role has explicit inputs, outputs, tools, exclusions, and takeover conditions",
+    "No private path, credential, customer identity, or unapproved external action is present"
+  ],
+  "stop_conditions": [
+    "Required evidence is missing or contradictory",
+    "A consequential external action lacks explicit authority"
+  ]
+}

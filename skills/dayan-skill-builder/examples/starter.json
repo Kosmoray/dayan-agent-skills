@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "skill": "dayan-skill-builder",
+  "input": {
+    "goal": "Forge a recurring workflow into a triggerable Skill with progressive disclosure and verification",
+    "scope": "bounded public or fictional fixture"
+  },
+  "output": {
+    "artifact": "skill-package.md",
+    "status": "reviewable draft"
+  },
+  "checks": [
+    "Facts, inference, assumptions, and unknowns are separated",
+    "Description, trigger boundary, workflow, fixtures, provenance, and validation all pass",
+    "No private path, credential, customer identity, or unapproved external action is present"
+  ],
+  "stop_conditions": [
+    "Required evidence is missing or contradictory",
+    "A consequential external action lacks explicit authority"
+  ]
+}

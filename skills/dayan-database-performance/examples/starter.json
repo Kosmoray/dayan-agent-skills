@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "skill": "dayan-database-performance",
+  "input": {
+    "goal": "Diagnose query shape, boundedness, indexing, and transaction risks before tuning",
+    "scope": "bounded public or fictional fixture"
+  },
+  "output": {
+    "artifact": "database-performance-review.md",
+    "status": "reviewable draft"
+  },
+  "checks": [
+    "Facts, inference, assumptions, and unknowns are separated",
+    "Recommendations include query evidence and an explain-plan or measurement path",
+    "No private path, credential, customer identity, or unapproved external action is present"
+  ],
+  "stop_conditions": [
+    "Required evidence is missing or contradictory",
+    "A consequential external action lacks explicit authority"
+  ]
+}

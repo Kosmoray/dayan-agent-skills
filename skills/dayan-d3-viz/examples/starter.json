@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "skill": "dayan-d3-viz",
+  "input": {
+    "goal": "Build a custom interactive data visualization when relationships cannot be explained by a simple chart",
+    "scope": "bounded public or fictional fixture"
+  },
+  "output": {
+    "artifact": "visualization.html",
+    "status": "reviewable draft"
+  },
+  "checks": [
+    "Facts, inference, assumptions, and unknowns are separated",
+    "Data mapping, scales, interaction, accessibility, responsive behavior, and source notes pass",
+    "No private path, credential, customer identity, or unapproved external action is present"
+  ],
+  "stop_conditions": [
+    "Required evidence is missing or contradictory",
+    "A consequential external action lacks explicit authority"
+  ]
+}

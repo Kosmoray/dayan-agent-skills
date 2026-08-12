@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "skill": "dayan-create-hook",
+  "input": {
+    "goal": "Create one minimal lifecycle guard for a repeated deterministic rule",
+    "scope": "bounded public or fictional fixture"
+  },
+  "output": {
+    "artifact": "hook-package.json",
+    "status": "reviewable draft"
+  },
+  "checks": [
+    "Facts, inference, assumptions, and unknowns are separated",
+    "Trigger, matcher, timeout, failure policy, log, and rollback are testable",
+    "No private path, credential, customer identity, or unapproved external action is present"
+  ],
+  "stop_conditions": [
+    "Required evidence is missing or contradictory",
+    "A consequential external action lacks explicit authority"
+  ]
+}

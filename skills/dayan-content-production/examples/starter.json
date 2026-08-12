@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "skill": "dayan-content-production",
+  "input": {
+    "goal": "Turn raw conversation or research into a reader-ready content package without leaking internal context",
+    "scope": "bounded public or fictional fixture"
+  },
+  "output": {
+    "artifact": "content-package.md",
+    "status": "reviewable draft"
+  },
+  "checks": [
+    "Facts, inference, assumptions, and unknowns are separated",
+    "Facts, opinions, private material, unknowns, audience, and publication authority are separated",
+    "No private path, credential, customer identity, or unapproved external action is present"
+  ],
+  "stop_conditions": [
+    "Required evidence is missing or contradictory",
+    "A consequential external action lacks explicit authority"
+  ]
+}

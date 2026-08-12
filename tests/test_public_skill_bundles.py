@@ -17,6 +17,12 @@ PUBLIC_SKILLS = (
     "dayan-ai-seo",
 )
 
+CORE_LIBRARY_SKILLS = tuple(
+    path.parent.parent.name
+    for path in sorted((ROOT / "skills").glob("*/examples/starter.json"))
+    if path.parent.parent.name not in PUBLIC_SKILLS
+)
+
 
 def load_module(name: str, path: Path):
     spec = importlib.util.spec_from_file_location(name, path)
@@ -31,11 +37,10 @@ validator = load_module("public_skill_validator", ROOT / "scripts/validate_publi
 
 class PublicSkillBundleTests(unittest.TestCase):
     def test_all_bundles_pass(self):
-        for skill_name in PUBLIC_SKILLS:
+        for skill_name in PUBLIC_SKILLS + CORE_LIBRARY_SKILLS:
             with self.subTest(skill=skill_name):
                 self.assertEqual(validator.verify(skill_name), [])
 
 
 if __name__ == "__main__":
     unittest.main()
-

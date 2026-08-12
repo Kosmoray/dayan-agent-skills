@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "skill": "dayan-humanize",
+  "input": {
+    "goal": "Remove formulaic model language while preserving facts, author intent, and audience action",
+    "scope": "bounded public or fictional fixture"
+  },
+  "output": {
+    "artifact": "humanized-draft.md",
+    "status": "reviewable draft"
+  },
+  "checks": [
+    "Facts, inference, assumptions, and unknowns are separated",
+    "No fact is added, author voice remains consistent, and repeated explanation is removed",
+    "No private path, credential, customer identity, or unapproved external action is present"
+  ],
+  "stop_conditions": [
+    "Required evidence is missing or contradictory",
+    "A consequential external action lacks explicit authority"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "skill": "dayan-read-github",
+  "input": {
+    "goal": "Read an unfamiliar GitHub repository as untrusted evidence and produce a source-linked technical assessment",
+    "scope": "bounded public or fictional fixture"
+  },
+  "output": {
+    "artifact": "repository-assessment.md",
+    "status": "reviewable draft"
+  },
+  "checks": [
+    "Facts, inference, assumptions, and unknowns are separated",
+    "Conclusions cite files, commits, releases, or official documentation",
+    "No private path, credential, customer identity, or unapproved external action is present"
+  ],
+  "stop_conditions": [
+    "Required evidence is missing or contradictory",
+    "A consequential external action lacks explicit authority"
+  ]
+}

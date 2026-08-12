@@ -74,13 +74,13 @@ def main() -> int:
         catalog = {}
         plugin = {}
 
-    if catalog.get("release") != "0.4.0-beta.1":
-        errors.append("catalog release must be 0.4.0-beta.1")
+    if catalog.get("release") != "0.5.0-beta.1":
+        errors.append("catalog release must be 0.5.0-beta.1")
     skills = catalog.get("skills", [])
     beta = [item for item in skills if item.get("maintenance_status") == "beta"]
     beta_names = [item.get("name") for item in beta]
-    if len(beta_names) != 12:
-        errors.append("all 12 catalog Skills must be public beta in v0.4.0-beta.1")
+    if len(beta_names) != 56:
+        errors.append("all 56 catalog Skills must be public beta in v0.5.0-beta.1")
     if plugin.get("version") != catalog.get("release"):
         errors.append("plugin and catalog versions must match")
     if plugin.get("license") != "MIT":

@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "skill": "dayan-local-tools",
+  "input": {
+    "goal": "Pin repository-scoped developer tools so setup and CI use the same versions",
+    "scope": "bounded public or fictional fixture"
+  },
+  "output": {
+    "artifact": "tool-manifest.json",
+    "status": "reviewable draft"
+  },
+  "checks": [
+    "Facts, inference, assumptions, and unknowns are separated",
+    "Tool versions, restore command, invocation, and removal path are explicit",
+    "No private path, credential, customer identity, or unapproved external action is present"
+  ],
+  "stop_conditions": [
+    "Required evidence is missing or contradictory",
+    "A consequential external action lacks explicit authority"
+  ]
+}

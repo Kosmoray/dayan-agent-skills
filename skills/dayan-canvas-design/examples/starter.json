@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "skill": "dayan-canvas-design",
+  "input": {
+    "goal": "Turn a theme into a focused high-resolution visual composition with one visual philosophy",
+    "scope": "bounded public or fictional fixture"
+  },
+  "output": {
+    "artifact": "canvas-artifact.png",
+    "status": "reviewable draft"
+  },
+  "checks": [
+    "Facts, inference, assumptions, and unknowns are separated",
+    "Composition, hierarchy, typography, contrast, and target resolution are reviewed",
+    "No private path, credential, customer identity, or unapproved external action is present"
+  ],
+  "stop_conditions": [
+    "Required evidence is missing or contradictory",
+    "A consequential external action lacks explicit authority"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "skill": "dayan-brand-guidelines",
+  "input": {
+    "goal": "Translate brand identity, visual rules, voice, and claims into an executable public guide",
+    "scope": "bounded public or fictional fixture"
+  },
+  "output": {
+    "artifact": "brand-guidelines.md",
+    "status": "reviewable draft"
+  },
+  "checks": [
+    "Facts, inference, assumptions, and unknowns are separated",
+    "Every rule includes a usable example, anti-example, and evidence boundary",
+    "No private path, credential, customer identity, or unapproved external action is present"
+  ],
+  "stop_conditions": [
+    "Required evidence is missing or contradictory",
+    "A consequential external action lacks explicit authority"
+  ]
+}

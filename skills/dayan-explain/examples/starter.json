@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "skill": "dayan-explain",
+  "input": {
+    "goal": "Explain a complex system so a decision-maker and operator can each repeat the relevant part",
+    "scope": "bounded public or fictional fixture"
+  },
+  "output": {
+    "artifact": "system-explainer.md",
+    "status": "reviewable draft"
+  },
+  "checks": [
+    "Facts, inference, assumptions, and unknowns are separated",
+    "The output separates executive decision, operator action, evidence, and unknowns",
+    "No private path, credential, customer identity, or unapproved external action is present"
+  ],
+  "stop_conditions": [
+    "Required evidence is missing or contradictory",
+    "A consequential external action lacks explicit authority"
+  ]
+}

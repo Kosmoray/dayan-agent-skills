@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "skill": "dayan-learning-opportunities",
+  "input": {
+    "goal": "Turn a real technical decision into a short exercise that builds transferable understanding",
+    "scope": "bounded public or fictional fixture"
+  },
+  "output": {
+    "artifact": "learning-card.md",
+    "status": "reviewable draft"
+  },
+  "checks": [
+    "Facts, inference, assumptions, and unknowns are separated",
+    "The exercise has a concrete artifact, answer key, and fifteen-minute limit",
+    "No private path, credential, customer identity, or unapproved external action is present"
+  ],
+  "stop_conditions": [
+    "Required evidence is missing or contradictory",
+    "A consequential external action lacks explicit authority"
+  ]
+}

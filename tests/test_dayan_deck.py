@@ -79,12 +79,9 @@ class InstallerTests(unittest.TestCase):
     def test_installs_beta_skills_into_both_isolated_agent_homes(self):
         with tempfile.TemporaryDirectory(prefix="openclaw-install-test-", dir="/tmp") as directory:
             home = Path(directory)
-            for skill_name in (
-                "dayan-deck", "dayan-huashu-design", "dayan-html", "dayan-diagram",
-                "dayan-wenzhen", "dayan-plan", "dayan-orient", "dayan-agent-designer",
-                "dayan-agent-factory", "dayan-hook-factory", "dayan-adversarial-reviewer",
-                "dayan-ai-seo",
-            ):
+            import json
+            skill_names = [item["name"] for item in json.loads((ROOT / "catalog.json").read_text())["skills"]]
+            for skill_name in skill_names:
                 for agent in ("codex", "claude-code"):
                     destination = installer.install(home, agent, skill_name)
                     self.assertTrue((destination / "SKILL.md").is_file())

@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "skill": "dayan-autoresearch-agent",
+  "input": {
+    "goal": "Run bounded single-variable research experiments with metrics, stop rules, and an audit trail",
+    "scope": "bounded public or fictional fixture"
+  },
+  "output": {
+    "artifact": "experiment-contract.json",
+    "status": "reviewable draft"
+  },
+  "checks": [
+    "Facts, inference, assumptions, and unknowns are separated",
+    "Baseline, one changed variable, metric, budget, and kill condition are present",
+    "No private path, credential, customer identity, or unapproved external action is present"
+  ],
+  "stop_conditions": [
+    "Required evidence is missing or contradictory",
+    "A consequential external action lacks explicit authority"
+  ]
+}

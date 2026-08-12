@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "skill": "dayan-code-to-design",
+  "input": {
+    "goal": "Extract a reviewable design system and component inventory from a running frontend",
+    "scope": "bounded public or fictional fixture"
+  },
+  "output": {
+    "artifact": "design-system.md",
+    "status": "reviewable draft"
+  },
+  "checks": [
+    "Facts, inference, assumptions, and unknowns are separated",
+    "Tokens and components are traced to source selectors or files",
+    "No private path, credential, customer identity, or unapproved external action is present"
+  ],
+  "stop_conditions": [
+    "Required evidence is missing or contradictory",
+    "A consequential external action lacks explicit authority"
+  ]
+}

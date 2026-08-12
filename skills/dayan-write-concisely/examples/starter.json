@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "skill": "dayan-write-concisely",
+  "input": {
+    "goal": "Reduce human-facing writing to the shortest form that preserves decision, evidence, and action",
+    "scope": "bounded public or fictional fixture"
+  },
+  "output": {
+    "artifact": "concise-draft.md",
+    "status": "reviewable draft"
+  },
+  "checks": [
+    "Facts, inference, assumptions, and unknowns are separated",
+    "The reader can identify conclusion, reason, action, and uncertainty in one pass",
+    "No private path, credential, customer identity, or unapproved external action is present"
+  ],
+  "stop_conditions": [
+    "Required evidence is missing or contradictory",
+    "A consequential external action lacks explicit authority"
+  ]
+}

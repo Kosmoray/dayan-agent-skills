@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "skill": "dayan-api-design-reviewer",
+  "input": {
+    "goal": "Review an API change as a durable contract before implementation or release",
+    "scope": "bounded public or fictional fixture"
+  },
+  "output": {
+    "artifact": "api-review.md",
+    "status": "reviewable draft"
+  },
+  "checks": [
+    "Facts, inference, assumptions, and unknowns are separated",
+    "Examples cover success, malformed input, authorization, pagination, and versioning",
+    "No private path, credential, customer identity, or unapproved external action is present"
+  ],
+  "stop_conditions": [
+    "Required evidence is missing or contradictory",
+    "A consequential external action lacks explicit authority"
+  ]
+}

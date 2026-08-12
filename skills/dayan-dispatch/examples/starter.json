@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "skill": "dayan-dispatch",
+  "input": {
+    "goal": "Split a bounded plan into independent assignments with non-overlapping write scopes",
+    "scope": "bounded public or fictional fixture"
+  },
+  "output": {
+    "artifact": "dispatch-map.json",
+    "status": "reviewable draft"
+  },
+  "checks": [
+    "Facts, inference, assumptions, and unknowns are separated",
+    "Dependencies are acyclic and concurrent assignments do not share write targets",
+    "No private path, credential, customer identity, or unapproved external action is present"
+  ],
+  "stop_conditions": [
+    "Required evidence is missing or contradictory",
+    "A consequential external action lacks explicit authority"
+  ]
+}

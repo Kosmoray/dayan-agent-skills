@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "skill": "dayan-cover-image",
+  "input": {
+    "goal": "Convert an article or campaign idea into a legible, distinctive cover image direction",
+    "scope": "bounded public or fictional fixture"
+  },
+  "output": {
+    "artifact": "cover-brief.json",
+    "status": "reviewable draft"
+  },
+  "checks": [
+    "Facts, inference, assumptions, and unknowns are separated",
+    "Thumbnail legibility, title hierarchy, rights, crop, and channel dimensions pass",
+    "No private path, credential, customer identity, or unapproved external action is present"
+  ],
+  "stop_conditions": [
+    "Required evidence is missing or contradictory",
+    "A consequential external action lacks explicit authority"
+  ]
+}

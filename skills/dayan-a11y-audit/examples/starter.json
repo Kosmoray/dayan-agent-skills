@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "skill": "dayan-a11y-audit",
+  "input": {
+    "goal": "Audit a digital interface for accessibility barriers and translate findings into reproducible fixes",
+    "scope": "bounded public or fictional fixture"
+  },
+  "output": {
+    "artifact": "accessibility-audit.md",
+    "status": "reviewable draft"
+  },
+  "checks": [
+    "Facts, inference, assumptions, and unknowns are separated",
+    "Every finding names the affected user, criterion, evidence, and retest",
+    "No private path, credential, customer identity, or unapproved external action is present"
+  ],
+  "stop_conditions": [
+    "Required evidence is missing or contradictory",
+    "A consequential external action lacks explicit authority"
+  ]
+}

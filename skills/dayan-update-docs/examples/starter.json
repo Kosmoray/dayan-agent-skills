@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "skill": "dayan-update-docs",
+  "input": {
+    "goal": "Update only the documentation whose user-visible contract changed",
+    "scope": "bounded public or fictional fixture"
+  },
+  "output": {
+    "artifact": "documentation-change.md",
+    "status": "reviewable draft"
+  },
+  "checks": [
+    "Facts, inference, assumptions, and unknowns are separated",
+    "Every edit maps to a real code or behavior change and stale claims are removed",
+    "No private path, credential, customer identity, or unapproved external action is present"
+  ],
+  "stop_conditions": [
+    "Required evidence is missing or contradictory",
+    "A consequential external action lacks explicit authority"
+  ]
+}
