@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.3.0-beta.1 — 2026-08-13
+
+- Added `docs/core-knowledge.md`, a public-safe map of method candidates and publication boundaries for the broader Dayan knowledge layer.
+- Added `docs/tooling.md`, a catalog of 14 local repository tools with commands, proof boundaries, and non-claims.
+- Added `scripts/verify_tooling.py` and tests, then wired tooling verification into release validation.
+- Linked core knowledge and tooling from README, Chinese README, quickstart, methods, skills, and contributing docs.
+
 ## 1.2.0-beta.1 — 2026-08-13
 
 - Expanded `docs/fixtures/` from 5 to 9 copyable artifact fixtures, adding visual deck brief, architecture decision record, agent package manifest, and responsive UI acceptance plan.

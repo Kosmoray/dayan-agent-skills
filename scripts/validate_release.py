@@ -36,6 +36,8 @@ REQUIRED_FILES = [
     "docs/quickstart.md",
     "docs/choose-a-skill.md",
     "docs/faq.md",
+    "docs/core-knowledge.md",
+    "docs/tooling.md",
     "docs/compatibility.md",
     "docs/compatibility-matrix.json",
     "docs/runtime-smoke.md",
@@ -73,6 +75,7 @@ REQUIRED_FILES = [
     "scripts/verify_examples.py",
     "scripts/verify_fixtures.py",
     "scripts/verify_good_first_issues.py",
+    "scripts/verify_tooling.py",
     "scripts/compatibility_smoke.py",
     "scripts/runtime_smoke.py",
     "skills/dayan-deck/SKILL.md",
@@ -119,13 +122,13 @@ def main() -> int:
         catalog = {}
         plugin = {}
 
-    if catalog.get("release") != "1.2.0-beta.1":
-        errors.append("catalog release must be 1.2.0-beta.1")
+    if catalog.get("release") != "1.3.0-beta.1":
+        errors.append("catalog release must be 1.3.0-beta.1")
     skills = catalog.get("skills", [])
     beta = [item for item in skills if item.get("maintenance_status") == "beta"]
     beta_names = [item.get("name") for item in beta]
     if len(beta_names) != 56:
-        errors.append("all 56 catalog Skills must be public beta in v1.2.0-beta.1")
+        errors.append("all 56 catalog Skills must be public beta in v1.3.0-beta.1")
     if plugin.get("version") != catalog.get("release"):
         errors.append("plugin and catalog versions must match")
     if plugin.get("license") != "MIT":
@@ -197,6 +200,7 @@ def main() -> int:
         Path("scripts/verify_examples.py"),
         Path("scripts/verify_fixtures.py"),
         Path("scripts/verify_good_first_issues.py"),
+        Path("scripts/verify_tooling.py"),
     }
     for path in sorted(item for item in ROOT.rglob("*") if item.is_file() and ".git" not in item.parts):
         relative = path.relative_to(ROOT)
@@ -218,6 +222,7 @@ def main() -> int:
     errors.extend(run([sys.executable, "scripts/verify_examples.py"]))
     errors.extend(run([sys.executable, "scripts/verify_fixtures.py"]))
     errors.extend(run([sys.executable, "scripts/verify_good_first_issues.py"]))
+    errors.extend(run([sys.executable, "scripts/verify_tooling.py"]))
     errors.extend(run([sys.executable, "scripts/compatibility_smoke.py", "--all-skills"]))
     errors.extend(run([sys.executable, "scripts/runtime_smoke.py", "--all-skills"]))
     errors.extend(

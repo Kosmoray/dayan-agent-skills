@@ -86,6 +86,8 @@ python3 scripts/verify_fixtures.py
 
 If you want to contribute without designing a new Skill, pick one task from [Good first issues](good-first-issues.md).
 
+If you want to understand the system layer first, read [Core knowledge](core-knowledge.md) and [Public tooling](tooling.md).
+
 ## Compatibility smoke
 
 To generate a paste-ready clean-install report:

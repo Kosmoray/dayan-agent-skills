@@ -42,7 +42,7 @@ This repository publishes those control layers instead of hiding them.
 
 The library now spans engineering quality, research and decisions, agent systems, content and design, and product architecture—without splitting stars, issues, or contributors across small repositories.
 
-[Start in 60 seconds](docs/quickstart.md) · [Choose a Skill](docs/choose-a-skill.md) · [Read the playbooks](docs/playbooks/README.md) · [Browse all 56 Skills](docs/skills.md) · [Inspect evidence](catalog.json)
+[Start in 60 seconds](docs/quickstart.md) · [Choose a Skill](docs/choose-a-skill.md) · [Core knowledge](docs/core-knowledge.md) · [Tooling](docs/tooling.md) · [Browse all 56 Skills](docs/skills.md) · [Inspect evidence](catalog.json)
 
 ## Start here
 
@@ -116,6 +116,8 @@ The repository now includes [11 sanitized example runs](examples/runs/README.md)
 It also includes [9 artifact fixtures](docs/fixtures/README.md) that show copyable output shapes for repository orientation, agent design, guardrail hooks, API review, AI visibility audits, visual deck briefs, architecture decisions, agent packages, and responsive UI acceptance.
 
 Then use the public [playbooks](docs/playbooks/README.md) to decide whether your repeated workflow should become a checklist, Skill, verifier, hook, or agent. If you want a bounded contribution, start with [Good first issues](docs/good-first-issues.md).
+
+For the system behind the Skills, read the [core knowledge map](docs/core-knowledge.md). For the small local tools that verify the repository, read [Public tooling](docs/tooling.md).
 
 ## Choose your route
 
@@ -224,6 +226,8 @@ python3 scripts/validate_public_skill.py dayan-orient
 python3 scripts/verify_fixtures.py
 
 python3 scripts/verify_good_first_issues.py
+
+python3 scripts/verify_tooling.py
 ```
 
 See [`catalog.json`](catalog.json) for readiness evidence and unresolved host-version evidence for every Skill.

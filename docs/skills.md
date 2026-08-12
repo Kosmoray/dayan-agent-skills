@@ -2,6 +2,8 @@
 
 All Skills install from this one repository and accumulate one shared history, issue tracker, contributor graph, and star count.
 
+For the method layer behind these Skills, see [Core knowledge](core-knowledge.md). For repository tools, see [Public tooling](tooling.md).
+
 ## Create · 19
 
 - [`dayan-deck`](../skills/dayan-deck/SKILL.md) — Turn structured content into a polished, editable presentation with a coherent visual system.

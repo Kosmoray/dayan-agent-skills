@@ -4,6 +4,8 @@ Twelve compact methods explain the decision rules shared across the public Skill
 
 For applied routes, start with the [public playbooks](playbooks/README.md).
 
+For the broader candidate map, read [Core knowledge](core-knowledge.md).
+
 - [Complexity ladder](methods/complexity-ladder.md) — Prefer a deterministic rule, then a pipeline, then an agent. Escalate only when the simpler form cannot handle uncertainty or tool choice.
 - [Multi-pass decomposition](methods/multi-pass-decomposition.md) — Separate framing, generation, evidence collection, verification, and release so one fluent output cannot silently approve itself.
 - [Adversarial validation](methods/adversarial-validation.md) — Use a checker with a different objective and, where possible, fewer permissions than the builder.

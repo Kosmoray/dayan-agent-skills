@@ -37,7 +37,7 @@ Skill、harness、hook 和 verifier，就是 AI 的半自动模式：
 
 公开库现已覆盖工程质量、研究决策、Agent 系统、内容设计与产品架构；所有 Star、Issue、贡献者和发布历史继续集中在一个仓库。
 
-[60 秒开始试用](docs/quickstart.md) · [按任务选择 Skill](docs/choose-a-skill.md) · [阅读 Playbook](docs/playbooks/README.md) · [浏览 56 个 Skill](docs/skills.md) · [查看机器可读证据](catalog.json)
+[60 秒开始试用](docs/quickstart.md) · [按任务选择 Skill](docs/choose-a-skill.md) · [核心知识地图](docs/core-knowledge.md) · [公开工具目录](docs/tooling.md) · [浏览 56 个 Skill](docs/skills.md) · [查看机器可读证据](catalog.json)
 
 ## 先从这里开始
 
@@ -107,6 +107,8 @@ python3 scripts/runtime_smoke.py \
 同时新增 [9 个产物 fixture](docs/fixtures/README.md)，展示仓库地图、Agent 设计、守门 Hook、API 审查、AI 可见性审计、视觉演示 brief、架构决策、Agent 包和响应式 UI 验收的可复制输出形态。
 
 再用公开 [Playbook](docs/playbooks/README.md) 判断你的重复工作应该做成清单、Skill、验证器、Hook 还是 Agent。想做小贡献时，从 [Good first issues](docs/good-first-issues.md) 开始。
+
+如果想看 Skill 背后的方法论和工具层，读 [核心知识地图](docs/core-knowledge.md) 与 [公开工具目录](docs/tooling.md)。
 
 ## 按任务选能力
 

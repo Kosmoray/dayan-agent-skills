@@ -6,3 +6,6 @@ contact_links:
   - name: Pick a good first issue
     url: https://github.com/Kosmoray/dayan-agent-skills/blob/main/docs/good-first-issues.md
     about: Start here if you want a bounded first contribution.
+  - name: Browse public tooling
+    url: https://github.com/Kosmoray/dayan-agent-skills/blob/main/docs/tooling.md
+    about: Start here if you want to improve a local verifier, installer, or release gate.
