@@ -71,7 +71,13 @@ python3 skills/dayan-wenzhen/scripts/verify_contract.py \
   skills/dayan-wenzhen/examples/starter-contract.json
 ```
 
-See the full [Quickstart](docs/quickstart.md), [Skill chooser](docs/choose-a-skill.md), and [FAQ](docs/faq.md).
+Generate a paste-ready compatibility report:
+
+```bash
+python3 scripts/compatibility_smoke.py
+```
+
+See the full [Quickstart](docs/quickstart.md), [Skill chooser](docs/choose-a-skill.md), [Compatibility evidence](docs/compatibility.md), and [FAQ](docs/faq.md).
 
 ## Copy-paste examples
 

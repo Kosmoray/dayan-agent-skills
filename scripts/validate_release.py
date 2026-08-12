@@ -57,6 +57,7 @@ REQUIRED_FILES = [
     "examples/runs/content-production-launch-boundary.md",
     "scripts/verify_site.py",
     "scripts/verify_examples.py",
+    "scripts/compatibility_smoke.py",
     "skills/dayan-deck/SKILL.md",
     "skills/dayan-deck/examples/starter.html",
     "skills/dayan-deck/scripts/verify_deck.py",
@@ -101,13 +102,13 @@ def main() -> int:
         catalog = {}
         plugin = {}
 
-    if catalog.get("release") != "0.7.0-beta.1":
-        errors.append("catalog release must be 0.7.0-beta.1")
+    if catalog.get("release") != "0.8.0-beta.1":
+        errors.append("catalog release must be 0.8.0-beta.1")
     skills = catalog.get("skills", [])
     beta = [item for item in skills if item.get("maintenance_status") == "beta"]
     beta_names = [item.get("name") for item in beta]
     if len(beta_names) != 56:
-        errors.append("all 56 catalog Skills must be public beta in v0.7.0-beta.1")
+        errors.append("all 56 catalog Skills must be public beta in v0.8.0-beta.1")
     if plugin.get("version") != catalog.get("release"):
         errors.append("plugin and catalog versions must match")
     if plugin.get("license") != "MIT":
@@ -162,6 +163,7 @@ def main() -> int:
     errors.extend(run([sys.executable, "scripts/scan_public_redlines.py", "skills"]))
     errors.extend(run([sys.executable, "scripts/verify_site.py"]))
     errors.extend(run([sys.executable, "scripts/verify_examples.py"]))
+    errors.extend(run([sys.executable, "scripts/compatibility_smoke.py"]))
     errors.extend(
         run(
             [

@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.8.0-beta.1 — 2026-08-13
+
+- Added `scripts/compatibility_smoke.py`, a clean temporary-home smoke harness that installs selected Skills into Codex-style and Claude Code-style directories and prints a paste-ready Markdown report.
+- Added compatibility-smoke tests and wired the smoke harness into release validation.
+- Updated README, README.zh-CN, quickstart, compatibility docs, and the compatibility issue template so external users can report packaging evidence without touching their live agent configuration.
+
 ## 0.7.0-beta.1 — 2026-08-13
 
 - Expanded sanitized example runs from 3 to 11 across repository orientation, agent design, hooks, API review, accessibility, database performance, AI visibility, and launch content boundaries.

@@ -64,6 +64,16 @@ PASS: starter-contract.json satisfies the Wenzhen contract
 
 See [Choose a Skill](choose-a-skill.md) for the complete route.
 
+## Compatibility smoke
+
+To generate a paste-ready clean-install report:
+
+```bash
+python3 scripts/compatibility_smoke.py
+```
+
+This checks packaging into temporary Codex-style and Claude Code-style homes. It does not claim host discovery or runtime triggering.
+
 ## What this proves
 
 This quickstart proves package structure, installation into a clean home, and fixture-level verification for the selected Skill.

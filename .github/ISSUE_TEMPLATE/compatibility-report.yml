@@ -33,6 +33,14 @@ body:
       render: bash
     validations:
       required: true
+  - type: textarea
+    id: smoke
+    attributes:
+      label: Compatibility smoke report
+      description: Paste the output of `python3 scripts/compatibility_smoke.py`.
+      render: markdown
+    validations:
+      required: true
   - type: dropdown
     id: result
     attributes:

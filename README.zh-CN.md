@@ -66,6 +66,12 @@ python3 skills/dayan-wenzhen/scripts/verify_contract.py \
   skills/dayan-wenzhen/examples/starter-contract.json
 ```
 
+生成一份可直接贴到 issue 的兼容性 smoke 报告：
+
+```bash
+python3 scripts/compatibility_smoke.py
+```
+
 ## 可复制样例
 
 仓库现在有 [11 个脱敏可复制样例](examples/runs/README.md)，包括：
