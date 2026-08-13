@@ -9,7 +9,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SHARE_KIT = ROOT / "docs" / "share-kit.md"
-SOCIAL_CARD = ROOT / "assets" / "social-card.svg"
+SOCIAL_CARD = ROOT / "docs" / "assets" / "social-card.svg"
 INDEX = ROOT / "docs" / "index.html"
 README = ROOT / "README.md"
 

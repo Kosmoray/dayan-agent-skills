@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Dayan Agent Skills social card</title>
+  <desc id="desc">56 Skills, 15 public methods, and one control library for repeatable AI agent work.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f7f2e8"/>
+      <stop offset="1" stop-color="#e6dac8"/>
+    </linearGradient>
+    <linearGradient id="navy" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#10243e"/>
+      <stop offset="1" stop-color="#18385d"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#paper)"/>
+  <rect x="52" y="52" width="1096" height="526" rx="0" fill="url(#navy)"/>
+  <path d="M1000 90h95v95h-95zM1000 215h95v95h-95zM875 215h95v95h-95zM1000 340h95v95h-95z" fill="#d39a35"/>
+  <text x="92" y="120" fill="#e8b958" font-family="ui-monospace, Menlo, monospace" font-size="24" font-weight="800" letter-spacing="4">DAYAN AGENT SKILLS</text>
+  <text x="92" y="248" fill="#fff8ec" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="92" font-weight="900" letter-spacing="-5">56 Skills.</text>
+  <text x="92" y="350" fill="#fff8ec" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="92" font-weight="900" letter-spacing="-5">One control library.</text>
+  <text x="96" y="424" fill="#cbd6e3" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="31">Prompts say what to ask. Control layers say what must be true.</text>
+  <g transform="translate(92 474)">
+    <rect width="184" height="70" fill="#213f64"/>
+    <rect x="202" width="184" height="70" fill="#213f64"/>
+    <rect x="404" width="184" height="70" fill="#213f64"/>
+    <rect x="606" width="184" height="70" fill="#213f64"/>
+    <text x="22" y="31" fill="#e8b958" font-family="ui-monospace, Menlo, monospace" font-size="25" font-weight="900">15</text>
+    <text x="22" y="55" fill="#d5dfeb" font-family="Inter, sans-serif" font-size="18">public methods</text>
+    <text x="224" y="31" fill="#e8b958" font-family="ui-monospace, Menlo, monospace" font-size="25" font-weight="900">12</text>
+    <text x="224" y="55" fill="#d5dfeb" font-family="Inter, sans-serif" font-size="18">fixtures</text>
+    <text x="426" y="31" fill="#e8b958" font-family="ui-monospace, Menlo, monospace" font-size="25" font-weight="900">112/112</text>
+    <text x="426" y="55" fill="#d5dfeb" font-family="Inter, sans-serif" font-size="18">install pass</text>
+    <text x="628" y="31" fill="#e8b958" font-family="ui-monospace, Menlo, monospace" font-size="25" font-weight="900">MIT</text>
+    <text x="628" y="55" fill="#d5dfeb" font-family="Inter, sans-serif" font-size="18">source available</text>
+  </g>
+</svg>

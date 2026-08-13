@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.7.1-beta.1 — 2026-08-13
+
+- Published the social card under `docs/assets/social-card.svg` so GitHub Pages serves the Open Graph image URL.
+- Updated share-kit verification and release validation to require the Pages-served social card path.
+
 ## 1.7.0-beta.1 — 2026-08-13
 
 - Added `docs/share-kit.md`, a bounded public sharing kit with canonical links, approved facts, short copy, forum copy, social copy, Chinese copy, and explicit non-claims.
