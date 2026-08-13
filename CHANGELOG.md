@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.7.2-beta.1 — 2026-08-13
+
+- Synchronized the root `llms.txt` release value with package metadata after the Pages social-card patch.
+- Regenerated release matrices for `1.7.2-beta.1`.
+
 ## 1.7.1-beta.1 — 2026-08-13
 
 - Published the social card under `docs/assets/social-card.svg` so GitHub Pages serves the Open Graph image URL.

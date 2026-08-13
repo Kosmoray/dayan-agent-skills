@@ -1,7 +1,7 @@
 # Public sanitization record
 
 Date: 2026-08-13
-Release: `1.7.1-beta.1`
+Release: `1.7.2-beta.1`
 
 ## Included
 
