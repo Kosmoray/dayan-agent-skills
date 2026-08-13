@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.7.0-beta.1 — 2026-08-13
+
+- Added `docs/share-kit.md`, a bounded public sharing kit with canonical links, approved facts, short copy, forum copy, social copy, Chinese copy, and explicit non-claims.
+- Added `assets/social-card.svg`, a public social card for the control-library message.
+- Added `scripts/verify_share_kit.py` and tests, then wired share-kit verification into release validation and tooling docs.
+
 ## 1.6.0-beta.1 — 2026-08-13
 
 - Added `docs/demos/control-library.html`, a one-screen positioning demo comparing a prompt collection with a control library.

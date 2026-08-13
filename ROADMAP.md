@@ -1,6 +1,6 @@
 # Public roadmap
 
-## Available through v1.6 beta
+## Available through v1.7 beta
 
 - 56 installable public beta Skills in one repository.
 - 15 public method cards.
@@ -9,6 +9,7 @@
 - Public core-knowledge map for method candidates and publication boundaries.
 - Public positioning page that explains why this is a control library rather than a prompt collection.
 - One-screen visual positioning demo for control-library vs prompt-collection.
+- Public share kit and social card for bounded, evidence-backed distribution.
 - Public tooling catalog for local verifier and installer scripts.
 - Public playbooks and 11 sanitized example runs that show how to apply the methods.
 - Twelve public artifact fixtures that show copyable output shapes for high-value Skills and method boundaries.
@@ -18,6 +19,7 @@
 - Deterministic method-card verification in the release validator.
 - Deterministic positioning-page verification in the release validator.
 - Deterministic control-demo verification in the release validator.
+- Deterministic share-kit verification in the release validator.
 - Deterministic good-first-issue verification in the release validator.
 - Deterministic tooling-catalog verification in the release validator.
 - Clean temporary-home compatibility smoke reports for Codex-style and Claude Code-style package installs.
@@ -31,7 +33,7 @@ See the [Skill index](docs/skills.md), [method index](docs/methods.md), and mach
 - external host-version reports from current Codex and Claude Code product versions;
 - external contributor reports and first accepted fixture PRs;
 - compatibility reports from clean external environments;
-- first accepted external fixture PRs, method-card improvements, positioning improvements, visual-demo improvements, tool improvements, and compatibility reports;
-- approved public demos and adoption evidence.
+- first accepted external fixture PRs, method-card improvements, positioning improvements, visual-demo improvements, share-kit improvements, tool improvements, and compatibility reports;
+- approved public demos, compatibility reports, and adoption evidence.
 
 Public beta means the package is installable, source-available, sanitized, structurally verified, and covered by an offline lifecycle harness. It is not a claim of universal host-version compatibility or external outcome.

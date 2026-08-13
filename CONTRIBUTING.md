@@ -19,6 +19,7 @@ python3 scripts/verify_fixtures.py
 python3 scripts/verify_methods.py
 python3 scripts/verify_positioning.py
 python3 scripts/verify_control_demo.py
+python3 scripts/verify_share_kit.py
 python3 scripts/verify_good_first_issues.py
 python3 scripts/verify_tooling.py
 python3 scripts/validate_release.py
@@ -46,6 +47,8 @@ If you want a bounded first contribution, start with [`docs/good-first-issues.md
 If you want to improve the repository tooling layer, start with [`docs/tooling.md`](docs/tooling.md) and add one verifier-backed change.
 
 If you want to improve the public positioning layer, start with [`docs/demos/control-library.html`](docs/demos/control-library.html) and keep `scripts/verify_control_demo.py` passing.
+
+If you want to improve public distribution copy, start with [`docs/share-kit.md`](docs/share-kit.md) and keep `scripts/verify_share_kit.py` passing. Keep claims bounded by repository evidence.
 
 ## Reporting compatibility
 

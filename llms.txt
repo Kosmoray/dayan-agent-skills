@@ -5,7 +5,7 @@
 Canonical repository: https://github.com/Kosmoray/dayan-agent-skills
 Live Dayan Deck demo: https://kosmoray.github.io/dayan-agent-skills/
 License: MIT
-Release: 1.6.0-beta.1
+Release: 1.7.0-beta.1
 
 ## Available Skills
 
@@ -21,6 +21,7 @@ Release: 1.6.0-beta.1
 - docs/core-knowledge.md: public-safe map of broader method candidates and publication boundaries.
 - docs/control-layer-vs-prompt-collection.md: why this repository is a control library rather than a prompt collection.
 - docs/demos/control-library.html: one-screen visual comparison of a prompt collection and a control library.
+- docs/share-kit.md: bounded public sharing copy, approved facts, non-claims, and social-card link.
 - docs/tooling.md: public catalog of local repository tools and what each proves.
 - docs/playbooks/README.md: applied public methods.
 - examples/runs/README.md: 11 sanitized copy-paste example runs.
@@ -44,6 +45,7 @@ Release: 1.6.0-beta.1
 - public method cards are checked by scripts/verify_methods.py.
 - public positioning is checked by scripts/verify_positioning.py.
 - one-screen control demo is checked by scripts/verify_control_demo.py.
+- share kit and social card are checked by scripts/verify_share_kit.py.
 - good-first issues are checked by scripts/verify_good_first_issues.py.
 - public tooling docs are checked by scripts/verify_tooling.py.
 - compatibility smoke is checked by scripts/compatibility_smoke.py.

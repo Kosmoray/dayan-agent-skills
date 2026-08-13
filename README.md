@@ -19,6 +19,8 @@
   ·
   <a href="docs/demos/control-library.html">Visual proof</a>
   ·
+  <a href="docs/share-kit.md">Share kit</a>
+  ·
   <a href="https://kosmoray.github.io/dayan-agent-skills/">Live demos</a>
   ·
   <a href="README.zh-CN.md">中文</a>
@@ -44,7 +46,7 @@ This repository publishes those control layers instead of hiding them. If you ar
 
 The library now spans engineering quality, research and decisions, agent systems, content and design, and product architecture—without splitting stars, issues, or contributors across small repositories.
 
-[Start in 60 seconds](docs/quickstart.md) · [Visual proof](docs/demos/control-library.html) · [Control library, not prompts](docs/control-layer-vs-prompt-collection.md) · [Choose a Skill](docs/choose-a-skill.md) · [Core knowledge](docs/core-knowledge.md) · [Tooling](docs/tooling.md) · [Browse all 56 Skills](docs/skills.md) · [Inspect evidence](catalog.json)
+[Start in 60 seconds](docs/quickstart.md) · [Visual proof](docs/demos/control-library.html) · [Share kit](docs/share-kit.md) · [Control library, not prompts](docs/control-layer-vs-prompt-collection.md) · [Choose a Skill](docs/choose-a-skill.md) · [Core knowledge](docs/core-knowledge.md) · [Tooling](docs/tooling.md) · [Browse all 56 Skills](docs/skills.md) · [Inspect evidence](catalog.json)
 
 ## Start here
 
@@ -232,6 +234,8 @@ python3 scripts/verify_methods.py
 python3 scripts/verify_positioning.py
 
 python3 scripts/verify_control_demo.py
+
+python3 scripts/verify_share_kit.py
 
 python3 scripts/verify_good_first_issues.py
 

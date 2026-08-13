@@ -105,9 +105,15 @@ Verify the one-screen control-library demo with:
 python3 scripts/verify_control_demo.py
 ```
 
+Verify the public share kit with:
+
+```bash
+python3 scripts/verify_share_kit.py
+```
+
 If you want to contribute without designing a new Skill, pick one task from [Good first issues](good-first-issues.md).
 
-If you want to understand the system layer first, open the [one-screen demo](demos/control-library.html), then read [Core knowledge](core-knowledge.md) and [Public tooling](tooling.md).
+If you want to understand or share the system layer first, open the [one-screen demo](demos/control-library.html), then read [Core knowledge](core-knowledge.md), [Public tooling](tooling.md), and the [Share kit](share-kit.md).
 
 ## Compatibility smoke
 

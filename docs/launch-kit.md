@@ -3,6 +3,7 @@
 Status: publication package approved for launch by owner on 2026-08-12
 Source of truth: <https://github.com/Kosmoray/dayan-agent-skills>
 Live demo: <https://kosmoray.github.io/dayan-agent-skills/>
+Share kit: <https://github.com/Kosmoray/dayan-agent-skills/blob/main/docs/share-kit.md>
 
 ## Audience and one action
 
@@ -14,6 +15,7 @@ For developers and AI workflow builders who are tired of recreating prompts, gua
 - 15 public method cards.
 - One public positioning page explaining why this is a control library rather than a prompt collection.
 - One visual positioning demo comparing prompt collections with control libraries.
+- One bounded public share kit and social card for evidence-backed distribution.
 - Isolated install smoke covers 56 Skills across Codex and Claude Code targets: 112 package installations.
 - Offline lifecycle smoke covers discovery, trigger routing, declared example commands, non-trigger rejection, and safe update across the same 112 targets.
 - Repository unit suite currently covers installer safety, compatibility smoke, runtime smoke, public bundles, and featured Skill validators.
@@ -61,6 +63,9 @@ Public beta means inspectable, installable, and lifecycle-smoked in a clean temp
 Try a Skill. If this is a library you want to return to, star it:
 <https://github.com/Kosmoray/dayan-agent-skills>
 
+Use the share kit for bounded copy and the social card:
+<https://github.com/Kosmoray/dayan-agent-skills/blob/main/docs/share-kit.md>
+
 ## Hacker News candidate
 
 ### Title
@@ -76,6 +81,8 @@ https://github.com/Kosmoray/dayan-agent-skills
 I built this because agent projects repeatedly recreated the same layer around the model: task framing, permission boundaries, evidence contracts, stop conditions, reviewer separation, and artifact verification.
 
 The repository contains 56 installable public beta Skills, 15 compact method cards, one visual positioning demo, and a positioning page explaining why it is a control library rather than a prompt collection. Four demos make the approach concrete before asking anyone to browse the catalog. The code and docs are MIT licensed.
+
+There is also a share kit with approved facts and non-claims so people can discuss the project without turning it into hype copy.
 
 The honest limitation: package validation is much stronger than current external adoption evidence. The catalog exposes unresolved runtime blockers instead of presenting 56 folders as 56 production-proven integrations. I would especially value reports from clean Codex or Claude Code environments, including failures.
 
@@ -103,6 +110,7 @@ Four fast demos:
 I am looking for concrete compatibility reports, especially from clean Codex and Claude Code homes. “It failed because…” is more useful than a courtesy star, though a star is welcome if you want to follow the library.
 
 Repository: <https://github.com/Kosmoray/dayan-agent-skills>
+Share kit: <https://github.com/Kosmoray/dayan-agent-skills/blob/main/docs/share-kit.md>
 
 ## Reddit account recovery candidate
 
@@ -146,6 +154,7 @@ AI 能写，不等于工作能稳定完成。
 目前最需要的不是客气点赞，而是干净环境里的真实安装反馈。如果你觉得这个库值得以后再回来，也欢迎点一个 Star。
 
 仓库：<https://github.com/Kosmoray/dayan-agent-skills>
+分享包：<https://github.com/Kosmoray/dayan-agent-skills/blob/main/docs/share-kit.md>
 
 ## X thread candidate
 
@@ -156,6 +165,9 @@ I open-sourced Dayan Agent Skills: 56 reusable Skills in one MIT-licensed repo f
 The missing layer is usually not model capability. It is framing, boundaries, evidence, stop conditions, and verification.
 
 https://github.com/Kosmoray/dayan-agent-skills
+
+Share kit:
+https://github.com/Kosmoray/dayan-agent-skills/blob/main/docs/share-kit.md
 
 ### Post 2
 
@@ -209,6 +221,8 @@ Pull back to the full capability map.
 End card:
 
 “Try one. Inspect the evidence. Star the library if it deserves a return visit.”
+
+Show the social card from `assets/social-card.svg` when a static image is needed.
 
 ## Publication boundary
 

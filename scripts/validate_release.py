@@ -25,6 +25,7 @@ REQUIRED_FILES = [
     "assets/dayan-mark.svg",
     "assets/dayan-mark-on-dark.svg",
     "assets/hero.svg",
+    "assets/social-card.svg",
     ".codex-plugin/plugin.json",
     ".github/workflows/ci.yml",
     "docs/index.html",
@@ -40,6 +41,7 @@ REQUIRED_FILES = [
     "docs/control-layer-vs-prompt-collection.md",
     "docs/core-knowledge.md",
     "docs/tooling.md",
+    "docs/share-kit.md",
     "docs/compatibility.md",
     "docs/compatibility-matrix.json",
     "docs/runtime-smoke.md",
@@ -85,6 +87,7 @@ REQUIRED_FILES = [
     "scripts/verify_methods.py",
     "scripts/verify_positioning.py",
     "scripts/verify_control_demo.py",
+    "scripts/verify_share_kit.py",
     "scripts/verify_good_first_issues.py",
     "scripts/verify_tooling.py",
     "scripts/compatibility_smoke.py",
@@ -133,13 +136,13 @@ def main() -> int:
         catalog = {}
         plugin = {}
 
-    if catalog.get("release") != "1.6.0-beta.1":
-        errors.append("catalog release must be 1.6.0-beta.1")
+    if catalog.get("release") != "1.7.0-beta.1":
+        errors.append("catalog release must be 1.7.0-beta.1")
     skills = catalog.get("skills", [])
     beta = [item for item in skills if item.get("maintenance_status") == "beta"]
     beta_names = [item.get("name") for item in beta]
     if len(beta_names) != 56:
-        errors.append("all 56 catalog Skills must be public beta in v1.6.0-beta.1")
+        errors.append("all 56 catalog Skills must be public beta in v1.7.0-beta.1")
     if plugin.get("version") != catalog.get("release"):
         errors.append("plugin and catalog versions must match")
     if plugin.get("license") != "MIT":
@@ -213,6 +216,7 @@ def main() -> int:
         Path("scripts/verify_methods.py"),
         Path("scripts/verify_positioning.py"),
         Path("scripts/verify_control_demo.py"),
+        Path("scripts/verify_share_kit.py"),
         Path("scripts/verify_good_first_issues.py"),
         Path("scripts/verify_tooling.py"),
     }
@@ -238,6 +242,7 @@ def main() -> int:
     errors.extend(run([sys.executable, "scripts/verify_methods.py"]))
     errors.extend(run([sys.executable, "scripts/verify_positioning.py"]))
     errors.extend(run([sys.executable, "scripts/verify_control_demo.py"]))
+    errors.extend(run([sys.executable, "scripts/verify_share_kit.py"]))
     errors.extend(run([sys.executable, "scripts/verify_good_first_issues.py"]))
     errors.extend(run([sys.executable, "scripts/verify_tooling.py"]))
     errors.extend(run([sys.executable, "scripts/compatibility_smoke.py", "--all-skills"]))

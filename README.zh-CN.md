@@ -15,6 +15,8 @@
   ·
   <a href="docs/demos/control-library.html">一屏演示</a>
   ·
+  <a href="docs/share-kit.md">分享包</a>
+  ·
   <a href="https://kosmoray.github.io/dayan-agent-skills/">在线演示</a>
   ·
   <a href="README.md">English</a>
@@ -39,7 +41,7 @@ Skill、harness、hook 和 verifier，就是 AI 的半自动模式：
 
 公开库现已覆盖工程质量、研究决策、Agent 系统、内容设计与产品架构；所有 Star、Issue、贡献者和发布历史继续集中在一个仓库。
 
-[60 秒开始试用](docs/quickstart.md) · [一屏演示](docs/demos/control-library.html) · [这不是提示词合集](docs/control-layer-vs-prompt-collection.md) · [按任务选择 Skill](docs/choose-a-skill.md) · [核心知识地图](docs/core-knowledge.md) · [公开工具目录](docs/tooling.md) · [浏览 56 个 Skill](docs/skills.md) · [查看机器可读证据](catalog.json)
+[60 秒开始试用](docs/quickstart.md) · [一屏演示](docs/demos/control-library.html) · [分享包](docs/share-kit.md) · [这不是提示词合集](docs/control-layer-vs-prompt-collection.md) · [按任务选择 Skill](docs/choose-a-skill.md) · [核心知识地图](docs/core-knowledge.md) · [公开工具目录](docs/tooling.md) · [浏览 56 个 Skill](docs/skills.md) · [查看机器可读证据](catalog.json)
 
 ## 先从这里开始
 
@@ -194,6 +196,12 @@ Beta 安装器只负责全新安装，遇到已有目录会停止，不会覆盖
 
 ```bash
 python3 scripts/verify_control_demo.py
+```
+
+验证公开分享包：
+
+```bash
+python3 scripts/verify_share_kit.py
 ```
 
 ## 开源原则

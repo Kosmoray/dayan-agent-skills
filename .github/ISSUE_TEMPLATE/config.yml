@@ -18,3 +18,6 @@ contact_links:
   - name: Open the visual positioning demo
     url: https://kosmoray.github.io/dayan-agent-skills/demos/control-library.html
     about: Start here if you want the 10-second visual explanation.
+  - name: Share the project responsibly
+    url: https://github.com/Kosmoray/dayan-agent-skills/blob/main/docs/share-kit.md
+    about: Use bounded copy, approved facts, and non-claims when sharing the project.
