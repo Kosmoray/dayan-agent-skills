@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.5.0-beta.1 — 2026-08-13
+
+- Added `docs/control-layer-vs-prompt-collection.md`, a public positioning page that explains why the repository is a control library rather than a prompt collection.
+- Added `scripts/verify_positioning.py` and tests, then wired positioning verification into release validation.
+- Linked the positioning page from README, Chinese README, Pages, launch kit, roadmap, llms entry points, and GitHub issue contact links.
+
 ## 1.4.0-beta.1 — 2026-08-13
 
 - Promoted three public method candidates into full method cards: `tool-before-agent`, `false-positive-control`, and `human-authority-ledger`.

@@ -93,6 +93,12 @@ Verify method cards with:
 python3 scripts/verify_methods.py
 ```
 
+Verify the public positioning page with:
+
+```bash
+python3 scripts/verify_positioning.py
+```
+
 If you want to contribute without designing a new Skill, pick one task from [Good first issues](good-first-issues.md).
 
 If you want to understand the system layer first, read [Core knowledge](core-knowledge.md) and [Public tooling](tooling.md).

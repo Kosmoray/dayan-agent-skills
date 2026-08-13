@@ -7,13 +7,13 @@
     "os": "macOS-26.3.1-arm64-arm-64bit-Mach-O",
     "python": "3.14.6"
   },
-  "generated_at": "2026-08-13T02:41:44Z",
+  "generated_at": "2026-08-13T02:56:43Z",
   "not_claimed": [
     "host application discovery",
     "runtime trigger behavior",
     "update or uninstall behavior in a user's live configuration"
   ],
-  "package_release": "1.4.0-beta.1",
+  "package_release": "1.5.0-beta.1",
   "results": [
     {
       "agent": "codex",

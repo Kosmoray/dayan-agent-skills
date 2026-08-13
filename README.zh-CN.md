@@ -37,7 +37,7 @@ Skill、harness、hook 和 verifier，就是 AI 的半自动模式：
 
 公开库现已覆盖工程质量、研究决策、Agent 系统、内容设计与产品架构；所有 Star、Issue、贡献者和发布历史继续集中在一个仓库。
 
-[60 秒开始试用](docs/quickstart.md) · [按任务选择 Skill](docs/choose-a-skill.md) · [核心知识地图](docs/core-knowledge.md) · [公开工具目录](docs/tooling.md) · [浏览 56 个 Skill](docs/skills.md) · [查看机器可读证据](catalog.json)
+[60 秒开始试用](docs/quickstart.md) · [这不是提示词合集](docs/control-layer-vs-prompt-collection.md) · [按任务选择 Skill](docs/choose-a-skill.md) · [核心知识地图](docs/core-knowledge.md) · [公开工具目录](docs/tooling.md) · [浏览 56 个 Skill](docs/skills.md) · [查看机器可读证据](catalog.json)
 
 ## 先从这里开始
 

@@ -36,13 +36,13 @@ Early AI feels like a manual film camera: powerful, but every focus, exposure, a
 
 Agent skills are the semi-automatic modes. A Skill chooses the workflow. A harness holds the process together. Hooks stop predictable mistakes. Verifiers check whether the result earned the claim.
 
-This repository publishes those control layers instead of hiding them.
+This repository publishes those control layers instead of hiding them. If you are comparing this with a prompt list, read [Control library, not a prompt collection](docs/control-layer-vs-prompt-collection.md).
 
 ## 56 Skills. One control library.
 
 The library now spans engineering quality, research and decisions, agent systems, content and design, and product architecture—without splitting stars, issues, or contributors across small repositories.
 
-[Start in 60 seconds](docs/quickstart.md) · [Choose a Skill](docs/choose-a-skill.md) · [Core knowledge](docs/core-knowledge.md) · [Tooling](docs/tooling.md) · [Browse all 56 Skills](docs/skills.md) · [Inspect evidence](catalog.json)
+[Start in 60 seconds](docs/quickstart.md) · [Control library, not prompts](docs/control-layer-vs-prompt-collection.md) · [Choose a Skill](docs/choose-a-skill.md) · [Core knowledge](docs/core-knowledge.md) · [Tooling](docs/tooling.md) · [Browse all 56 Skills](docs/skills.md) · [Inspect evidence](catalog.json)
 
 ## Start here
 
@@ -226,6 +226,8 @@ python3 scripts/validate_public_skill.py dayan-orient
 python3 scripts/verify_fixtures.py
 
 python3 scripts/verify_methods.py
+
+python3 scripts/verify_positioning.py
 
 python3 scripts/verify_good_first_issues.py
 
