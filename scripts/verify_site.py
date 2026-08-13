@@ -4,7 +4,7 @@ from __future__ import annotations
 import re,sys
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
-FILES=[ROOT/'docs/index.html',ROOT/'docs/demos/wenzhen.html',ROOT/'docs/demos/deck.html',ROOT/'docs/demos/reviewer.html']
+FILES=[ROOT/'docs/index.html',ROOT/'docs/demos/control-library.html',ROOT/'docs/demos/wenzhen.html',ROOT/'docs/demos/deck.html',ROOT/'docs/demos/reviewer.html']
 def verify():
     errors=[]
     for path in FILES:
@@ -25,4 +25,4 @@ if __name__=='__main__':
     problems=verify()
     if problems:
         print('\n'.join('ERROR: '+x for x in problems));sys.exit(1)
-    print('PASS: discovery site and three flagship demos satisfy the public contract')
+    print('PASS: discovery site and four flagship demos satisfy the public contract')

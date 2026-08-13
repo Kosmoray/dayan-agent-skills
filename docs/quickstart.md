@@ -99,9 +99,15 @@ Verify the public positioning page with:
 python3 scripts/verify_positioning.py
 ```
 
+Verify the one-screen control-library demo with:
+
+```bash
+python3 scripts/verify_control_demo.py
+```
+
 If you want to contribute without designing a new Skill, pick one task from [Good first issues](good-first-issues.md).
 
-If you want to understand the system layer first, read [Core knowledge](core-knowledge.md) and [Public tooling](tooling.md).
+If you want to understand the system layer first, open the [one-screen demo](demos/control-library.html), then read [Core knowledge](core-knowledge.md) and [Public tooling](tooling.md).
 
 ## Compatibility smoke
 

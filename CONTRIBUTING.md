@@ -18,6 +18,7 @@ python3 scripts/scan_public_redlines.py skills
 python3 scripts/verify_fixtures.py
 python3 scripts/verify_methods.py
 python3 scripts/verify_positioning.py
+python3 scripts/verify_control_demo.py
 python3 scripts/verify_good_first_issues.py
 python3 scripts/verify_tooling.py
 python3 scripts/validate_release.py
@@ -43,6 +44,8 @@ Small, evidenced Skills are preferred over large speculative frameworks.
 If you want a bounded first contribution, start with [`docs/good-first-issues.md`](docs/good-first-issues.md). Most good first issues should touch one fixture, one example, one issue template, or one documentation link.
 
 If you want to improve the repository tooling layer, start with [`docs/tooling.md`](docs/tooling.md) and add one verifier-backed change.
+
+If you want to improve the public positioning layer, start with [`docs/demos/control-library.html`](docs/demos/control-library.html) and keep `scripts/verify_control_demo.py` passing.
 
 ## Reporting compatibility
 

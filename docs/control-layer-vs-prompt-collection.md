@@ -2,6 +2,8 @@
 
 Dayan Agent Skills is not a folder of clever prompts. It is a public control library for making probabilistic AI work more repeatable, inspectable, and safe to hand off.
 
+For the 10-second visual version, open the [control-library demo](demos/control-library.html).
+
 ## The difference
 
 | Prompt collection | Control library |
@@ -39,6 +41,7 @@ That is a control layer. A prompt collection would usually stop at a better inst
 - [Core knowledge](core-knowledge.md) if you want the method layer.
 - [Artifact fixtures](fixtures/README.md) if you want concrete output shapes.
 - [Public tooling](tooling.md) if you want the verifier layer.
+- [One-screen control demo](demos/control-library.html) if you want the visual positioning first.
 - [Compatibility matrix](compatibility-matrix.json) and [runtime smoke](runtime-smoke.json) if you want package evidence.
 
 ## What this still does not claim

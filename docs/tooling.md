@@ -15,6 +15,7 @@ These are the small tools that make the repository inspectable. They are intenti
 | `scripts/verify_fixtures.py` | Verify artifact fixtures | `python3 scripts/verify_fixtures.py` | fixture structure, links, Skill references, boundaries | production results |
 | `scripts/verify_methods.py` | Verify public method cards | `python3 scripts/verify_methods.py` | method links, required sections, promoted fixtures, boundaries | method effectiveness |
 | `scripts/verify_positioning.py` | Verify public positioning | `python3 scripts/verify_positioning.py` | control-library claim, links, comparison, non-claims | external persuasion |
+| `scripts/verify_control_demo.py` | Verify one-screen control demo | `python3 scripts/verify_control_demo.py` | control-library demo structure, links, proof strip, non-claims | external persuasion |
 | `scripts/verify_good_first_issues.py` | Verify contribution tasks | `python3 scripts/verify_good_first_issues.py` | actionable small tasks with proof commands | contributor availability |
 | `scripts/verify_site.py` | Verify the public discovery site | `python3 scripts/verify_site.py` | basic page structure, links, public claims | visual taste |
 | `skills/dayan-deck/scripts/verify_deck.py` | Verify the Deck starter artifact | `python3 skills/dayan-deck/scripts/verify_deck.py skills/dayan-deck/examples/starter.html` | structural deck contract | presentation persuasion |

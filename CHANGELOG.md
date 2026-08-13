@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.6.0-beta.1 — 2026-08-13
+
+- Added `docs/demos/control-library.html`, a one-screen positioning demo comparing a prompt collection with a control library.
+- Added `scripts/verify_control_demo.py` and tests, then wired control-demo verification into release validation and site checks.
+- Linked the visual demo from README, Chinese README, Pages, launch kit, roadmap, llms entry points, sitemap, quickstart, contributing docs, and GitHub issue contact links.
+
 ## 1.5.0-beta.1 — 2026-08-13
 
 - Added `docs/control-layer-vs-prompt-collection.md`, a public positioning page that explains why the repository is a control library rather than a prompt collection.

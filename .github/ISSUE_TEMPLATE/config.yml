@@ -15,3 +15,6 @@ contact_links:
   - name: Understand the positioning
     url: https://github.com/Kosmoray/dayan-agent-skills/blob/main/docs/control-layer-vs-prompt-collection.md
     about: Start here if you want to understand why this is a control library, not a prompt collection.
+  - name: Open the visual positioning demo
+    url: https://kosmoray.github.io/dayan-agent-skills/demos/control-library.html
+    about: Start here if you want the 10-second visual explanation.

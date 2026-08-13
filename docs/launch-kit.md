@@ -13,6 +13,7 @@ For developers and AI workflow builders who are tired of recreating prompts, gua
 - 56 installable public beta Skills in one repository.
 - 15 public method cards.
 - One public positioning page explaining why this is a control library rather than a prompt collection.
+- One visual positioning demo comparing prompt collections with control libraries.
 - Isolated install smoke covers 56 Skills across Codex and Claude Code targets: 112 package installations.
 - Offline lifecycle smoke covers discovery, trigger routing, declared example commands, non-trigger rejection, and safe update across the same 112 targets.
 - Repository unit suite currently covers installer safety, compatibility smoke, runtime smoke, public bundles, and featured Skill validators.
@@ -46,11 +47,12 @@ Dayan Agent Skills packages those control layers in one repository:
 
 This is a control library, not a prompt collection: it publishes workflow contracts, method cards, fixtures, verifiers, evidence boundaries, and known non-claims instead of only better wording for a model.
 
-Start with one of three one-screen demos:
+Start with the one-screen control-library demo, then a workflow demo:
 
-1. Wenzhen: a vague request becomes a falsifiable task contract.
-2. Dayan Deck: a crowded slide becomes one visible decision.
-3. Adversarial Reviewer: “looks good” becomes an evidence-backed release verdict.
+1. Control Library: prompt collection vs evidence-backed workflow control.
+2. Wenzhen: a vague request becomes a falsifiable task contract.
+3. Dayan Deck: a crowded slide becomes one visible decision.
+4. Adversarial Reviewer: “looks good” becomes an evidence-backed release verdict.
 
 All 56 Skills live in one repository with one issue tracker, release history, contributor graph, and star count. Each package publishes its boundary, starter contract, provenance, sanitization record, and known evidence gap.
 
@@ -73,7 +75,7 @@ https://github.com/Kosmoray/dayan-agent-skills
 
 I built this because agent projects repeatedly recreated the same layer around the model: task framing, permission boundaries, evidence contracts, stop conditions, reviewer separation, and artifact verification.
 
-The repository contains 56 installable public beta Skills, 15 compact method cards, and a positioning page explaining why it is a control library rather than a prompt collection. Three demos make the approach concrete before asking anyone to browse the catalog. The code and docs are MIT licensed.
+The repository contains 56 installable public beta Skills, 15 compact method cards, one visual positioning demo, and a positioning page explaining why it is a control library rather than a prompt collection. Four demos make the approach concrete before asking anyone to browse the catalog. The code and docs are MIT licensed.
 
 The honest limitation: package validation is much stronger than current external adoption evidence. The catalog exposes unresolved runtime blockers instead of presenting 56 folders as 56 production-proven integrations. I would especially value reports from clean Codex or Claude Code environments, including failures.
 
@@ -91,8 +93,9 @@ So I consolidated 56 reusable Skills into one MIT-licensed repository. They cove
 
 This is intentionally one repository rather than dozens of tiny repos. The useful unit is the library: shared installer, catalog, fixtures, validators, provenance, and known blockers.
 
-Three fast demos:
+Four fast demos:
 
+- control library: prompt collection vs evidence-backed workflow control;
 - build the right thing: Wenzhen;
 - make it obvious: Dayan Deck;
 - catch the failure: Adversarial Reviewer.
@@ -129,7 +132,7 @@ AI 能写，不等于工作能稳定完成。
 
 真正反复消耗时间的，往往是模型外面这一层：问题有没有问对、权限有没有越界、证据能不能追溯、失败什么时候停、结果凭什么算完成。
 
-我们把这套控制层整理成了一个开源母舰：56 个可安装 Skill、12 张方法卡，以及统一的示例、来源记录、脱敏记录和验证入口。
+我们把这套控制层整理成了一个开源母舰：56 个可安装 Skill、15 张方法卡，以及统一的示例、来源记录、脱敏记录和验证入口。
 
 它覆盖四类工作：
 
@@ -138,7 +141,7 @@ AI 能写，不等于工作能稳定完成。
 - 构建：Agent、Hook、Prompt、角色、派工与 Skill 打包；
 - 验证：代码、API、无障碍、数据库、系统状态与 AI 可见性。
 
-首页没有让人先翻 56 个目录，而是先看三个一分钟 Demo：做对事情、讲清事情、发版前抓住错误。
+首页没有让人先翻 56 个目录，而是先看一屏定位 Demo 和三个一分钟 Demo：先明白它不是提示词合集，再看做对事情、讲清事情、发版前抓住错误。
 
 目前最需要的不是客气点赞，而是干净环境里的真实安装反馈。如果你觉得这个库值得以后再回来，也欢迎点一个 Star。
 
@@ -166,8 +169,9 @@ The repo is intentionally one library, not dozens of tiny repos:
 
 ### Post 3
 
-Start with the three one-screen demos:
+Start with the one-screen positioning demo, then the three workflow demos:
 
+- Control Library: prompt collection vs evidence-backed workflow control
 - Wenzhen: turn a vague ask into a falsifiable task contract
 - Dayan Deck: turn a crowded slide into one visible decision
 - Adversarial Reviewer: turn "looks good" into an evidence-backed release verdict
@@ -200,7 +204,7 @@ Show Reviewer verdict.
 
 Pull back to the full capability map.
 
-“Fifty-six Skills. Fifteen public methods. One repository.”
+“Fifty-six Skills. Fifteen public methods. One control library.”
 
 End card:
 
