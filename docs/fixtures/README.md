@@ -21,6 +21,9 @@ Each fixture includes:
 - [Architecture decision record](architecture-decision-record.md) — `dayan-tech-stack-evaluator`
 - [Agent package manifest](agent-package-manifest.md) — `dayan-agent-factory`
 - [Responsive UI acceptance plan](frontend-responsive-plan.md) — `dayan-frontend-responsive-ui`
+- [Tool-before-agent verifier plan](tool-before-agent-verifier-plan.md) — `dayan-hook-factory`
+- [False-positive control review](false-positive-control-review.md) — `dayan-adversarial-reviewer`
+- [Human authority ledger](human-authority-ledger.md) — `dayan-agent-designer`
 
 ## Add a fixture
 

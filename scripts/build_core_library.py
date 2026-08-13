@@ -7,7 +7,7 @@ import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-VERSION = "1.3.0-beta.1"
+VERSION = "1.4.0-beta.1"
 
 # name, category, purpose, artifact, distinctive verification
 SKILLS = [
@@ -70,6 +70,9 @@ METHODS = [
     ("delivery-assets", "Delivery asset pipeline", "A reusable delivery includes the artifact, deterministic checks, evidence, handoff, version, and a path to reuse or retire it."),
     ("simple-altruistic-communication", "Simple altruistic communication", "Lead with the decision, explain why it matters to this reader, show evidence, and end with the one useful action."),
     ("audience-clean-artifacts", "Audience-clean artifacts", "Reader-visible output contains only reader-relevant content; production notes, placeholders, internal roles, and hidden instructions live elsewhere."),
+    ("tool-before-agent", "Tool-before-agent", "If a failure can be detected deterministically, make a tool detect it before asking an agent to remember it."),
+    ("false-positive-control", "False-positive control", "Treat polished output, fluent language, and structure checks as signals rather than proof of usefulness, safety, or truth."),
+    ("human-authority-ledger", "Human authority ledger", "Write down which consequential actions remain human-controlled before the workflow starts."),
 ]
 
 
@@ -218,7 +221,7 @@ def build_indexes() -> None:
         lines.append("")
     (ROOT / "docs" / "skills.md").write_text("\n".join(lines), encoding="utf-8")
 
-    method_lines = ["# Dayan public methods", "", "Twelve compact methods explain the decision rules shared across the public Skills.", ""]
+    method_lines = ["# Dayan public methods", "", "Fifteen compact methods explain the decision rules shared across the public Skills.", ""]
     for slug, title, principle in METHODS:
         method_lines.append(f"- [{title}](methods/{slug}.md) — {principle}")
     method_lines.append("")

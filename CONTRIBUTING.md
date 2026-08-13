@@ -16,6 +16,7 @@ Thank you for helping make AI control layers more useful and inspectable.
 python3 scripts/validate_catalog.py catalog.json
 python3 scripts/scan_public_redlines.py skills
 python3 scripts/verify_fixtures.py
+python3 scripts/verify_methods.py
 python3 scripts/verify_good_first_issues.py
 python3 scripts/verify_tooling.py
 python3 scripts/validate_release.py

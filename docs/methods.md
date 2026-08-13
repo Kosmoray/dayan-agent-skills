@@ -1,6 +1,6 @@
 # Dayan public methods
 
-Twelve compact methods explain the decision rules shared across the public Skills.
+Fifteen compact methods explain the decision rules shared across the public Skills.
 
 For applied routes, start with the [public playbooks](playbooks/README.md).
 
@@ -18,3 +18,6 @@ For the broader candidate map, read [Core knowledge](core-knowledge.md).
 - [Delivery asset pipeline](methods/delivery-assets.md) — A reusable delivery includes the artifact, deterministic checks, evidence, handoff, version, and a path to reuse or retire it.
 - [Simple altruistic communication](methods/simple-altruistic-communication.md) — Lead with the decision, explain why it matters to this reader, show evidence, and end with the one useful action.
 - [Audience-clean artifacts](methods/audience-clean-artifacts.md) — Reader-visible output contains only reader-relevant content; production notes, placeholders, internal roles, and hidden instructions live elsewhere.
+- [Tool-before-agent](methods/tool-before-agent.md) — If a failure can be detected deterministically, make a tool detect it before asking an agent to remember it.
+- [False-positive control](methods/false-positive-control.md) — Treat polished output, fluent language, and structure checks as signals rather than proof of usefulness, safety, or truth.
+- [Human authority ledger](methods/human-authority-ledger.md) — Write down which consequential actions remain human-controlled before the workflow starts.

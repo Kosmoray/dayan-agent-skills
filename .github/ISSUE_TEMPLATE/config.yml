@@ -9,3 +9,6 @@ contact_links:
   - name: Browse public tooling
     url: https://github.com/Kosmoray/dayan-agent-skills/blob/main/docs/tooling.md
     about: Start here if you want to improve a local verifier, installer, or release gate.
+  - name: Browse public methods
+    url: https://github.com/Kosmoray/dayan-agent-skills/blob/main/docs/methods.md
+    about: Start here if you want to improve a method card or add a boundary fixture.

@@ -77,11 +77,20 @@ Use the [artifact fixtures](fixtures/README.md) when you want to see copyable ou
 - architecture decision record;
 - agent package manifest;
 - responsive UI acceptance plan.
+- verifier plan;
+- false-positive review;
+- human authority ledger.
 
 Verify them with:
 
 ```bash
 python3 scripts/verify_fixtures.py
+```
+
+Verify method cards with:
+
+```bash
+python3 scripts/verify_methods.py
 ```
 
 If you want to contribute without designing a new Skill, pick one task from [Good first issues](good-first-issues.md).

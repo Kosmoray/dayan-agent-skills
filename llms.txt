@@ -5,7 +5,7 @@
 Canonical repository: https://github.com/Kosmoray/dayan-agent-skills
 Live Dayan Deck demo: https://kosmoray.github.io/dayan-agent-skills/
 License: MIT
-Release: 1.2.0-beta.1
+Release: 1.4.0-beta.1
 
 ## Available Skills
 
@@ -22,7 +22,8 @@ Release: 1.2.0-beta.1
 - docs/tooling.md: public catalog of local repository tools and what each proves.
 - docs/playbooks/README.md: applied public methods.
 - examples/runs/README.md: 11 sanitized copy-paste example runs.
-- docs/fixtures/README.md: 9 copyable artifact fixtures.
+- docs/fixtures/README.md: 12 copyable artifact fixtures.
+- docs/methods.md: 15 compact public method cards.
 - docs/good-first-issues.md: 8 bounded contribution tasks.
 - scripts/compatibility_smoke.py: clean temporary-home install smoke report.
 - docs/compatibility-matrix.json: machine-readable all-Skill package install matrix.
@@ -38,6 +39,7 @@ Release: 1.2.0-beta.1
 - public redline scanning is part of CI.
 - public example runs are checked by scripts/verify_examples.py.
 - public artifact fixtures are checked by scripts/verify_fixtures.py.
+- public method cards are checked by scripts/verify_methods.py.
 - good-first issues are checked by scripts/verify_good_first_issues.py.
 - public tooling docs are checked by scripts/verify_tooling.py.
 - compatibility smoke is checked by scripts/compatibility_smoke.py.
@@ -54,4 +56,4 @@ Release: 1.2.0-beta.1
 
 ## Roadmap
 
-Next evidence wave: runtime trigger reports, clean external compatibility reports, stronger generated artifact fixtures, and narrower good-first-issue paths.
+Next evidence wave: runtime trigger reports, clean external compatibility reports, stronger generated artifact fixtures, and narrower method-specific verifiers.

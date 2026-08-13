@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.4.0-beta.1 — 2026-08-13
+
+- Promoted three public method candidates into full method cards: `tool-before-agent`, `false-positive-control`, and `human-authority-ledger`.
+- Added three matching artifact fixtures that show a verifier plan, false-positive review, and release authority ledger.
+- Added `scripts/verify_methods.py` and tests, then wired method-card verification into release validation.
+- Updated public indexes, README entry points, Pages copy, launch kit, and machine-readable context around 15 method cards and 12 fixtures.
+
 ## 1.3.0-beta.1 — 2026-08-13
 
 - Added `docs/core-knowledge.md`, a public-safe map of method candidates and publication boundaries for the broader Dayan knowledge layer.

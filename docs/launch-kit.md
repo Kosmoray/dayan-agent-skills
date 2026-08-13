@@ -11,7 +11,7 @@ For developers and AI workflow builders who are tired of recreating prompts, gua
 ## Factual claims approved by repository evidence
 
 - 56 installable public beta Skills in one repository.
-- 12 public method cards.
+- 15 public method cards.
 - Isolated install smoke covers 56 Skills across Codex and Claude Code targets: 112 package installations.
 - Offline lifecycle smoke covers discovery, trigger routing, declared example commands, non-trigger rejection, and safe update across the same 112 targets.
 - Repository unit suite currently covers installer safety, compatibility smoke, runtime smoke, public bundles, and featured Skill validators.
@@ -70,7 +70,7 @@ https://github.com/Kosmoray/dayan-agent-skills
 
 I built this because agent projects repeatedly recreated the same layer around the model: task framing, permission boundaries, evidence contracts, stop conditions, reviewer separation, and artifact verification.
 
-The repository contains 56 installable public beta Skills and 12 compact method cards. Three demos make the approach concrete before asking anyone to browse the catalog. The code and docs are MIT licensed.
+The repository contains 56 installable public beta Skills and 15 compact method cards. Three demos make the approach concrete before asking anyone to browse the catalog. The code and docs are MIT licensed.
 
 The honest limitation: package validation is much stronger than current external adoption evidence. The catalog exposes unresolved runtime blockers instead of presenting 56 folders as 56 production-proven integrations. I would especially value reports from clean Codex or Claude Code environments, including failures.
 
@@ -156,7 +156,7 @@ https://github.com/Kosmoray/dayan-agent-skills
 The repo is intentionally one library, not dozens of tiny repos:
 
 - 56 installable public beta Skills
-- 12 public method cards
+- 15 public method cards
 - shared installer and catalog
 - provenance and sanitization records
 - validators and known evidence gaps
@@ -197,7 +197,7 @@ Show Reviewer verdict.
 
 Pull back to the full capability map.
 
-“Fifty-six Skills. Twelve public methods. One repository.”
+“Fifty-six Skills. Fifteen public methods. One repository.”
 
 End card:
 
