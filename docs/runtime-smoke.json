@@ -7,14 +7,14 @@
     "os": "macOS-26.3.1-arm64-arm-64bit-Mach-O",
     "python": "3.14.6"
   },
-  "generated_at": "2026-08-13T04:24:59Z",
+  "generated_at": "2026-08-13T05:20:42Z",
   "not_claimed": [
     "actual host application UI loading",
     "LLM model decision quality",
     "networked marketplace install flows",
     "uninstall behavior in a user's live configuration"
   ],
-  "package_release": "1.7.2-beta.1",
+  "package_release": "1.8.0-beta.1",
   "results": [
     {
       "agent": "codex",

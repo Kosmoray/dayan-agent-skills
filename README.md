@@ -17,6 +17,8 @@
 <p align="center">
   <a href="docs/quickstart.md"><strong>START IN 60 SECONDS</strong></a>
   ·
+  <a href="docs/product-tour.md"><strong>TAKE THE PRODUCT TOUR</strong></a>
+  ·
   <a href="docs/demos/control-library.html">Visual proof</a>
   ·
   <a href="docs/share-kit.md">Share kit</a>
@@ -25,7 +27,7 @@
   ·
   <a href="README.zh-CN.md">中文</a>
   ·
-  <a href="https://github.com/Kosmoray/dayan-agent-skills"><strong>★ STAR THIS CONTROL LAYER</strong></a>
+  <a href="https://github.com/Kosmoray/dayan-agent-skills"><strong>OPEN THE REPOSITORY</strong></a>
 </p>
 
 <p align="center">
@@ -42,11 +44,15 @@ Agent skills are the semi-automatic modes. A Skill chooses the workflow. A harne
 
 This repository publishes those control layers instead of hiding them. If you are comparing this with a prompt list, start with the [one-screen visual proof](docs/demos/control-library.html), then read [Control library, not a prompt collection](docs/control-layer-vs-prompt-collection.md).
 
+## The three-minute route
+
+If you do not want to browse 56 folders, follow the [product tour](docs/product-tour.md): see the control-layer difference, choose one failure to stop, run one Skill in a temporary home, and inspect the matching fixture and verifier.
+
 ## 56 Skills. One control library.
 
 The library now spans engineering quality, research and decisions, agent systems, content and design, and product architecture—without splitting stars, issues, or contributors across small repositories.
 
-[Start in 60 seconds](docs/quickstart.md) · [Visual proof](docs/demos/control-library.html) · [Share kit](docs/share-kit.md) · [Control library, not prompts](docs/control-layer-vs-prompt-collection.md) · [Choose a Skill](docs/choose-a-skill.md) · [Core knowledge](docs/core-knowledge.md) · [Tooling](docs/tooling.md) · [Browse all 56 Skills](docs/skills.md) · [Inspect evidence](catalog.json)
+[Product tour](docs/product-tour.md) · [Start in 60 seconds](docs/quickstart.md) · [Visual proof](docs/demos/control-library.html) · [Control library, not prompts](docs/control-layer-vs-prompt-collection.md) · [Choose a Skill](docs/choose-a-skill.md) · [Core knowledge](docs/core-knowledge.md) · [Tooling](docs/tooling.md) · [Browse all 56 Skills](docs/skills.md) · [Inspect evidence](catalog.json)
 
 ## Start here
 

@@ -5,7 +5,7 @@
 Canonical repository: https://github.com/Kosmoray/dayan-agent-skills
 Live Dayan Deck demo: https://kosmoray.github.io/dayan-agent-skills/
 License: MIT
-Release: 1.7.2-beta.1
+Release: 1.8.0-beta.1
 
 ## Available Skills
 
@@ -17,6 +17,7 @@ Release: 1.7.2-beta.1
 ## Start Here
 
 - docs/quickstart.md: temporary-home install and verifier path.
+- docs/product-tour.md: the three-minute route through the public control library.
 - docs/choose-a-skill.md: choose the first Skill by failure mode.
 - docs/core-knowledge.md: public-safe map of broader method candidates and publication boundaries.
 - docs/control-layer-vs-prompt-collection.md: why this repository is a control library rather than a prompt collection.

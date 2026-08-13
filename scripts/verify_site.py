@@ -4,7 +4,7 @@ from __future__ import annotations
 import re,sys
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
-FILES=[ROOT/'docs/index.html',ROOT/'docs/demos/control-library.html',ROOT/'docs/demos/wenzhen.html',ROOT/'docs/demos/deck.html',ROOT/'docs/demos/reviewer.html']
+FILES=[ROOT/'docs/index.html',ROOT/'docs/product-tour.html',ROOT/'docs/demos/control-library.html',ROOT/'docs/demos/wenzhen.html',ROOT/'docs/demos/deck.html',ROOT/'docs/demos/reviewer.html']
 def verify():
     errors=[]
     for path in FILES:
@@ -18,7 +18,7 @@ def verify():
             local=(path.parent/target.split('#',1)[0]).resolve()
             if target and not local.exists(): errors.append(f'{path.relative_to(ROOT)} broken link {target}')
     index=FILES[0].read_text(encoding='utf-8')
-    for claim in ('56 Skills','112','Star the library'):
+    for claim in ('56 Skills','112','Take the product tour','Run one route'):
         if claim not in index: errors.append(f'landing page missing claim {claim}')
     return errors
 if __name__=='__main__':

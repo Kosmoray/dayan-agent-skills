@@ -2,6 +2,8 @@
 
 Use this path when you want to inspect the library without touching your live agent configuration.
 
+New here? Take the [three-minute product tour](product-tour.md) first. It explains which route to choose and what each check can—and cannot—prove.
+
 ## 1. Clone
 
 ```bash

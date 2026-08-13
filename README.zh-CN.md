@@ -13,6 +13,8 @@
 <p align="center">
   <a href="docs/quickstart.md"><strong>60 秒开始试用</strong></a>
   ·
+  <a href="docs/product-tour.md"><strong>三分钟产品导览</strong></a>
+  ·
   <a href="docs/demos/control-library.html">一屏演示</a>
   ·
   <a href="docs/share-kit.md">分享包</a>
@@ -21,7 +23,7 @@
   ·
   <a href="README.md">English</a>
   ·
-  <a href="https://github.com/Kosmoray/dayan-agent-skills"><strong>★ 收藏这套控制层</strong></a>
+  <a href="https://github.com/Kosmoray/dayan-agent-skills"><strong>打开 GitHub 仓库</strong></a>
 </p>
 
 ## 为什么做
@@ -37,11 +39,13 @@ Skill、harness、hook 和 verifier，就是 AI 的半自动模式：
 
 这些机制迟早会成为行业公共能力。与其藏着等待别人重新发明，不如率先命名、实现、验证并公开。
 
+如果你只愿意花三分钟，请走[产品导览](docs/product-tour.md)：先看控制层和提示词合集的区别，再按一个具体失败点选 Skill，临时安装一次，最后检查 fixture 和 verifier 到底证明了什么。
+
 ## 56 个 Skill，一个能力母舰
 
 公开库现已覆盖工程质量、研究决策、Agent 系统、内容设计与产品架构；所有 Star、Issue、贡献者和发布历史继续集中在一个仓库。
 
-[60 秒开始试用](docs/quickstart.md) · [一屏演示](docs/demos/control-library.html) · [分享包](docs/share-kit.md) · [这不是提示词合集](docs/control-layer-vs-prompt-collection.md) · [按任务选择 Skill](docs/choose-a-skill.md) · [核心知识地图](docs/core-knowledge.md) · [公开工具目录](docs/tooling.md) · [浏览 56 个 Skill](docs/skills.md) · [查看机器可读证据](catalog.json)
+[产品导览](docs/product-tour.md) · [60 秒开始试用](docs/quickstart.md) · [一屏演示](docs/demos/control-library.html) · [这不是提示词合集](docs/control-layer-vs-prompt-collection.md) · [按任务选择 Skill](docs/choose-a-skill.md) · [核心知识地图](docs/core-knowledge.md) · [公开工具目录](docs/tooling.md) · [浏览 56 个 Skill](docs/skills.md) · [查看机器可读证据](catalog.json)
 
 ## 先从这里开始
 

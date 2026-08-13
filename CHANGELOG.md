@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.8.0-beta.1 — 2026-08-13
+
+- Added `docs/product-tour.md`, a guided three-minute route from the control-library distinction to a clean install, fixture, verifier, and evidence boundary.
+- Reworked the GitHub Pages front door around the same product route: see the difference, choose one failure, run one bounded trial, and inspect the proof.
+- Replaced the first-screen Star CTA with a product-tour CTA so the public asset leads with understanding and evidence rather than a vanity metric.
+
 ## 1.7.2-beta.1 — 2026-08-13
 
 - Synchronized the root `llms.txt` release value with package metadata after the Pages social-card patch.
