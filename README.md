@@ -1,72 +1,40 @@
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/dayan-mark-on-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="assets/dayan-mark.svg">
-    <img src="assets/dayan-mark.svg" width="104" alt="Dayan">
-  </picture>
-</p>
+<p align="center"><img src="assets/dayan-mark.svg" width="104" alt="Dayan"></p>
 
 <h1 align="center">DAYAN AGENT SKILLS</h1>
 
-<p align="center"><strong>Give probabilistic AI a control layer.</strong></p>
+<p align="center"><strong>Pick the mess. Install the fix.</strong></p>
+
+<p align="center">One public library of 56 AI-agent Skills for turning vague work into a clear contract, a clear deck, a safer release, a mapped repository, or a bounded agent.</p>
 
 <p align="center">
-  Open skills, harnesses, hooks, and verifiers for making agent work more repeatable, inspectable, and human-friendly.
-</p>
-
-<p align="center">
-  <a href="docs/quickstart.md"><strong>START IN 60 SECONDS</strong></a>
+  <a href="https://kosmoray.github.io/dayan-agent-skills/"><strong>PICK A PROBLEM</strong></a>
   ·
-  <a href="docs/product-tour.md"><strong>TAKE THE PRODUCT TOUR</strong></a>
+  <a href="docs/quickstart.md"><strong>INSTALL IN 60 SECONDS</strong></a>
   ·
-  <a href="docs/demos/control-library.html">Visual proof</a>
-  ·
-  <a href="docs/share-kit.md">Share kit</a>
-  ·
-  <a href="https://kosmoray.github.io/dayan-agent-skills/">Live demos</a>
+  <a href="docs/demos/control-library.html">SEE THE PROOF</a>
   ·
   <a href="README.zh-CN.md">中文</a>
   ·
-  <a href="https://github.com/Kosmoray/dayan-agent-skills"><strong>OPEN THE REPOSITORY</strong></a>
+  <a href="https://github.com/Kosmoray/dayan-agent-skills"><strong>★ STAR IF IT SAVED YOU A REBUILD</strong></a>
 </p>
 
-<p align="center">
-  <a href="https://kosmoray.github.io/dayan-agent-skills/">
-    <img src="assets/hero.svg" alt="Dayan Agent Skills turns probabilistic AI into repeatable workflows">
-  </a>
-</p>
+<p align="center"><a href="https://kosmoray.github.io/dayan-agent-skills/"><img src="assets/hero.svg" alt="Pick a common AI-agent problem and install the matching Dayan Skill"></a></p>
 
-## The idea
+## Pick your problem. Take the fix.
 
-Early AI feels like a manual film camera: powerful, but every focus, exposure, and timing decision is left to the operator.
-
-Agent skills are the semi-automatic modes. A Skill chooses the workflow. A harness holds the process together. Hooks stop predictable mistakes. Verifiers check whether the result earned the claim.
-
-This repository publishes those control layers instead of hiding them. If you are comparing this with a prompt list, start with the [one-screen visual proof](docs/demos/control-library.html), then read [Control library, not a prompt collection](docs/control-layer-vs-prompt-collection.md).
-
-## The three-minute route
-
-If you do not want to browse 56 folders, follow the [product tour](docs/product-tour.md): see the control-layer difference, choose one failure to stop, run one Skill in a temporary home, and inspect the matching fixture and verifier.
-
-## 56 Skills. One control library.
-
-The library now spans engineering quality, research and decisions, agent systems, content and design, and product architecture—without splitting stars, issues, or contributors across small repositories.
-
-[Product tour](docs/product-tour.md) · [Start in 60 seconds](docs/quickstart.md) · [Visual proof](docs/demos/control-library.html) · [Control library, not prompts](docs/control-layer-vs-prompt-collection.md) · [Choose a Skill](docs/choose-a-skill.md) · [Core knowledge](docs/core-knowledge.md) · [Tooling](docs/tooling.md) · [Browse all 56 Skills](docs/skills.md) · [Inspect evidence](catalog.json)
-
-## Start here
-
-Do not begin by reading 56 folders. Pick the route that matches the failure you want to stop:
-
-| If the work fails because... | Start with | Why |
+| You need to... | Click this Skill | You get |
 | --- | --- | --- |
-| the task is vague or risky | [`dayan-wenzhen`](skills/dayan-wenzhen/SKILL.md) | creates a falsifiable task contract before polished output hides a wrong assumption |
-| the artifact is hard to explain | [`dayan-deck`](skills/dayan-deck/SKILL.md) | gives each slide one job and verifies the deck structure |
-| release review is too soft | [`dayan-adversarial-reviewer`](skills/dayan-adversarial-reviewer/SKILL.md) | checks failure modes, maintenance traps, and trust boundaries separately |
-| the repository is unfamiliar | [`dayan-orient`](skills/dayan-orient/SKILL.md) | maps code before changes start |
-| the agent itself is unclear | [`dayan-agent-designer`](skills/dayan-agent-designer/SKILL.md) | defines responsibilities, tools, memory, boundaries, and evaluation |
+| turn a fuzzy request into work that can be checked | [`dayan-wenzhen`](skills/dayan-wenzhen/SKILL.md) | a falsifiable task contract with authority, evidence, and a stop signal |
+| make an AI-generated deck obvious instead of crowded | [`dayan-deck`](skills/dayan-deck/SKILL.md) | one narrative job per slide plus a structural verifier |
+| catch a release failure before it ships | [`dayan-adversarial-reviewer`](skills/dayan-adversarial-reviewer/SKILL.md) | a `BLOCK`, `CONCERNS`, or `CLEAN` verdict with evidence |
+| understand an unfamiliar codebase before changing it | [`dayan-orient`](skills/dayan-orient/SKILL.md) | a repository map and a safe first-change route |
+| define what an agent may do, use, remember, and refuse | [`dayan-agent-designer`](skills/dayan-agent-designer/SKILL.md) | a bounded agent specification with evaluation hooks |
 
-The fastest safe trial is a temporary-home install:
+The live [problem picker](https://kosmoray.github.io/dayan-agent-skills/) gives each route a one-click install command and a visual proof. The library stays in one package: one clone, one source of truth, 56 installable public-beta Skills.
+
+### Run one route
+
+Clone once, then install only the Skill you need into a temporary home:
 
 ```bash
 git clone https://github.com/Kosmoray/dayan-agent-skills.git
@@ -81,35 +49,7 @@ python3 skills/dayan-wenzhen/scripts/verify_contract.py \
   skills/dayan-wenzhen/examples/starter-contract.json
 ```
 
-Generate a paste-ready compatibility report:
-
-```bash
-python3 scripts/compatibility_smoke.py
-```
-
-Smoke the full library and write a compatibility matrix:
-
-```bash
-python3 scripts/compatibility_smoke.py \
-  --all-skills \
-  --json-output docs/compatibility-matrix.json
-```
-
-Run the offline lifecycle smoke:
-
-```bash
-python3 scripts/runtime_smoke.py
-```
-
-Smoke discovery, trigger routing, example commands, and safe update for the full library:
-
-```bash
-python3 scripts/runtime_smoke.py \
-  --all-skills \
-  --json-output docs/runtime-smoke.json
-```
-
-See the full [Quickstart](docs/quickstart.md), [Skill chooser](docs/choose-a-skill.md), [Compatibility evidence](docs/compatibility.md), and [FAQ](docs/faq.md).
+Replace `dayan-wenzhen` with the Skill above that matches your problem. [Quickstart](docs/quickstart.md) · [All 56 Skills](docs/skills.md) · [Compatibility evidence](docs/compatibility.md) · [What the checks do—and do not—prove](docs/control-layer-vs-prompt-collection.md) · [Share kit](docs/share-kit.md)
 
 ## Copy-paste examples and fixtures
 

@@ -1,24 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
   <title id="title">Dayan Agent Skills</title>
-  <desc id="desc">A black and white control layer diagram with the Dayan square array and red human-decision point.</desc>
-  <rect width="1600" height="900" fill="#080808"/>
-  <g opacity=".16" stroke="#fff" stroke-width="1">
-    <path d="M0 120h1600M0 300h1600M0 480h1600M0 660h1600M0 840h1600"/>
-    <path d="M160 0v900M480 0v900M800 0v900M1120 0v900M1440 0v900"/>
+  <desc id="desc">Five direct routes from common AI-agent problems to an installable Dayan Skill.</desc>
+  <rect width="1600" height="900" fill="#0C2236"/>
+  <g opacity=".1" stroke="#fff" stroke-width="1"><path d="M0 110h1600M0 290h1600M0 470h1600M0 650h1600M0 830h1600"/><path d="M160 0v900M480 0v900M800 0v900M1120 0v900M1440 0v900"/></g>
+  <text x="104" y="110" fill="#E3B25A" font-family="Arial, PingFang SC, sans-serif" font-size="26" font-weight="700" letter-spacing="6">DAYAN AGENT SKILLS · 56 PUBLIC BETA SKILLS</text>
+  <text x="104" y="220" fill="#FFFFFF" font-family="Arial, PingFang SC, sans-serif" font-size="92" font-weight="800" letter-spacing="-3">PICK THE MESS.</text>
+  <text x="104" y="318" fill="#FFFFFF" font-family="Arial, PingFang SC, sans-serif" font-size="92" font-weight="800" letter-spacing="-3">INSTALL THE FIX.</text>
+  <text x="104" y="385" fill="#BFD0E2" font-family="Arial, PingFang SC, sans-serif" font-size="31">One package. Choose the problem you need solved today.</text>
+  <g font-family="Arial, PingFang SC, sans-serif">
+    <g transform="translate(104 470)"><rect width="258" height="218" rx="10" fill="#F7F5F0"/><text x="24" y="46" fill="#D7263D" font-size="20" font-weight="700" letter-spacing="3">VAGUE WORK</text><text x="24" y="109" fill="#111827" font-size="42" font-weight="800">CONTRACT</text><text x="24" y="158" fill="#526174" font-size="24">dayan-wenzhen</text><rect x="24" y="180" width="184" height="3" fill="#D7263D"/></g>
+    <g transform="translate(386 470)"><rect width="258" height="218" rx="10" fill="#F7F5F0"/><text x="24" y="46" fill="#AD7B27" font-size="20" font-weight="700" letter-spacing="3">CROWDED DECK</text><text x="24" y="109" fill="#111827" font-size="42" font-weight="800">CLARITY</text><text x="24" y="158" fill="#526174" font-size="24">dayan-deck</text><rect x="24" y="180" width="184" height="3" fill="#AD7B27"/></g>
+    <g transform="translate(668 470)"><rect width="258" height="218" rx="10" fill="#F7F5F0"/><text x="24" y="46" fill="#D7263D" font-size="20" font-weight="700" letter-spacing="3">RISKY RELEASE</text><text x="24" y="109" fill="#111827" font-size="42" font-weight="800">VERDICT</text><text x="24" y="158" fill="#526174" font-size="24">adversarial-reviewer</text><rect x="24" y="180" width="184" height="3" fill="#D7263D"/></g>
+    <g transform="translate(950 470)"><rect width="258" height="218" rx="10" fill="#F7F5F0"/><text x="24" y="46" fill="#0F766E" font-size="20" font-weight="700" letter-spacing="3">UNKNOWN REPO</text><text x="24" y="109" fill="#111827" font-size="42" font-weight="800">MAP</text><text x="24" y="158" fill="#526174" font-size="24">dayan-orient</text><rect x="24" y="180" width="184" height="3" fill="#0F766E"/></g>
+    <g transform="translate(1232 470)"><rect width="264" height="218" rx="10" fill="#F7F5F0"/><text x="24" y="46" fill="#0F766E" font-size="20" font-weight="700" letter-spacing="3">NEW AGENT</text><text x="24" y="109" fill="#111827" font-size="42" font-weight="800">BOUNDARY</text><text x="24" y="158" fill="#526174" font-size="24">agent-designer</text><rect x="24" y="180" width="184" height="3" fill="#0F766E"/></g>
   </g>
-  <g transform="translate(124 105) scale(2.1)">
-    <defs><path id="hero-row" d="M0 0h12v12H0zm24 0h12v12H24zm24 0h12v12H48zm24 0h12v12H72zm24 0h12v12H96zm24 0h12v12h-12zm24 0h12v12h-12z"/></defs>
-    <g fill="#F4F2ED">
-      <use href="#hero-row"/><use href="#hero-row" y="24"/><use href="#hero-row" y="48"/><use href="#hero-row" y="72"/>
-      <use href="#hero-row" y="96"/><use href="#hero-row" y="120"/><use href="#hero-row" y="144"/>
-    </g>
-    <rect x="190" y="-34" width="16" height="16" fill="#E21B23"/>
-  </g>
-  <text x="124" y="560" fill="#E21B23" font-family="Arial, PingFang SC, sans-serif" font-size="28" font-weight="700" letter-spacing="7">DAYAN AGENT SKILLS · PUBLIC BETA 01</text>
-  <text x="124" y="660" fill="#F4F2ED" font-family="Arial, PingFang SC, sans-serif" font-size="86" font-weight="700" letter-spacing="-3">GIVE AI A CONTROL LAYER.</text>
-  <text x="124" y="735" fill="#A6A39D" font-family="Arial, PingFang SC, sans-serif" font-size="34">SKILLS · HARNESSES · HOOKS · VERIFIERS</text>
-  <g transform="translate(124 798)">
-    <rect width="350" height="3" fill="#E21B23"/>
-    <text y="44" fill="#F4F2ED" font-family="Arial, PingFang SC, sans-serif" font-size="25" font-weight="700">01  DAYAN DECK — AVAILABLE NOW</text>
-  </g>
+  <text x="104" y="790" fill="#E3B25A" font-family="Arial, PingFang SC, sans-serif" font-size="25" font-weight="700">COPY ONE COMMAND · RUN ONE SKILL · KEEP THE CHECK</text>
 </svg>

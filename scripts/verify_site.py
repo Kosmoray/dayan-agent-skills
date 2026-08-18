@@ -18,7 +18,7 @@ def verify():
             local=(path.parent/target.split('#',1)[0]).resolve()
             if target and not local.exists(): errors.append(f'{path.relative_to(ROOT)} broken link {target}')
     index=FILES[0].read_text(encoding='utf-8')
-    for claim in ('56 Skills','112','Take the product tour','Run one route'):
+    for claim in ('56 Skills','112','Pick the mess','Install the fix','Run one route','dayan-wenzhen','dayan-deck','dayan-adversarial-reviewer','dayan-orient','dayan-agent-designer'):
         if claim not in index: errors.append(f'landing page missing claim {claim}')
     return errors
 if __name__=='__main__':

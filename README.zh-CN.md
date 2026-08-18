@@ -1,65 +1,40 @@
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/dayan-mark-on-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="assets/dayan-mark.svg">
-    <img src="assets/dayan-mark.svg" width="104" alt="大衍">
-  </picture>
-</p>
+<p align="center"><img src="assets/dayan-mark.svg" width="104" alt="大衍"></p>
 
 <h1 align="center">大衍 AGENT SKILLS</h1>
 
-<p align="center"><strong>给概率性 AI 装上一层可控机制。</strong></p>
+<p align="center"><strong>问题选对。点一下，装上解决办法。</strong></p>
+
+<p align="center">一个包含 56 个 AI Agent Skill 的公开母包：把模糊需求变成可验收任务、把演示讲清楚、把发版风险挑出来、先读懂代码库，或先给 Agent 划清边界。</p>
 
 <p align="center">
-  <a href="docs/quickstart.md"><strong>60 秒开始试用</strong></a>
+  <a href="https://kosmoray.github.io/dayan-agent-skills/"><strong>按问题选 Skill</strong></a>
   ·
-  <a href="docs/product-tour.md"><strong>三分钟产品导览</strong></a>
+  <a href="docs/quickstart.md"><strong>60 秒安装</strong></a>
   ·
-  <a href="docs/demos/control-library.html">一屏演示</a>
-  ·
-  <a href="docs/share-kit.md">分享包</a>
-  ·
-  <a href="https://kosmoray.github.io/dayan-agent-skills/">在线演示</a>
+  <a href="docs/demos/control-library.html">看一屏证明</a>
   ·
   <a href="README.md">English</a>
   ·
-  <a href="https://github.com/Kosmoray/dayan-agent-skills"><strong>打开 GitHub 仓库</strong></a>
+  <a href="https://github.com/Kosmoray/dayan-agent-skills"><strong>★ 解决过一次麻烦就点个 Star</strong></a>
 </p>
 
-## 为什么做
+<p align="center"><a href="https://kosmoray.github.io/dayan-agent-skills/"><img src="assets/hero.svg" alt="按常见 AI Agent 问题选择对应的大衍 Skill"></a></p>
 
-AI 刚兴起时，像一台纯手动胶片相机：能力很强，但光圈、快门、对焦都要使用者自己控制。
+## 你要解决什么问题？点这个。
 
-Skill、harness、hook 和 verifier，就是 AI 的半自动模式：
-
-- Skill 选择工作流；
-- harness 保持过程稳定；
-- hook 拦截可预见的错误；
-- verifier 检查结果是否配得上它的完成声明。
-
-这些机制迟早会成为行业公共能力。与其藏着等待别人重新发明，不如率先命名、实现、验证并公开。
-
-如果你只愿意花三分钟，请走[产品导览](docs/product-tour.md)：先看控制层和提示词合集的区别，再按一个具体失败点选 Skill，临时安装一次，最后检查 fixture 和 verifier 到底证明了什么。
-
-## 56 个 Skill，一个能力母舰
-
-公开库现已覆盖工程质量、研究决策、Agent 系统、内容设计与产品架构；所有 Star、Issue、贡献者和发布历史继续集中在一个仓库。
-
-[产品导览](docs/product-tour.md) · [60 秒开始试用](docs/quickstart.md) · [一屏演示](docs/demos/control-library.html) · [这不是提示词合集](docs/control-layer-vs-prompt-collection.md) · [按任务选择 Skill](docs/choose-a-skill.md) · [核心知识地图](docs/core-knowledge.md) · [公开工具目录](docs/tooling.md) · [浏览 56 个 Skill](docs/skills.md) · [查看机器可读证据](catalog.json)
-
-## 先从这里开始
-
-不要先翻 56 个目录。先按你要阻止的问题选入口：
-
-| 你的问题 | 先用 | 作用 |
+| 你要做的事 | 点这个 Skill | 你会拿到 |
 | --- | --- | --- |
-| 任务模糊或风险高 | [`dayan-wenzhen`](skills/dayan-wenzhen/SKILL.md) | 先生成可证伪任务契约，避免 AI 把错问题写得很漂亮 |
-| 演示或报告讲不清 | [`dayan-deck`](skills/dayan-deck/SKILL.md) | 每页一个任务，并验证演示结构 |
-| 发版前审查太软 | [`dayan-adversarial-reviewer`](skills/dayan-adversarial-reviewer/SKILL.md) | 分开检查失败模式、维护陷阱和信任边界 |
-| 代码库不熟 | [`dayan-orient`](skills/dayan-orient/SKILL.md) | 先建立仓库地图，再开始改动 |
-| Agent 职责不清 | [`dayan-agent-designer`](skills/dayan-agent-designer/SKILL.md) | 定义职责、工具、记忆、边界和评估 |
+| 把一句模糊需求变成可验收任务 | [`dayan-wenzhen`](skills/dayan-wenzhen/SKILL.md) | 带权限、证据和停止信号的可证伪任务契约 |
+| 把 AI 做的演示讲明白 | [`dayan-deck`](skills/dayan-deck/SKILL.md) | 每页一个叙事任务，加上结构验证器 |
+| 在发布前揪出真正的风险 | [`dayan-adversarial-reviewer`](skills/dayan-adversarial-reviewer/SKILL.md) | 有证据的 `BLOCK`、`CONCERNS` 或 `CLEAN` 裁决 |
+| 改代码前先读懂陌生仓库 | [`dayan-orient`](skills/dayan-orient/SKILL.md) | 仓库地图和安全的第一步改动路线 |
+| 让 Agent 知道能做什么、该拒绝什么 | [`dayan-agent-designer`](skills/dayan-agent-designer/SKILL.md) | 带评测入口的 Agent 边界规格 |
 
-最快的安全试用方式是安装到临时 home：
+在线[问题选择器](https://kosmoray.github.io/dayan-agent-skills/)会给每条路线配一条可复制安装命令和一个可视化证明。所有能力继续放在同一个母包：克隆一次，按需安装，56 个 Public Beta Skill 共用一条贡献与发布历史。
+
+### 跑一条路线
+
+先克隆一次，再把你需要的单个 Skill 安装进临时 home：
 
 ```bash
 git clone https://github.com/Kosmoray/dayan-agent-skills.git
@@ -74,33 +49,7 @@ python3 skills/dayan-wenzhen/scripts/verify_contract.py \
   skills/dayan-wenzhen/examples/starter-contract.json
 ```
 
-生成一份可直接贴到 issue 的兼容性 smoke 报告：
-
-```bash
-python3 scripts/compatibility_smoke.py
-```
-
-对完整 56-Skill 母舰做 smoke，并生成 JSON 矩阵：
-
-```bash
-python3 scripts/compatibility_smoke.py \
-  --all-skills \
-  --json-output docs/compatibility-matrix.json
-```
-
-运行离线生命周期 smoke：
-
-```bash
-python3 scripts/runtime_smoke.py
-```
-
-对完整母舰验证发现、触发路由、示例命令与安全更新：
-
-```bash
-python3 scripts/runtime_smoke.py \
-  --all-skills \
-  --json-output docs/runtime-smoke.json
-```
+把 `dayan-wenzhen` 换成上表对应的 Skill 即可。[快速开始](docs/quickstart.md) · [浏览全部 56 个 Skill](docs/skills.md) · [兼容性证据](docs/compatibility.md) · [检查究竟证明什么](docs/control-layer-vs-prompt-collection.md) · [分享包](docs/share-kit.md)
 
 ## 可复制样例与产物 fixture
 
